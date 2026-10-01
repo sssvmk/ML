@@ -1,0 +1,66 @@
+{
+  "method": "ols",
+  "complexity": "effective rank",
+  "selection": {
+    "index": 0,
+    "comp": 225.0,
+    "cv_mse": 0.026318100585869635,
+    "cv_se": 0.002042255578673657,
+    "n_nonzero_final": 233,
+    "cv_min_index": 0,
+    "cv_min_comp": 225.0,
+    "argmin_aic_comp": 225.0,
+    "argmin_bic_comp": 225.0,
+    "argmin_cp_comp": 225.0,
+    "rank_at_choice": 225.0
+  },
+  "validation_train_only_model": {
+    "n": 9901,
+    "mse": 0.03421612102157174,
+    "mse_se": 0.0039343221226051115,
+    "rmse": 0.1849760012044042,
+    "mae": 0.07279652185837414,
+    "r2": 0.003903126961188441
+  },
+  "test": {
+    "n": 2927,
+    "mse": 0.038719569557624255,
+    "mse_se": 0.006578456132742901,
+    "rmse": 0.19677288826874564,
+    "mae": 0.07248231066129504,
+    "r2": -0.0013691488940148488,
+    "baseline_train_mean_mse": 0.03881828776259108,
+    "rel_mse_vs_mean_baseline": 0.9974569150094775
+  },
+  "final_model_info_criteria_or_extras": {
+    "training_rss": 301.4289412480782,
+    "df": 227,
+    "AIC": -140683.1228235779,
+    "BIC": -138792.8145844785,
+    "Cp": 0.01001213908342875,
+    "note": "AIC/BIC/Cp computed on the data the final model was fit on (train, or train+val if refit)"
+  },
+  "notes": "Minimum-norm OLS (eigen-decomposition) so collinear columns are handled.",
+  "config": {
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "seed": 42,
+    "refit": "train_val",
+    "n_lambda": 60,
+    "subset_pool": 20,
+    "dantzig_pool": 30,
+    "fs_steps": 5000,
+    "fs_eps_frac": 0.003,
+    "pls_max_comp": 50,
+    "enet_alphas": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "group_max_iter": 2000
+  },
+  "runtime_sec": 6.6
+}

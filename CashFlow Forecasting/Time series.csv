@@ -1,0 +1,39 @@
+#,Algorithm,Data Tests,Minimum observations
+1,ARIMAX,"Stationarity, ACF/PACF, trend, exogenous relationship, lag effects, residual autocorrelation",50+
+2,SARIMAX,ARIMAX tests + stable seasonality and seasonal period,100+
+3,VARMAX,"Multiple-series correlation, stationarity, cross-series dependency, Granger causality, lag structure",100+
+4,Dynamic Regression,"Target–exogenous relationships, lag effects, multicollinearity, residual autocorrelation",50+
+5,State Space Models,"Latent trend/level, time-varying behavior, structural changes, missing observations",50+
+6,Structural Time Series,"Trend, seasonality, cycles, level shifts, structural breaks",100+
+7,Prophet,"Trend, seasonality, changepoints, holidays/events, irregular/missing dates",50+
+8,Linear Regression,"Linear relationship, multicollinearity, residuals, heteroscedasticity, outliers",50+
+9,Polynomial Regression,"Nonlinear/curved relationship, polynomial degree, overfitting",50+
+10,Ridge Regression,Multicollinearity and high-dimensional correlated predictors,50+
+11,Lasso Regression,Sparse relationships and usefulness/stability of feature selection,50+
+12,ElasticNet,Sparse + correlated predictors; L1/L2 regularization balance,50+
+13,Random Forest Regressor,"Nonlinear relationships, feature interactions, lag features, categorical encoding",200+
+14,Extra Trees Regressor,Nonlinear/high-dimensional relationships and noisy features,200+
+15,XGBoost,"Nonlinear effects, interactions, lag/rolling features, exogenous variables",200+
+16,LightGBM,"Nonlinear/high-dimensional relationships, missing values, categorical features",500+
+17,CatBoost,"Nonlinear relationships, categorical variables, high-cardinality dimensions",200+
+18,SVR,"Nonlinear relationship, scaling, outliers, dimensionality, kernel suitability",100+
+19,KNN Regression,"Local similarity, scaling, dimensionality, noise",200+
+20,RNN,Sequential dependency and useful sequence-history length,500+
+21,LSTM,Short/long temporal dependencies and sequence length,500+
+22,GRU,Short/long temporal dependencies and sequence length,500+
+23,TCN,Local/multi-scale temporal dependencies and receptive field,500+
+24,WaveNet,Very long sequential dependencies and multi-scale temporal patterns,"1,000+"
+25,DeepAR,Shared patterns across multiple related time series; probabilistic forecasting,"1,000+ total"
+26,DeepState,"Latent state, changing trend/seasonality, probabilistic forecasting","1,000+ total"
+27,DeepVAR,Cross-series dependencies and multivariate probabilistic forecasting,"1,000+ total"
+28,TFT,"Static features, known-future/observed covariates, interactions, long/short dependencies","1,000+"
+29,TiDE,"Long-horizon forecasting, nonlinear covariates, multivariate relationships","1,000+"
+30,TSMixer,Multivariate temporal and cross-variable mixing,"1,000+"
+31,TimesNet,Multiple periodicities and complex temporal/frequency patterns,"1,000+"
+32,iTransformer,High-dimensional multivariate relationships and long dependencies,"1,000+"
+33,Informer,Very long input sequences and long-horizon forecasting,"1,000+"
+34,Autoformer,Trend/seasonal decomposition and long-horizon patterns,"1,000+"
+35,FEDformer,"Frequency-domain patterns, seasonality and long-horizon forecasting","1,000+"
+36,ETSformer,Structured trend/seasonal behavior and long-horizon forecasting,"1,000+"
+37,N-BEATS,Trend/seasonality and long-horizon forecasting,500+
+38,N-HiTS,Multi-scale temporal patterns and long-horizon forecasting,500+

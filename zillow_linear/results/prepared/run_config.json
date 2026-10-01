@@ -1,0 +1,21 @@
+{
+  "cv_folds": 10,
+  "cv_scheme": "blocked",
+  "seed": 42,
+  "refit": "train_val",
+  "n_lambda": 60,
+  "subset_pool": 20,
+  "dantzig_pool": 30,
+  "fs_steps": 5000,
+  "fs_eps_frac": 0.003,
+  "pls_max_comp": 50,
+  "enet_alphas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "group_max_iter": 2000
+}

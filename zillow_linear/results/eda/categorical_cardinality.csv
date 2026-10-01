@@ -1,0 +1,16 @@
+column,n_levels,pct_missing
+airconditioningtypeid,4,68.05770720371804
+architecturalstyletypeid,5,99.6998450813323
+buildingclasstypeid,1,99.97095274980636
+decktypeid,1,99.33191324554609
+heatingorsystemtypeid,11,37.509682416731216
+propertylandusetypeid,13,0.02420604182804028
+storytypeid,1,99.97095274980636
+typeconstructiontypeid,2,99.65627420604183
+fips,3,0.02420604182804028
+regionidcounty,3,0.02420604182804028
+regionidcity,175,2.1446553059643687
+regionidzip,383,0.07261812548412083
+regionidneighborhood,412,60.544151820294346
+propertycountylandusecode,51,0.02420604182804028
+propertyzoningdesc,1265,35.2778853601859

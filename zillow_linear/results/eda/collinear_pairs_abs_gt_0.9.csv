@@ -1,0 +1,8 @@
+feature_a,feature_b,pearson
+bathroomcnt,calculatedbathnbr,1.0
+calculatedfinishedsquarefeet,finishedsquarefeet12,1.0
+bathroomcnt,fullbathcnt,0.9847581346444808
+calculatedbathnbr,fullbathcnt,0.9847581346444808
+taxvaluedollarcnt,taxamount,0.9637550982944345
+taxvaluedollarcnt,landtaxvaluedollarcnt,0.9608191937021191
+landtaxvaluedollarcnt,taxamount,0.9234430176249121

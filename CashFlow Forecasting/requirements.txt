@@ -1,0 +1,80 @@
+# ============================================================
+# STC Cash Flow Forecasting — Python dependencies
+# Python >= 3.10 required (3.12 recommended)
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# ---- Core scientific stack ---------------------------------
+numpy>=1.26,<3          # 2.x works; MXNet calibration venv needs ==1.26.4 (separate)
+pandas>=2.0,<3
+scipy>=1.10
+statsmodels>=0.14
+
+# ---- Machine learning (tree-based) -------------------------
+scikit-learn>=1.3
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+
+# ---- Deep learning -----------------------------------------
+torch>=2.0              # CPU install sufficient; add --index-url for GPU builds
+lightning>=2.0          # pytorch-lightning; also satisfies pytorch-lightning imports
+torchmetrics>=1.0
+einops>=0.6
+
+# ---- Time-series forecasting libraries ---------------------
+# NeuralForecast is VENDORED at vendor/nf_patched/ (Apache-2.0, 3 files patched).
+# Do NOT pip-install neuralforecast — the vendored copy is loaded automatically.
+gluonts>=0.14           # WaveNet (GluonTS PyTorch backend); also used by the
+                        # G-42 MXNet calibration reference (separate venv, see below)
+prophet>=1.1            # Facebook Prophet (stan backend via cmdstanpy)
+cmdstanpy>=1.0          # CmdStan backend for Prophet
+
+# ---- Transformers / pretrained models ----------------------
+transformers>=4.30      # used transitively by timesfm
+huggingface_hub>=0.20   # weight loading (local_files_only=True; no runtime download)
+safetensors>=0.4        # model weight format
+
+# ---- TimesFM-3 (optional — demo/skills environments only) --
+# The weights are non-commercial / non-production (Google licence).
+# The package must be installed to use the adapter at all; the weights
+# must be supplied separately (see config.json -> prebuilt_models.timesfm3).
+timesfm==3.0.2
+
+# ---- MLflow experiment tracking ----------------------------
+mlflow>=2.10
+
+# ---- Hyperparameter search (optional) ----------------------
+# Optuna and Ray are imported lazily; the system runs without them.
+# Install if you want hyperparameter search (config.json -> hyperparameter_search.enabled: true).
+optuna>=3.0             # optional: comment out if not using HPO
+# ray[tune]>=2.0        # optional: uncomment for distributed HPO (S2 strategy)
+
+# ---- Utilities ---------------------------------------------
+pyarrow>=12             # fast parquet / Arrow I/O
+openpyxl>=3.1           # reading the traceability matrix .xlsx
+pydantic>=2.0           # GluonTS internal dependency
+toolz>=0.12             # GluonTS internal dependency
+tqdm>=4.60
+holidays>=0.40          # calendar features (country-level holidays)
+matplotlib>=3.7
+seaborn>=0.12
+setuptools>=68          # needed for Python 3.12 compatibility with older packages
+
+# ============================================================
+# G-42 CALIBRATION REFERENCE — separate isolated virtualenv
+# ============================================================
+# The Layer 2 calibration run (admission.py) compares our custom models against
+# the official GluonTS-MXNet reference implementation. MXNet 1.9.1 is NOT
+# compatible with the main environment (requires numpy==1.26.4 and Python 3.12
+# shims). Create a separate venv:
+#
+#   python3 -m venv /tmp/mxenv
+#   /tmp/mxenv/bin/pip install setuptools "numpy==1.26.4" mxnet==1.9.1 \
+#       "pandas<3,>=1.4" "toolz~=0.12" "scipy<1.14" "statsmodels<0.15" gluonts
+#
+# Then set config.json -> admission.calibration.python to /tmp/mxenv/bin/python
+# (or wherever you created the venv).
+# This venv is ONLY used by calibration/reference_worker.py — never imported
+# by the main application.
+# ============================================================

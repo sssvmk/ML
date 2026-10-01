@@ -1,0 +1,58 @@
+{
+  "method": "ridge",
+  "complexity": "lambda (small = complex)",
+  "selection": {
+    "index": 0,
+    "comp": -12.23834620608047,
+    "cv_mse": 0.026355780909845816,
+    "cv_se": 0.0020210965780989004,
+    "n_nonzero_final": 233,
+    "cv_min_index": 11,
+    "cv_min_comp": -8.803981999580875,
+    "argmin_gcv_comp": -8.803981999580875,
+    "lam_at_choice": 206560.0,
+    "df_at_choice": 18.823099433602213
+  },
+  "validation_train_only_model": {
+    "n": 9901,
+    "mse": 0.03431440317075274,
+    "mse_se": 0.003947136115121049,
+    "rmse": 0.18524147259928792,
+    "mae": 0.07076359816628636,
+    "r2": 0.0010419451979777339
+  },
+  "test": {
+    "n": 2927,
+    "mse": 0.0387409071194877,
+    "mse_se": 0.006596662143834561,
+    "rmse": 0.19682709955564479,
+    "mae": 0.07164826090466457,
+    "r2": -0.0019209829254049904,
+    "baseline_train_mean_mse": 0.03881828776259108,
+    "rel_mse_vs_mean_baseline": 0.9980065930888907
+  },
+  "final_model_info_criteria_or_extras": {},
+  "notes": "Complexity ordering = -log(lambda); x-axis of CV plot is lambda.",
+  "config": {
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "seed": 42,
+    "refit": "train_val",
+    "n_lambda": 60,
+    "subset_pool": 20,
+    "dantzig_pool": 30,
+    "fs_steps": 5000,
+    "fs_eps_frac": 0.003,
+    "pls_max_comp": 50,
+    "enet_alphas": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "group_max_iter": 2000
+  },
+  "runtime_sec": 6.2
+}

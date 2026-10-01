@@ -1,0 +1,20 @@
+{
+  "test": {
+    "n": 2927,
+    "mse": 0.038719569557624255,
+    "mse_se": 0.006578456132742901,
+    "rmse": 0.19677288826874564,
+    "mae": 0.07248231066129504,
+    "r2": -0.0013691488940148488,
+    "baseline_train_mean_mse": 0.03881828776259108,
+    "rel_mse_vs_mean_baseline": 0.9974569150094775
+  },
+  "extras": {
+    "training_rss": 301.4289412480782,
+    "df": 227,
+    "AIC": -140683.1228235779,
+    "BIC": -138792.8145844785,
+    "Cp": 0.01001213908342875,
+    "note": "AIC/BIC/Cp computed on the data the final model was fit on (train, or train+val if refit)"
+  }
+}

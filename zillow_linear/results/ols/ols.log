@@ -1,0 +1,4 @@
+16:41:13 | INFO | ols | n_train=20656 n_val=9901 n_test=2927 p=233 | cv=10-fold (blocked) refit=train_val
+16:41:13 | INFO | fit on full train: path with 1 points
+16:41:18 | INFO | CV minimum at index 0 (comp=225, CV MSE=0.026318); one-SE choice index 0 (comp=225, CV MSE=0.026318)
+16:41:21 | INFO | VALIDATION (train-only model) MSE=0.034216 +- 0.003934 | TEST MSE=0.038720 +- 0.006578 | 8.4s

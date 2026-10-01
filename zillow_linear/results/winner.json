@@ -1,0 +1,33 @@
+{
+  "winner": "ols",
+  "tied_with_winner": [
+    "ols",
+    "ridge",
+    "backward_stepwise",
+    "best_subset",
+    "forward_stagewise",
+    "lasso",
+    "lar",
+    "pcr",
+    "pls",
+    "elastic_net",
+    "dantzig",
+    "grouped_lasso"
+  ],
+  "method": "ols",
+  "status": "ok",
+  "test_mse": 0.038719569557624255,
+  "test_mse_se": 0.006578456132742901,
+  "test_rmse": 0.19677288826874564,
+  "test_mae": 0.07248231066129504,
+  "test_r2": -0.0013691488940148488,
+  "val_mse": 0.03421612102157174,
+  "cv_mse_at_choice": 0.026318100585869635,
+  "cv_se_at_choice": 0.002042255578673657,
+  "n_nonzero": 233,
+  "runtime_sec": 6.6,
+  "mse_minus_winner": 0.0,
+  "paired_se": 0.0,
+  "significantly_worse_than_winner_(z>2)": false,
+  "rel_mse_vs_train_mean_baseline": 0.9974569150094775
+}

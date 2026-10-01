@@ -1,0 +1,425 @@
+{
+  "orchestration": {
+    "backtest_horizon": 4,
+    "backtest_years_of_history": 4,
+    "min_observations": 30,
+    "output_dir": "logs",
+    "registry_dir": "registry_store",
+    "max_parallel_workers": 8,
+    "daily_inference_time": "06:00",
+    "seasonal_period": 7,
+    "bias_threshold": 20.0,
+    "consistency_min_pass_rate": 0.6,
+    "holdout_periods": 20,
+    "window_search_enabled": true,
+    "backtest_step": 4,
+    "frequency": "D",
+    "_frequency_comment": "Pandas frequency alias for every date this system produces or expects (this request: was hard-coded daily everywhere). 'D'=daily (default, unchanged behaviour), 'W'=weekly, 'M'=month-end, etc. Every algorithm module reads it via hyperparameters['frequency'] (self.frequency); config.py injects this value into every module automatically."
+  },
+  "hyperparameter_search": {
+    "enabled": true,
+    "budget": 12,
+    "seed": 42,
+    "prune_margin": 2.0,
+    "pruner": {
+      "n_startup_trials": 3,
+      "n_warmup_folds": 2,
+      "margin": 1.5
+    }
+  },
+  "mlflow": {
+    "enabled": false,
+    "tracking_uri": null,
+    "registry_uri": null,
+    "experiment_name": "stc_cashflow"
+  },
+  "baseline": {
+    "algorithm_id": "seasonal_naive",
+    "hyperparameters": {
+      "season": 7
+    }
+  },
+  "challengers": {
+    "naive_1": {},
+    "seasonal_naive_30": {
+      "season": 30
+    }
+  },
+  "fallback": {
+    "combine": "rolling_mean_median",
+    "lookback": 14
+  },
+  "algorithms": {
+    "arimax": {
+      "enabled": true,
+      "hyperparameters": {
+        "order": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "sarimax": {
+      "enabled": true,
+      "hyperparameters": {
+        "order": [
+          1,
+          1,
+          1
+        ],
+        "seasonal_order": [
+          1,
+          0,
+          1,
+          7
+        ]
+      }
+    },
+    "varmax": {
+      "enabled": true,
+      "hyperparameters": {
+        "order": [
+          1,
+          0
+        ]
+      }
+    },
+    "dynamic_regression": {
+      "enabled": true,
+      "hyperparameters": {
+        "order": [
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    "state_space": {
+      "enabled": true,
+      "hyperparameters": {
+        "level": "local level"
+      }
+    },
+    "structural_ts": {
+      "enabled": true,
+      "hyperparameters": {
+        "level": "local linear trend",
+        "seasonal_period": 7
+      }
+    },
+    "prophet": {
+      "enabled": true,
+      "hyperparameters": {
+        "changepoint_prior_scale": 0.05,
+        "n_changepoints": 25,
+        "seasonality_prior_scale": 10.0,
+        "seasonality_mode": "additive"
+      }
+    },
+    "linear_regression": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 3
+      }
+    },
+    "polynomial_regression": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 3,
+        "degree": 2
+      }
+    },
+    "ridge": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 3,
+        "alpha": 1.0
+      }
+    },
+    "lasso": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 3,
+        "alpha": 0.1
+      }
+    },
+    "elastic_net": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 3,
+        "alpha": 0.1,
+        "l1_ratio": 0.5
+      }
+    },
+    "random_forest": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 5,
+        "n_estimators": 100,
+        "max_depth": 5
+      }
+    },
+    "extra_trees": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 5,
+        "n_estimators": 100,
+        "max_depth": 5
+      }
+    },
+    "xgboost": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 7,
+        "n_estimators": 100,
+        "max_depth": 4,
+        "learning_rate": 0.1
+      }
+    },
+    "lightgbm": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 7,
+        "n_estimators": 100,
+        "learning_rate": 0.1
+      }
+    },
+    "catboost": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 7,
+        "iterations": 100,
+        "depth": 4,
+        "learning_rate": 0.1
+      }
+    },
+    "svr": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 5,
+        "C": 1.0,
+        "epsilon": 0.1,
+        "compute_ceiling": 10000,
+        "ceiling_action": "limit_window"
+      },
+      "note": "G-11: compute_ceiling=10000, ceiling_action=limit_window (trains on the most recent 10,000 observations above the ceiling rather than refusing) -- assumption, confirm if you'd rather it go ineligible instead"
+    },
+    "knn_regression": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 5,
+        "n_neighbors": 5
+      }
+    },
+    "rnn": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14,
+        "max_steps": 200
+      }
+    },
+    "lstm": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14,
+        "max_steps": 200
+      }
+    },
+    "gru": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14,
+        "max_steps": 200
+      }
+    },
+    "tcn": {
+      "enabled": true,
+      "hyperparameters": {
+        "kernel_size": 3,
+        "levels": 4
+      }
+    },
+    "wavenet": {
+      "enabled": true,
+      "hyperparameters": {
+        "dilation_depth": 6,
+        "num_stacks": 1,
+        "max_epochs": 5
+      }
+    },
+    "deepar": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 28,
+        "max_steps": 100
+      },
+      "note": "pooling-capable: competes through Orchestrator.full_train_pooled (G-03); ineligible in the single-segment path"
+    },
+    "deepstate": {
+      "enabled": true,
+      "hyperparameters": {
+        "context_length": 56,
+        "max_epochs": 30
+      },
+      "note": "custom native PyTorch model: competes only with a passing G-42 admission report for its current source; pooled"
+    },
+    "deepvar": {
+      "enabled": true,
+      "hyperparameters": {
+        "context_length": 56,
+        "rank": 2,
+        "max_epochs": 30
+      },
+      "note": "custom native PyTorch joint model: competes only with a passing G-42 admission report for its current source; forecasts the whole pool together (infer_pool)"
+    },
+    "tft": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 28,
+        "max_steps": 100
+      },
+      "note": "eligible only when the data carries future-known covariate series (inferred from structure); works on one segment or a pool"
+    },
+    "tide": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 28,
+        "max_steps": 100
+      },
+      "note": "eligible only when the data carries future-known covariate series (inferred from structure); works on one segment or a pool"
+    },
+    "timesnet": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "itransformer": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "informer": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "autoformer": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "fedformer": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "etsformer": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 48,
+        "max_epochs": 20
+      }
+    },
+    "nbeats": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "nhits": {
+      "enabled": true,
+      "hyperparameters": {
+        "n_lags": 14
+      }
+    },
+    "timesfm3": {
+      "enabled": true,
+      "hyperparameters": {
+        "context_length": 512
+      },
+      "note": "zero-shot; eligible with context_length + horizon observations (D-13); demo/skills use only (your decision) -- see prebuilt_models.timesfm3.allowed_environments"
+    }
+  },
+  "monitoring": {
+    "rule": "live six-metric rank-sum of Production vs prior version; rollback is proposed, a human decides",
+    "min_actuals": 1
+  },
+  "prebuilt_models": {
+    "_comment": "Pretrained models are read ONLY from `path` (never downloaded at run time). enabled=false or path=null makes the algorithm that needs it report itself unavailable (visible in the elimination log), never silently fall back.",
+    "timesfm3": {
+      "enabled": false,
+      "path": null,
+      "fine_tune": false,
+      "expected_fingerprint": null,
+      "licence_id": "timesfm-non-commercial-v1.0",
+      "use_scope": "non_commercial",
+      "used_by": "timesfm3 (roster #39)",
+      "notes": "zero-shot, nothing is fitted; non-commercial, non-production only (D-8). RESTRICTED TO DEMO/SKILLS USE ONLY (your decision): allowed_environments=['demo'], so it refuses to load unless deployment.environment is 'demo' -- normal dev/test/production runs never use it.",
+      "non_commercial_use_acknowledged": false,
+      "allowed_environments": [
+        "demo"
+      ]
+    }
+  },
+  "admission": {
+    "reports_dir": "admission_reports",
+    "calibration": {
+      "_approved_by": "Muni",
+      "_approved_note": "1x-reference-SD margin, alpha 0.05, 12 seeds/setting. DeepVAR is judged per correlation setting: on the pilot it was non-inferior when the series were truly correlated but not when independent (asymmetry accepted as-is, not forced).",
+      "alpha": 0.05,
+      "power": 0.8,
+      "margin_k": 1.0,
+      "n_seeds": 12,
+      "results_path": "calibration/pilot_results.jsonl",
+      "legs": {
+        "deepstate": [
+          "local_level_weekly"
+        ],
+        "deepvar": [
+          "var1_corr0.0",
+          "var1_corr0.6"
+        ]
+      }
+    },
+    "_comment": "G-42: Layer 2 needs an approved calibration {significance_level, n_seeds, n_series, margin_rule}; while it is null Layer 2 reports not_run and custom models are not admitted."
+  },
+  "deployment": {
+    "environment": "dev",
+    "_comment": "names this run's environment; licence-restricted pretrained weights (timesfm3) refuse to load unless it is listed in their allowed_environments"
+  },
+  "baselines": {
+    "elimination_gate": {
+      "season": 7
+    },
+    "challengers": {
+      "naive_1": {
+        "enabled": true
+      },
+      "seasonal_naive_30": {
+        "enabled": true,
+        "season": 30
+      }
+    },
+    "fallback": {
+      "combine": "rolling_mean_median",
+      "lookback": 14
+    },
+    "_comment": "Config-driven now (your decision): elimination_gate is the fixed baseline every candidate must beat; challengers are informational-only comparisons; fallback is used only when nothing survives elimination."
+  },
+  "data_source": {
+      "adapter": "exchange_rate",
+      "params": {
+          "file_path": "data/exchange_rate.txt",
+          "start": "1990-01-01",
+          "freq": "D",
+          "currencies": ["AUD", "GBP", "CAD", "CHF", "CNY", "JPY", "NZD", "SGD"]
+      },
+      "segments": null
+	}
+}

@@ -1,0 +1,84 @@
+{
+  "algorithm": "deepstate",
+  "module_sha256": "a0397820dc30e4ffe7259adf1a58680be6172eeeaf069b088daed9177b8cd424",
+  "run_at": "2026-09-28T20:24:36+00:00",
+  "layer1": {
+    "passed": true,
+    "tolerance": 1e-06,
+    "reference": "statsmodels.tsa.statespace.kalman_filter.KalmanFilter (independent implementation)",
+    "worst_relative_difference": {
+      "loglik": 5.754635476292897e-16,
+      "state": 1.4868968623661203e-11,
+      "cov": 3.0052657896555068e-15,
+      "forecast_mean": 3.7069617362830994e-14,
+      "forecast_var": 1.2885043977496849e-15
+    },
+    "cases": 6,
+    "dtype": "float64",
+    "trained": false
+  },
+  "layer2": {
+    "passed": false,
+    "status": "failed",
+    "alpha": 0.05,
+    "margin_k": 1.0,
+    "n_seeds": 12,
+    "results_file": "/home/claude/stc_cashflow/calibration/pilot_results.jsonl",
+    "checks": [
+      {
+        "setting": "local_level_weekly",
+        "n_seeds": 12,
+        "margin": 0.20124844923781277,
+        "noninferiority_p": 0.012082637387090077,
+        "noninferior": true,
+        "coverage": 0.7361111111111112,
+        "coverage_kupiec_p": 0.0005374803803644125,
+        "coverage_ok": false,
+        "passed": false
+      }
+    ]
+  },
+  "layer3": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "same-seed reproducibility",
+        "passed": true,
+        "detail": "two fits with the same seed give the same forecasts"
+      },
+      {
+        "check": "save -> load -> infer identical",
+        "passed": true,
+        "detail": "loaded without any training data"
+      },
+      {
+        "check": "horizons [1, 4, 30] return exactly that many dated rows",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "no NaN / inf in forecasts",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "changing future covariates does not change earlier steps",
+        "passed": true,
+        "detail": "future-known values at steps 6-8 changed; steps 1-5 compared",
+        "later_steps_changed": true,
+        "applicable": true
+      },
+      {
+        "check": "training loss decreases",
+        "passed": true,
+        "detail": "first -0.823 -> last -1.759"
+      },
+      {
+        "check": "early stopping triggers on a noisy series",
+        "passed": true,
+        "detail": "stopped after 11 of 60 epochs; best epoch 8; best weights restored: True"
+      }
+    ]
+  },
+  "admitted": false
+}

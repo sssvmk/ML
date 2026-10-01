@@ -1,0 +1,96 @@
+{
+  "algorithm": "deepvar",
+  "module_sha256": "70adb6e853a919c700e21235413fa8c920070c06af4c71d6131e64177b2bf6de",
+  "run_at": "2026-09-28T20:24:44+00:00",
+  "layer1": {
+    "passed": true,
+    "tolerance": 1e-06,
+    "reference": "scipy.stats.multivariate_normal and torch.distributions.LowRankMultivariateNormal; exact covariance D + V V^T",
+    "worst_relative_difference": {
+      "vs_scipy": 2.2155379479086397e-14,
+      "vs_torch_distributions": 1.5909564222603931e-15,
+      "sampling_map_covariance_vs_true": 1.6322883454233786e-16
+    },
+    "sampled_covariance_monte_carlo_max_relative_error": 0.005507527279407905,
+    "monte_carlo_samples": 200000,
+    "cases": 27,
+    "dtype": "float64",
+    "trained": false
+  },
+  "layer2": {
+    "passed": false,
+    "status": "failed",
+    "alpha": 0.05,
+    "margin_k": 1.0,
+    "n_seeds": 12,
+    "results_file": "/home/claude/stc_cashflow/calibration/pilot_results.jsonl",
+    "checks": [
+      {
+        "setting": "var1_corr0.0",
+        "n_seeds": 12,
+        "margin": 6.074220475266616,
+        "noninferiority_p": 0.2366229413615538,
+        "noninferior": false,
+        "coverage": 0.6825396825396826,
+        "coverage_kupiec_p": 1.116157567876029e-05,
+        "coverage_ok": false,
+        "passed": false
+      },
+      {
+        "setting": "var1_corr0.6",
+        "n_seeds": 12,
+        "margin": 10.607008969331863,
+        "noninferiority_p": 3.531546354295068e-05,
+        "noninferior": true,
+        "coverage": 0.7380952380952381,
+        "coverage_kupiec_p": 0.017603999817210374,
+        "coverage_ok": false,
+        "negative_control_p_full_beats_diagonal": 0.04997218665618475,
+        "negative_control_ok": true,
+        "passed": false
+      }
+    ]
+  },
+  "layer3": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "same-seed reproducibility",
+        "passed": true,
+        "detail": "two fits with the same seed give the same forecasts"
+      },
+      {
+        "check": "save -> load -> infer identical",
+        "passed": true,
+        "detail": "loaded without any training data"
+      },
+      {
+        "check": "horizons [1, 4, 30] return exactly that many dated rows",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "no NaN / inf in forecasts",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "changing future covariates does not change earlier steps",
+        "passed": true,
+        "detail": "not applicable: no future-known inputs supplied",
+        "applicable": false
+      },
+      {
+        "check": "training loss decreases",
+        "passed": true,
+        "detail": "first 1.587 -> last -7.675"
+      },
+      {
+        "check": "early stopping triggers on a noisy series",
+        "passed": true,
+        "detail": "stopped after 4 of 60 epochs; best epoch 1; best weights restored: True"
+      }
+    ]
+  },
+  "admitted": false
+}

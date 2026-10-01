@@ -1,0 +1,30 @@
+16:40:54 | [1/5] exploratory data analysis
+16:40:57 | EDA: {'rows_read': 33484, 'rows_used': 33484, 'columns': 61, 'date_min': '2016-01-03', 'date_max': '2017-09-19', 'split_counts': {'train': 20656, 'val': 9901, 'test': 2927}}
+16:41:00 | EDA written to results\eda
+16:41:00 | [2/5] temporal split + feature engineering
+16:41:00 | reading down_Sample_zillow.csv
+16:41:01 | split sizes: {'train': 20656, 'val': 9901, 'test': 2927}
+16:41:03 |   train: X (20656, 233)
+16:41:04 |   val: X (9901, 233)
+16:41:04 |   test: X (2927, 233)
+16:41:04 | features: 233 columns (11 missing indicators); fit-target clip bounds [-0.3389, 0.4609]
+16:41:04 | [3/5] caching fold statistics for 10-fold CV
+16:41:04 |       p=233 features | train=20656 val=9901 test=2927
+16:41:04 | [4/5] training 12 methods in parallel (12 processes, 1 BLAS thread(s) each)
+16:41:15 |       pls finished: test MSE 0.038836 +- 0.006609
+16:41:17 |       forward_stagewise finished: test MSE 0.038836 +- 0.006609
+16:41:21 |       ols finished: test MSE 0.038720 +- 0.006578
+16:41:22 |       lar finished: test MSE 0.038836 +- 0.006609
+16:41:24 |       ridge finished: test MSE 0.038741 +- 0.006597
+16:41:25 |       pcr finished: test MSE 0.038836 +- 0.006609
+16:41:33 |       dantzig finished: test MSE 0.038836 +- 0.006609
+16:41:34 |       backward_stepwise finished: test MSE 0.038836 +- 0.006609
+16:41:35 |       grouped_lasso finished: test MSE 0.038836 +- 0.006609
+16:43:53 |       best_subset finished: test MSE 0.038836 +- 0.006609
+16:44:00 |       lasso finished: test MSE 0.038836 +- 0.006609
+16:54:23 |       elastic_net finished: test MSE 0.038836 +- 0.006609
+16:54:25 |       finished 12/12 methods; failed: none
+16:54:25 | [5/5] cross-method comparison on the test set
+16:54:25 | WINNER: ols  (test MSE 0.038720 +- 0.006578, RMSE 0.19677, 0.9975x the predict-the-mean baseline)
+16:54:25 | Not significantly different from the winner (paired z<=2): ols, ridge, backward_stepwise, best_subset, forward_stagewise, lasso, lar, pcr, pls, elastic_net, dantzig, grouped_lasso
+16:54:25 | all done in 13.5 min  -> results in C:\Users\msk80743\Use Case Design\zillow_linear\results

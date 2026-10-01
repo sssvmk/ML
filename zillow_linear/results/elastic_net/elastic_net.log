@@ -1,0 +1,4 @@
+16:41:17 | INFO | elastic_net | n_train=20656 n_val=9901 n_test=2927 p=233 | cv=10-fold (blocked) refit=train_val
+16:42:53 | INFO | fit on full train: path with 360 points
+16:54:22 | INFO | CV minimum at index 315 (comp=0.101004, CV MSE=0.026234); one-SE choice index 300 (comp=0, CV MSE=0.026399)
+16:54:23 | INFO | VALIDATION (train-only model) MSE=0.034360 +- 0.003948 | TEST MSE=0.038836 +- 0.006609 | 786.1s

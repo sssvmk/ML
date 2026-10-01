@@ -1,0 +1,11 @@
+{
+  "commit": "082555c3638d80dcc7655fc5f316b5a18fd93867",
+  "files": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decoder.py": "6b32ce0f0326c2d55e490a6b9781621d0c2420e6f40d0b44e9b842cbb51c4880",
+    "encoder.py": "0d27f42c902433e7cd2d1c22e9cf91789682a811cbd5e12bfe07c40bfbac3e1b",
+    "exponential_smoothing.py": "03b466a1eaa3587994d9915d9855fa7218f92fb611c8a03d8e79dfe7dc52b232",
+    "model.py": "1b1cd78b2f3f8fe3bb089f636e6f1e9468ee939d222bc8f9c7c4f2f1f3cd7d6e",
+    "modules.py": "d60e216a99512db96ecb47c2909e2e6b47eb176033f84a64113680135c8c7fcf"
+  }
+}

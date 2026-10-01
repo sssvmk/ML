@@ -1,0 +1,57 @@
+{
+  "method": "elastic_net",
+  "complexity": "shrinkage factor s (within alpha)",
+  "selection": {
+    "index": 300,
+    "comp": 0.0,
+    "cv_mse": 0.026399197625231453,
+    "cv_se": 0.0020192256762348345,
+    "n_nonzero_final": 0,
+    "cv_min_index": 315,
+    "cv_min_comp": 0.1010035020670109,
+    "alpha_at_choice": 0.9,
+    "lam_at_choice": 2675.5845096690327
+  },
+  "validation_train_only_model": {
+    "n": 9901,
+    "mse": 0.034359910560214826,
+    "mse_se": 0.003947880468939623,
+    "rmse": 0.18536426451777274,
+    "mae": 0.07077265980245748,
+    "r2": -0.0002828621439991963
+  },
+  "test": {
+    "n": 2927,
+    "mse": 0.038836261515129686,
+    "mse_se": 0.006608826612197184,
+    "rmse": 0.19706917951605138,
+    "mae": 0.07184758741767687,
+    "r2": -0.004387047272148559,
+    "baseline_train_mean_mse": 0.03881828776259108,
+    "rel_mse_vs_mean_baseline": 1.0004630228063776
+  },
+  "final_model_info_criteria_or_extras": {},
+  "notes": "alphas=[0.0, 0.1, 0.25, 0.5, 0.75, 0.9] (alpha weights the L2 term).",
+  "config": {
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "seed": 42,
+    "refit": "train_val",
+    "n_lambda": 60,
+    "subset_pool": 20,
+    "dantzig_pool": 30,
+    "fs_steps": 5000,
+    "fs_eps_frac": 0.003,
+    "pls_max_comp": 50,
+    "enet_alphas": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "group_max_iter": 2000
+  },
+  "runtime_sec": 784.9
+}
