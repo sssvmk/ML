@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kernel_methods"
+version = "0.1.0"
+description = "ESLII Ch. 6 kernel smoothing methods - regression (Zillow) and classification (Santander)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "threadpoolctl",
+    "rich",
+]
+
+[project.scripts]
+run-all = "run_all:main"
