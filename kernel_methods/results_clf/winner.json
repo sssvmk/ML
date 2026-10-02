@@ -1,0 +1,14 @@
+{
+  "winner": "kernel_density_classifier",
+  "tied_with_winner": [
+    "kernel_density_classifier",
+    "gaussian_mixture_classifier",
+    "nw_classification",
+    "naive_bayes",
+    "local_logistic"
+  ],
+  "test_log_loss": 0.00010000500033334732,
+  "test_log_loss_se": 0.0,
+  "auc": 1.0,
+  "error": 0.0
+}

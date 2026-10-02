@@ -1,0 +1,40 @@
+{
+  "task": "regression",
+  "input_kinds": [
+    "x1",
+    "xm"
+  ],
+  "predictor": "taxamount",
+  "x1_label": "taxamount (log1p, z-scored)",
+  "multi_predictors": [
+    "taxamount",
+    "finishedsquarefeet12",
+    "calculatedfinishedsquarefeet",
+    "structuretaxvaluedollarcnt",
+    "bedroomcnt",
+    "bathroomcnt"
+  ],
+  "split_counts": {
+    "train": 103712,
+    "val": 49439,
+    "test": 14737
+  },
+  "clip_bounds": [
+    -0.3425,
+    0.4762
+  ],
+  "date_ranges": {
+    "train": [
+      "2016-01-01",
+      "2017-02-28"
+    ],
+    "val": [
+      "2017-03-01",
+      "2017-07-31"
+    ],
+    "test": [
+      "2017-08-01",
+      "2017-09-25"
+    ]
+  }
+}

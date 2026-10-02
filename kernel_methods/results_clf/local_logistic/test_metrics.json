@@ -1,0 +1,26 @@
+{
+  "n": 6000,
+  "log_loss": 0.00024571631075340667,
+  "log_loss_se": 6.637215495514196e-05,
+  "null_log_loss": 0.3261801988436408,
+  "brier": 2.0954040548190564e-05,
+  "auc": 1.0,
+  "auc_se": 0.0,
+  "threshold": 0.3881988558980076,
+  "error": 0.0,
+  "error_se": 0.0,
+  "majority_class_error": 0.1005,
+  "sensitivity": 1.0,
+  "specificity": 1.0,
+  "ece": 5.3576045721335006e-05,
+  "confusion_matrix": [
+    [
+      5397,
+      0
+    ],
+    [
+      0,
+      603
+    ]
+  ]
+}

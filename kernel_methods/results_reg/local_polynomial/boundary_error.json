@@ -1,0 +1,9 @@
+{
+  "span": 0.4,
+  "chosen_degree": 1,
+  "n_boundary_rows": 1551,
+  "boundary_mse_locally_constant": 0.06550293362928947,
+  "boundary_mse_chosen_degree": 0.0654571245539126,
+  "interior_mse_locally_constant": 0.03869187128593302,
+  "interior_mse_chosen_degree": 0.03868029528147823
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "cv_folds": 10,
+  "tune_rows": 30000,
+  "one_se_mode": "paired",
+  "predictor": "auto",
+  "n_multi": 6,
+  "n_top_features": 8,
+  "rbf_restarts": 5,
+  "nb_compare_rows": 60000,
+  "alpha": 0.05
+}

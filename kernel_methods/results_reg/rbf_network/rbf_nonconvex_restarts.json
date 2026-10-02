@@ -1,0 +1,41 @@
+{
+  "M": 40,
+  "n_train_rows_used": 8000,
+  "restarts": [
+    {
+      "restart": 0,
+      "train_sse": 87.11278736433549,
+      "test_mse": 0.04174177783478673,
+      "iterations": 150
+    },
+    {
+      "restart": 1,
+      "train_sse": 87.95893022333429,
+      "test_mse": 0.04168027872267522,
+      "iterations": 150
+    },
+    {
+      "restart": 2,
+      "train_sse": 88.364068629202,
+      "test_mse": 0.04162045398608082,
+      "iterations": 150
+    },
+    {
+      "restart": 3,
+      "train_sse": 87.17161017642984,
+      "test_mse": 0.04167967432769162,
+      "iterations": 150
+    },
+    {
+      "restart": 4,
+      "train_sse": 88.68005594363515,
+      "test_mse": 0.04163687787005842,
+      "iterations": 150
+    }
+  ],
+  "train_sse_min": 87.11278736433549,
+  "train_sse_max": 88.68005594363515,
+  "train_sse_rel_spread": 0.01799125738847973,
+  "test_mse_best_train_restart": 0.04174177783478673,
+  "test_mse_of_least_squares_model": 0.04143752669666427
+}

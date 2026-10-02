@@ -1,0 +1,60 @@
+{
+  "method": "nw_regression",
+  "task": "regression",
+  "input": "x1",
+  "input_dim": 1,
+  "selected": {
+    "span": 0.2
+  },
+  "selected_complexity": 9.044877805758507,
+  "cv_min": {
+    "span": 0.2
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "span": 0.4
+  },
+  "cv": {
+    "mse": 0.026560553756472642,
+    "se": 0.0022153275363054692
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025693516313653995,
+    "mse_se": 0.0011958997740560459,
+    "rmse": 0.16029197208111826,
+    "mae": 0.06808569845473962,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9991311812461838
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04150156403567274,
+    "mse_se": 0.00312357865260792,
+    "rmse": 0.20371932661304556,
+    "mae": 0.07385888708691599,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0003194908799837
+  },
+  "store": {
+    "df_full_data": 9.040862151017949,
+    "loocv_full_data": 0.010400078750407648,
+    "gcv_full_data": 0.010400020513287929
+  },
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "Tri-cube kernel, k-NN bandwidth (span = k/N), grid-of-targets fit + interpolation.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "predictor": "auto",
+    "n_multi": 6,
+    "n_top_features": 8,
+    "rbf_restarts": 5,
+    "nb_compare_rows": 60000,
+    "alpha": 0.05
+  },
+  "runtime_sec": 13.0
+}

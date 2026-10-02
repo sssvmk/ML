@@ -1,0 +1,7 @@
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn      # Gaussian mixtures, naive-Bayes comparison fits, tests
+threadpoolctl
+rich              # live progress bars (falls back to plain prints)

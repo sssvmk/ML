@@ -1,0 +1,8 @@
+{
+  "winner": "structured_local_regression",
+  "tied_with_winner": [
+    "structured_local_regression"
+  ],
+  "test_mse": 0.04135973474040465,
+  "test_mse_se": 0.003114948926023518
+}

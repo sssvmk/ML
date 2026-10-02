@@ -1,0 +1,60 @@
+{
+  "method": "local_likelihood_regression",
+  "task": "regression",
+  "input": "x1",
+  "input_dim": 1,
+  "selected": {
+    "span": 0.4,
+    "degree": 1
+  },
+  "selected_complexity": 6.384021290363762,
+  "cv_min": {
+    "span": 0.2,
+    "degree": 1
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "span": 0.4,
+    "degree": 1
+  },
+  "cv": {
+    "mse": 0.026562597116370944,
+    "se": 0.0022163220082496563
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025691180215900992,
+    "mse_se": 0.0011955292632173597,
+    "rmse": 0.16028468490751382,
+    "mae": 0.06817858203539308,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9990403385573524
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04149843073656039,
+    "mse_se": 0.00312338805196611,
+    "rmse": 0.20371163623259322,
+    "mae": 0.0739137245741557,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0002439684208748
+  },
+  "store": {},
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "Gaussian local likelihood == local regression.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "predictor": "auto",
+    "n_multi": 6,
+    "n_top_features": 8,
+    "rbf_restarts": 5,
+    "nb_compare_rows": 60000,
+    "alpha": 0.05
+  },
+  "runtime_sec": 34.3,
+  "max_abs_diff_vs_local_polynomial": 0.0
+}

@@ -1,0 +1,103 @@
+{
+  "method": "rbf_network",
+  "task": "regression",
+  "input": "xm",
+  "input_dim": 6,
+  "selected": {
+    "M": 40,
+    "scale": 0.5,
+    "renorm": true
+  },
+  "selected_complexity": 41.0,
+  "cv_min": {
+    "M": 40,
+    "scale": 1.0,
+    "renorm": true
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "M": 5,
+    "scale": 0.5,
+    "renorm": false
+  },
+  "cv": {
+    "mse": 0.026450950391426874,
+    "se": 0.002197834259817405
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025647398569345673,
+    "mse_se": 0.0011934135126222775,
+    "rmse": 0.16014805203106802,
+    "mae": 0.0683109847363818,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9973378231170477
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04143752669666427,
+    "mse_se": 0.00312011547699378,
+    "rmse": 0.2035620954319941,
+    "mae": 0.07404126251133006,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9987759876447997
+  },
+  "store": {},
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "k-means centres + least squares; nonconvex (6.29) check in rbf_nonconvex_restarts.json.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "predictor": "auto",
+    "n_multi": 6,
+    "n_top_features": 8,
+    "rbf_restarts": 5,
+    "nb_compare_rows": 60000,
+    "alpha": 0.05
+  },
+  "runtime_sec": 35.0,
+  "nonconvex_restarts": {
+    "M": 40,
+    "n_train_rows_used": 8000,
+    "restarts": [
+      {
+        "restart": 0,
+        "train_sse": 87.11278736433549,
+        "test_mse": 0.04174177783478673,
+        "iterations": 150
+      },
+      {
+        "restart": 1,
+        "train_sse": 87.95893022333429,
+        "test_mse": 0.04168027872267522,
+        "iterations": 150
+      },
+      {
+        "restart": 2,
+        "train_sse": 88.364068629202,
+        "test_mse": 0.04162045398608082,
+        "iterations": 150
+      },
+      {
+        "restart": 3,
+        "train_sse": 87.17161017642984,
+        "test_mse": 0.04167967432769162,
+        "iterations": 150
+      },
+      {
+        "restart": 4,
+        "train_sse": 88.68005594363515,
+        "test_mse": 0.04163687787005842,
+        "iterations": 150
+      }
+    ],
+    "train_sse_min": 87.11278736433549,
+    "train_sse_max": 88.68005594363515,
+    "train_sse_rel_spread": 0.01799125738847973,
+    "test_mse_best_train_restart": 0.04174177783478673,
+    "test_mse_of_least_squares_model": 0.04143752669666427
+  }
+}
