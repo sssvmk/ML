@@ -1,0 +1,10 @@
+{
+  "support_fraction": 0.6102,
+  "n_support": 30510,
+  "fit_rows": 50000,
+  "kernel": "rbf",
+  "C": 0.1,
+  "gamma": 0.0016666666666666668,
+  "degree": 0,
+  "n_features_used": 600
+}

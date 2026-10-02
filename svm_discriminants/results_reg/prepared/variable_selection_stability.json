@@ -1,0 +1,7 @@
+{
+  "mean_overlap_of_fold_top_k_with_full_top_k": {
+    "top10": 0.86,
+    "top20": 0.7700000000000001,
+    "top40": 0.75
+  }
+}

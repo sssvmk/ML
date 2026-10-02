@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svm_discriminants"
+version = "0.1.0"
+description = "ESLII Ch. 12 - SVMs and flexible discriminants: regression (Zillow) and classification (Santander)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "threadpoolctl",
+    "rich"
+]
+
+[project.scripts]
+svm-discriminants-run = "run_all:main"
+
+[tool.setuptools]
+packages = ["methods"]
+py-modules = [
+    "bases",
+    "common",
+    "compare",
+    "eda_clf",
+    "eda_reg",
+    "prep_clf",
+    "prep_reg",
+    "run_all",
+    "selection",
+    "sfeatures",
+    "zfeatures"
+]

@@ -1,0 +1,12 @@
+{
+  "winner": "svc",
+  "criterion": "auc",
+  "tied_with_winner": [
+    "svc",
+    "svm"
+  ],
+  "auc": 0.8854444840831972,
+  "auc_se": 0.0039332239194977605,
+  "error": 0.1799,
+  "log_loss": 0.21381068736353667
+}

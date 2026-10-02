@@ -1,0 +1,7 @@
+{
+  "lambda": 100000.0,
+  "effective_df": 159.07417885062614,
+  "roughness_along_variable_order": 0.7428444484417589,
+  "n_features_used": 300,
+  "fit_rows": 160000
+}

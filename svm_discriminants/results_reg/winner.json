@@ -1,0 +1,9 @@
+{
+  "winner": "svr_linear",
+  "tied_with_winner": [
+    "svr_linear",
+    "svr_poly"
+  ],
+  "test_mse": 0.04127292347208195,
+  "test_mse_se": 0.003110830458512912
+}

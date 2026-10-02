@@ -1,0 +1,10 @@
+{
+  "n_support_vectors": 17155,
+  "support_fraction": 0.3431,
+  "eps_in_y_units": 0.05089225354581383,
+  "test_eps_insensitive_loss": 0.04283489454783899,
+  "test_mae": 0.07381821447561784,
+  "validation_eps_insensitive_loss": 0.036595614480664555,
+  "fit_rows": 50000,
+  "kernel": "poly"
+}

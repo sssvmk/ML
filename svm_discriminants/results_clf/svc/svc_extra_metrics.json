@@ -1,0 +1,7 @@
+{
+  "support_fraction_training": 0.1922875,
+  "margin_1_over_norm_beta": 1.4454054946062975,
+  "hinge_loss_training": 0.18994191489813972,
+  "n_features_used": 600,
+  "C": 0.01
+}

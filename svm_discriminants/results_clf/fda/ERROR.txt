@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "C:\Users\msk80743\Use Case Design\svm_discriminants\run_all.py", line 43, in _worker
+    s = importlib.import_module(MODULE.get(name, name)).run(prep_dir, out_dir, cfg, prog)
+  File "C:\Users\msk80743\Use Case Design\svm_discriminants\methods\fda.py", line 86, in run
+    return common.run_method(NAME, prep_dir, out_dir, cfg, progress, make_grid=make_grid, predict_path=sl.make_predict_path(build, sl.margin_score, capped=lambda hp: True), complexity=complexity,
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             extra=extra, select_by="auc", notes="Ridge regression of the class indicators on a spline / Nystroem basis + LDA on the fitted values.", console=console)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\Use Case Design\svm_discriminants\common.py", line 338, in run_method
+    P = predict_path(Xs[tr], ys_fit[tr], grid, Xs[idx], cfg, ctx)
+  File "C:\Users\msk80743\Use Case Design\svm_discriminants\methods\svmlib.py", line 57, in predict_path
+    model.fit(Xr, y)
+    ~~~~~~~~~^^^^^^^
+  File "C:\Users\msk80743\Use Case Design\svm_discriminants\methods\fda.py", line 39, in fit
+    self.reg = Ridge(alpha=self.alpha).fit(H, Y)                              # (penalised) regression of Y on the basis
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\linear_model\_ridge.py", line 1249, in fit
+    return super().fit(X, y, sample_weight=sample_weight)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\linear_model\_ridge.py", line 956, in fit
+    X, y, X_offset, y_offset, X_scale = _preprocess_data(
+                                        ~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<3 lines>...
+        sample_weight=sample_weight,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\linear_model\_base.py", line 166, in _preprocess_data
+    X = check_array(
+        X, copy=copy, accept_sparse=["csr", "csc"], dtype=supported_float_dtypes(xp)
+    )
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py", line 1118, in check_array
+    array = _asarray_with_order(
+        array, dtype=dtype, order=order, copy=True, xp=xp
+    )
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\_array_api.py", line 837, in _asarray_with_order
+    array = numpy.array(array, order=order, dtype=dtype)
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 513. MiB for an array with shape (16000, 4200) and data type float64
