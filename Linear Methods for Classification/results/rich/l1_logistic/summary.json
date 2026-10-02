@@ -1,0 +1,137 @@
+{
+  "method": "l1_logistic",
+  "feature_set": "rich",
+  "probabilistic": true,
+  "selected_hyperparameters": {
+    "lam": 0.0008829244629778169
+  },
+  "cv_best_hyperparameters": {
+    "lam": 0.00026833799508135396
+  },
+  "selection_metric": "cv_logloss",
+  "cv": {
+    "cv_threshold": -2.083167731095239,
+    "cv_error": 0.17799372254367668,
+    "cv_error_se": 0.0008286859970354592,
+    "cv_auc": 0.8911066083218794,
+    "cv_auc_se": 0.001463125462479616,
+    "cv_logloss": 0.20919531811447906,
+    "cv_logloss_se": 0.001166051717702749
+  },
+  "train_subsample_30k": {
+    "n": 30000,
+    "threshold": -1.9686527014958553,
+    "error": 0.16266666666666665,
+    "error_se": 0.0021307762452701146,
+    "error_at_default_rule": 0.07743333333333334,
+    "majority_class_error": 0.09826666666666667,
+    "sensitivity": 0.7700135685210312,
+    "specificity": 0.8446695253585687,
+    "balanced_accuracy": 0.8073415469398,
+    "auc": 0.8911482052455987,
+    "auc_se": 0.0030608351590711473,
+    "confusion_matrix": [
+      [
+        22850,
+        4202
+      ],
+      [
+        678,
+        2270
+      ]
+    ],
+    "log_loss": 0.20728303685192076,
+    "log_loss_se": 0.0030397553718430896,
+    "brier": 0.059427766394296117,
+    "ece": 0.006789518443121942,
+    "null_log_loss": 0.3212576729480205
+  },
+  "validation": {
+    "n": 20000,
+    "threshold": -1.9686527014958553,
+    "error": 0.1579,
+    "error_se": 0.002578445171028463,
+    "error_at_default_rule": 0.07735,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.7955223880597015,
+    "specificity": 0.8473040578098944,
+    "balanced_accuracy": 0.8214132229347979,
+    "auc": 0.8971275916139149,
+    "auc_se": 0.0037009399175823403,
+    "confusion_matrix": [
+      [
+        15243,
+        2747
+      ],
+      [
+        411,
+        1599
+      ]
+    ],
+    "log_loss": 0.2055250621764465,
+    "log_loss_se": 0.00368793454869547,
+    "brier": 0.05910168188403991,
+    "ece": 0.012772520208533316,
+    "null_log_loss": 0.32618019884364075
+  },
+  "test": {
+    "n": 20000,
+    "threshold": -1.9686527014958553,
+    "error": 0.1661,
+    "error_se": 0.0026316419779293687,
+    "error_at_default_rule": 0.0798,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.7761194029850746,
+    "specificity": 0.8403557531962201,
+    "balanced_accuracy": 0.8082375780906474,
+    "auc": 0.8878183567985531,
+    "auc_se": 0.003880603878592573,
+    "confusion_matrix": [
+      [
+        15118,
+        2872
+      ],
+      [
+        450,
+        1560
+      ]
+    ],
+    "log_loss": 0.2127580074958846,
+    "log_loss_se": 0.0037994981378582176,
+    "brier": 0.06119341942153841,
+    "ece": 0.008166819266721848,
+    "null_log_loss": 0.32618019884364075
+  },
+  "model_info": {
+    "lambda": 0.0008829244629778169,
+    "n_nonzero": 379
+  },
+  "n_nonzero_coefficients": 379,
+  "notes": "30 lambdas, ratio lambda_min/lambda_max = 0.001.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "perceptron_max_epochs": 50,
+    "perceptron_pocket": false,
+    "svm_C": 100.0,
+    "svm_max_iter": 300,
+    "rda_alphas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "rda_gammas": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "l1_nlambda": 30,
+    "l1_ratio": 0.001,
+    "l1_max_outer": 4,
+    "cv_logistic": true,
+    "winner_metric": "auc"
+  },
+  "runtime_sec": 4165.2
+}

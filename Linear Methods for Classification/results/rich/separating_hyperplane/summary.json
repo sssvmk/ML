@@ -1,0 +1,117 @@
+{
+  "method": "separating_hyperplane",
+  "feature_set": "rich",
+  "probabilistic": false,
+  "selected_hyperparameters": {},
+  "cv_best_hyperparameters": {},
+  "selection_metric": null,
+  "cv": null,
+  "train_subsample_30k": {
+    "n": 30000,
+    "threshold": -0.6714322031845037,
+    "error": 0.29496666666666665,
+    "error_se": 0.0026328775906614816,
+    "error_at_default_rule": 0.13013333333333332,
+    "majority_class_error": 0.09826666666666667,
+    "sensitivity": 0.6889416553595658,
+    "specificity": 0.706786928877717,
+    "balanced_accuracy": 0.6978642921186413,
+    "auc": 0.7649153166192213,
+    "auc_se": 0.004690457561803518,
+    "confusion_matrix": [
+      [
+        19120,
+        7932
+      ],
+      [
+        917,
+        2031
+      ]
+    ]
+  },
+  "validation": {
+    "n": 20000,
+    "threshold": -0.6714322031845037,
+    "error": 0.29675,
+    "error_se": 0.0032302433151389694,
+    "error_at_default_rule": 0.13195,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.6915422885572139,
+    "specificity": 0.7045580878265704,
+    "balanced_accuracy": 0.6980501881918921,
+    "auc": 0.7612124756982183,
+    "auc_se": 0.0057954492397131975,
+    "confusion_matrix": [
+      [
+        12675,
+        5315
+      ],
+      [
+        620,
+        1390
+      ]
+    ]
+  },
+  "test": {
+    "n": 20000,
+    "threshold": -0.6714322031845037,
+    "error": 0.299,
+    "error_se": 0.003237275088712728,
+    "error_at_default_rule": 0.13055,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.6736318407960199,
+    "specificity": 0.7040578098943858,
+    "balanced_accuracy": 0.6888448253452029,
+    "auc": 0.7589223421524949,
+    "auc_se": 0.005799275984995665,
+    "confusion_matrix": [
+      [
+        12666,
+        5324
+      ],
+      [
+        656,
+        1354
+      ]
+    ]
+  },
+  "model_info": {
+    "fit_type": "SOFT-MARGIN (hard margin infeasible on non-separable data)",
+    "C": 100.0,
+    "margin_1_over_norm_beta": 1.4253607727719597,
+    "n_support_points": 81348,
+    "n_training_errors": 20760,
+    "training_error": 0.12975,
+    "iterations": 300,
+    "converged": false,
+    "hard_margin_feasible": false
+  },
+  "n_nonzero_coefficients": 600,
+  "notes": "SOFT-MARGIN linear SVM, hinge loss, C=100.0. Not a hard-margin optimal hyperplane.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "perceptron_max_epochs": 50,
+    "perceptron_pocket": false,
+    "svm_C": 100.0,
+    "svm_max_iter": 300,
+    "rda_alphas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "rda_gammas": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "l1_nlambda": 30,
+    "l1_ratio": 0.001,
+    "l1_max_outer": 4,
+    "cv_logistic": true,
+    "winner_metric": "auc"
+  },
+  "runtime_sec": 343.4
+}

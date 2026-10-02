@@ -1,0 +1,116 @@
+{
+  "method": "indicator_regression",
+  "feature_set": "lean",
+  "probabilistic": false,
+  "selected_hyperparameters": {},
+  "cv_best_hyperparameters": {},
+  "selection_metric": "cv_auc",
+  "cv": {
+    "cv_threshold": -0.649634075922749,
+    "cv_error": 0.2125687132224364,
+    "cv_error_se": 0.0009738927341001385,
+    "cv_auc": 0.8584261102897148,
+    "cv_auc_se": 0.0010736692082717121
+  },
+  "train_subsample_30k": {
+    "n": 30000,
+    "threshold": -0.6606275568646792,
+    "error": 0.2276,
+    "error_se": 0.0024207315698634023,
+    "error_at_default_rule": 0.09613333333333333,
+    "majority_class_error": 0.09826666666666667,
+    "sensitivity": 0.7717096336499322,
+    "specificity": 0.7724752328848145,
+    "balanced_accuracy": 0.7720924332673733,
+    "auc": 0.8540522539534393,
+    "auc_se": 0.003683117754958425,
+    "confusion_matrix": [
+      [
+        20897,
+        6155
+      ],
+      [
+        673,
+        2275
+      ]
+    ]
+  },
+  "validation": {
+    "n": 20000,
+    "threshold": -0.6606275568646792,
+    "error": 0.21835,
+    "error_se": 0.002921243549415214,
+    "error_at_default_rule": 0.09825,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.7920398009950249,
+    "specificity": 0.7804891606448027,
+    "balanced_accuracy": 0.7862644808199137,
+    "auc": 0.8641468864681595,
+    "auc_se": 0.004276306841457028,
+    "confusion_matrix": [
+      [
+        14041,
+        3949
+      ],
+      [
+        418,
+        1592
+      ]
+    ]
+  },
+  "test": {
+    "n": 20000,
+    "threshold": -0.6606275568646792,
+    "error": 0.228,
+    "error_se": 0.0029666142317463524,
+    "error_at_default_rule": 0.09855,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.7587064676616916,
+    "specificity": 0.773485269594219,
+    "balanced_accuracy": 0.7660958686279553,
+    "auc": 0.8526724631428737,
+    "auc_se": 0.004461041002074925,
+    "confusion_matrix": [
+      [
+        13915,
+        4075
+      ],
+      [
+        485,
+        1525
+      ]
+    ]
+  },
+  "model_info": {
+    "max_abs_f0_plus_f1_minus_1": 0.0,
+    "columns_sum_to_one": true
+  },
+  "n_nonzero_coefficients": 200,
+  "notes": "Fitted from class sufficient statistics (normal equations). For K=2 the two indicator fits sum to 1.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "perceptron_max_epochs": 50,
+    "perceptron_pocket": false,
+    "svm_C": 100.0,
+    "svm_max_iter": 300,
+    "rda_alphas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "rda_gammas": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "l1_nlambda": 30,
+    "l1_ratio": 0.001,
+    "l1_max_outer": 4,
+    "cv_logistic": true,
+    "winner_metric": "auc"
+  },
+  "runtime_sec": 2.3
+}

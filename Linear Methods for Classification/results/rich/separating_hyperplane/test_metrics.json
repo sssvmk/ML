@@ -1,0 +1,23 @@
+{
+  "n": 20000,
+  "threshold": -0.6714322031845037,
+  "error": 0.299,
+  "error_se": 0.003237275088712728,
+  "error_at_default_rule": 0.13055,
+  "majority_class_error": 0.1005,
+  "sensitivity": 0.6736318407960199,
+  "specificity": 0.7040578098943858,
+  "balanced_accuracy": 0.6888448253452029,
+  "auc": 0.7589223421524949,
+  "auc_se": 0.005799275984995665,
+  "confusion_matrix": [
+    [
+      12666,
+      5324
+    ],
+    [
+      656,
+      1354
+    ]
+  ]
+}

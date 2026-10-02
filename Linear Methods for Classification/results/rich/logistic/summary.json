@@ -1,0 +1,135 @@
+{
+  "method": "logistic",
+  "feature_set": "rich",
+  "probabilistic": true,
+  "selected_hyperparameters": {},
+  "cv_best_hyperparameters": {},
+  "selection_metric": "cv_logloss",
+  "cv": {
+    "cv_threshold": -2.18177395283457,
+    "cv_error": 0.18009371707761215,
+    "cv_error_se": 0.0008594424750527524,
+    "cv_auc": 0.8908640141959235,
+    "cv_auc_se": 0.0013859224532750342,
+    "cv_logloss": 0.20870257953250454,
+    "cv_logloss_se": 0.0012531363026643302
+  },
+  "train_subsample_30k": {
+    "n": 30000,
+    "threshold": -1.8965848553969646,
+    "error": 0.15,
+    "error_se": 0.00206155281280883,
+    "error_at_default_rule": 0.07596666666666667,
+    "majority_class_error": 0.09826666666666667,
+    "sensitivity": 0.7476255088195387,
+    "specificity": 0.861156291586574,
+    "balanced_accuracy": 0.8043909002030564,
+    "auc": 0.8929359577042536,
+    "auc_se": 0.0030302046522271337,
+    "confusion_matrix": [
+      [
+        23296,
+        3756
+      ],
+      [
+        744,
+        2204
+      ]
+    ],
+    "log_loss": 0.20529615821484382,
+    "log_loss_se": 0.0031859996543763605,
+    "brier": 0.05894313704900643,
+    "ece": 0.002897260352145935,
+    "null_log_loss": 0.3212576729480205
+  },
+  "validation": {
+    "n": 20000,
+    "threshold": -1.8965848553969646,
+    "error": 0.14495,
+    "error_se": 0.0024893723857631264,
+    "error_at_default_rule": 0.07785,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.772636815920398,
+    "specificity": 0.8642579210672596,
+    "balanced_accuracy": 0.8184473684938288,
+    "auc": 0.896365034195338,
+    "auc_se": 0.0037101838337797806,
+    "confusion_matrix": [
+      [
+        15548,
+        2442
+      ],
+      [
+        457,
+        1553
+      ]
+    ],
+    "log_loss": 0.20490518448162978,
+    "log_loss_se": 0.0039014369945444306,
+    "brier": 0.0590200959411412,
+    "ece": 0.00468156655233793,
+    "null_log_loss": 0.32618019884364075
+  },
+  "test": {
+    "n": 20000,
+    "threshold": -1.8965848553969646,
+    "error": 0.15485,
+    "error_se": 0.002558041022931415,
+    "error_at_default_rule": 0.0803,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.7417910447761195,
+    "specificity": 0.8566981656475819,
+    "balanced_accuracy": 0.7992446052118507,
+    "auc": 0.8861726387517666,
+    "auc_se": 0.00392369138678474,
+    "confusion_matrix": [
+      [
+        15412,
+        2578
+      ],
+      [
+        519,
+        1491
+      ]
+    ],
+    "log_loss": 0.21326129103336358,
+    "log_loss_se": 0.0040387407129740755,
+    "brier": 0.06126367806627118,
+    "ece": 0.004087019915939769,
+    "null_log_loss": 0.32618019884364075
+  },
+  "model_info": {
+    "newton_iterations": 4,
+    "train_deviance_per_row": 0.20459710216184104,
+    "quasi_separation_suspected": false,
+    "warning": ""
+  },
+  "n_nonzero_coefficients": 600,
+  "notes": "Unpenalised MLE via damped IRLS (tiny damping floor; flags quasi-separation).",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "perceptron_max_epochs": 50,
+    "perceptron_pocket": false,
+    "svm_C": 100.0,
+    "svm_max_iter": 300,
+    "rda_alphas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "rda_gammas": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "l1_nlambda": 30,
+    "l1_ratio": 0.001,
+    "l1_max_outer": 4,
+    "cv_logistic": true,
+    "winner_metric": "auc"
+  },
+  "runtime_sec": 766.2
+}
