@@ -1,0 +1,4 @@
+method,mean_mse_vs_truth,se,mean_nonzero_or_df,signal_to_noise_snr,mean_sure_risk_estimate,sure_estimate_over_actual_mse
+smoothing_spline_GCV,0.002274486604242977,4.465788138557981e-06,99.99999999297025,7.0,,
+wavelet_SURE,0.000385056929151687,5.753650929894098e-06,187.54,7.0,0.00030292371115269253,0.7866985066859051
+wavelet_universal,0.0009778905720584559,1.4482445298240599e-05,30.2,7.0,,

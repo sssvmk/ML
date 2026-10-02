@@ -1,0 +1,85 @@
+{
+  "method": "thin_plate_splines",
+  "task": "regression",
+  "inputs": "xy",
+  "predictor": "latitude,longitude",
+  "selected": {
+    "df_target": 130,
+    "lam": 5.958378101096315
+  },
+  "selected_df": 129.93922767057157,
+  "cv_min": {
+    "df_target": 170,
+    "lam": 1.2977931463090724
+  },
+  "cv_min_df": 169.91324619395942,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "df_target": 3.5,
+    "lam": 326555.73822284583
+  },
+  "selected_plain_one_se_df": 3.499997434311239,
+  "cv": {
+    "mse": 0.026253554994489857,
+    "se": 0.0012971446692447554
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.025659906024500842,
+    "mse_se": 0.0011962480576986024,
+    "rmse": 0.16018709693511785,
+    "mae": 0.06810386856603959,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9978241943980749,
+    "r2_vs_mean_baseline": 0.002175805601925096
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.041518613638474984,
+    "mse_se": 0.0031259040261683198,
+    "rmse": 0.2037611681318965,
+    "mae": 0.07392785534742291,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0007304404523947,
+    "r2_vs_mean_baseline": -0.0007304404523946761
+  },
+  "final_model_df": 141.36463298582595,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "df_target": 130,
+    "lambda": 5.958378101096315
+  },
+  "notes": "Inputs are the z-scored (latitude, longitude); k-means knots from the training coordinates.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 48.8,
+  "argmin_aic_df": 169.91324619395942,
+  "argmin_bic_df": 9.999889418082756,
+  "argmin_cp_df": 169.91324619395942,
+  "argmin_gcv_df": 169.91324619395942,
+  "moran_I_test_residuals": {
+    "I": 0.02355624898597351,
+    "perm_p": 0.01
+  },
+  "spatial_block_cv": {
+    "spatial_block_cv_mse": 0.027170757815148067,
+    "spatial_block_cv_se": 0.0027245573026045775,
+    "spatial_block_cv_mean_baseline_mse": 0.026298624376292472,
+    "chosen_df": 129.93922767057157
+  }
+}

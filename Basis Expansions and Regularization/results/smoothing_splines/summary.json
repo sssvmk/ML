@@ -1,0 +1,77 @@
+{
+  "method": "smoothing_splines",
+  "task": "regression",
+  "inputs": "x",
+  "predictor": "taxamount",
+  "selected": {
+    "df_target": 5,
+    "lam": 812.400145547783
+  },
+  "selected_df": 4.999976440140586,
+  "cv_min": {
+    "df_target": 20,
+    "lam": 1.6432508811469178
+  },
+  "cv_min_df": 19.999999809275558,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "df_target": 2.2,
+    "lam": 10426.244644302884
+  },
+  "selected_plain_one_se_df": 3.0008215310925914,
+  "cv": {
+    "mse": 0.026252683051296005,
+    "se": 0.0012979693421075013
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.02569069971378929,
+    "mse_se": 0.0011955611827535219,
+    "rmse": 0.1602831859983738,
+    "mae": 0.06816321601073477,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9990216535071399,
+    "r2_vs_mean_baseline": 0.0009783464928601049
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04150720206164901,
+    "mse_se": 0.003124380154015296,
+    "rmse": 0.2037331638728683,
+    "mae": 0.07384455858786294,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0004553852108409,
+    "r2_vs_mean_baseline": -0.00045538521084087513
+  },
+  "final_model_df": 5.448503368299438,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "df_target": 5,
+    "n_basis": 154,
+    "lambda": 812.400145547783
+  },
+  "notes": "Penalised cubic B-spline representation, 150 interior knots; lambda grid defined by df targets on the training data.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 15.1,
+  "argmin_aic_df": 19.999999809275558,
+  "argmin_bic_df": 3.999945314228195,
+  "argmin_cp_df": 19.999999809275558,
+  "argmin_gcv_df": 19.999999809275558,
+  "argmin_loocv_mse_fit_target_df": 11.999998947701778
+}

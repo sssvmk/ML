@@ -1,0 +1,76 @@
+{
+  "method": "natural_cubic_splines",
+  "task": "regression",
+  "inputs": "x",
+  "predictor": "taxamount",
+  "selected": {
+    "K": 3
+  },
+  "selected_df": 3.0,
+  "cv_min": {
+    "K": 12
+  },
+  "cv_min_df": 12.0,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "K": 2
+  },
+  "selected_plain_one_se_df": 2.0,
+  "cv": {
+    "mse": 0.026252885098112976,
+    "se": 0.0012985675776878323
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.02568801394270908,
+    "mse_se": 0.0011953581300720355,
+    "rmse": 0.16027480757345827,
+    "mae": 0.06815761814000917,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9989172132429438,
+    "r2_vs_mean_baseline": 0.0010827867570561978
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.041513929930685346,
+    "mse_se": 0.003125367179991241,
+    "rmse": 0.20374967467626873,
+    "mae": 0.07384986052435563,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.000617548220489,
+    "r2_vs_mean_baseline": -0.0006175482204890947
+  },
+  "final_model_df": 3.0,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "knots": [
+      -2.6679106081355153,
+      0.03712627515239452,
+      3.0008949464227426
+    ],
+    "cond_design": 23.679780073213127
+  },
+  "notes": "Boundary knots at the data min/max; linear beyond.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 31.4,
+  "argmin_aic_df": 12.0,
+  "argmin_bic_df": 5.0,
+  "argmin_cp_df": 12.0,
+  "argmin_gcv_df": 12.0
+}

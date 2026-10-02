@@ -1,0 +1,78 @@
+{
+  "method": "regression_splines",
+  "task": "regression",
+  "inputs": "x",
+  "predictor": "taxamount",
+  "selected": {
+    "degree": 1,
+    "K": 1
+  },
+  "selected_df": 3.0,
+  "cv_min": {
+    "degree": 1,
+    "K": 2
+  },
+  "cv_min_df": 4.0,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "degree": 0,
+    "K": 0
+  },
+  "selected_plain_one_se_df": 1.0,
+  "cv": {
+    "mse": 0.026251431864873727,
+    "se": 0.001298459654307546
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.025688084291873487,
+    "mse_se": 0.0011953011783412241,
+    "rmse": 0.16027502703750665,
+    "mae": 0.068162073617347,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.998919948876435,
+    "r2_vs_mean_baseline": 0.0010800511235650179
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.041505355024245204,
+    "mse_se": 0.0031243835137392873,
+    "rmse": 0.2037286308407466,
+    "mae": 0.07384377384057757,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0004108657437234,
+    "r2_vs_mean_baseline": -0.0004108657437233987
+  },
+  "final_model_df": 3.0,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "degree": 1,
+    "knots": [
+      0.03712627515239452
+    ],
+    "cond_design": 4.307732549975297
+  },
+  "notes": "One predictor; truncated-power basis fitted by QR least squares; knots at quantiles of the fitting data.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 66.4,
+  "argmin_aic_df": 10.0,
+  "argmin_bic_df": 3.0,
+  "argmin_cp_df": 10.0,
+  "argmin_gcv_df": 10.0
+}

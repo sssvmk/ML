@@ -1,0 +1,14 @@
+{
+  "winner": "wavelet_smoothing",
+  "tied_with_winner": [
+    "wavelet_smoothing",
+    "rkhs",
+    "regression_splines",
+    "smoothing_splines",
+    "natural_cubic_splines",
+    "b_splines",
+    "thin_plate_splines"
+  ],
+  "test_mse": 0.04149410322525912,
+  "test_mse_se": 0.003122339680090746
+}

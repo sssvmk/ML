@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "cv_folds": 10,
+  "cv_scheme": "blocked",
+  "refit": "train_val",
+  "predictor": "auto",
+  "smooth_knots": 150,
+  "tps_knots": 200,
+  "rkhs_landmarks": 300,
+  "logit_knots": 25,
+  "wavelet": "sym8",
+  "wavelet_sim_reps": 50,
+  "wavelet_sim_n": 1024,
+  "wavelet_sim_snr": 7.0,
+  "alpha": 0.05,
+  "one_se_mode": "paired"
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basis-expansions-and-regularization"
+version = "0.1.0"
+description = "Basis Expansions and Regularization Analysis comparing various methods based on The Elements of Statistical Learning, Chapter 5."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy>=1.8",
+    "pandas",
+    "matplotlib",
+    "threadpoolctl",
+    "PyWavelets",
+    "rich"
+]
+
+[project.optional-dependencies]
+test = [
+    "scikit-learn"
+]

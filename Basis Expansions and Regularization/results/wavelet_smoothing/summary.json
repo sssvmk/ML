@@ -1,0 +1,102 @@
+{
+  "method": "wavelet_smoothing",
+  "task": "regression",
+  "inputs": "x",
+  "predictor": "taxamount",
+  "selected": {
+    "N": 512,
+    "t": 0.03885066374501473,
+    "t_over_sigma": 4.0,
+    "sigma_hat": 0.009712665936253683
+  },
+  "selected_df": 47.0,
+  "cv_min": {
+    "N": 512,
+    "t": 0.03885066374501473,
+    "t_over_sigma": 4.0,
+    "sigma_hat": 0.009712665936253683
+  },
+  "cv_min_df": 47.0,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "N": 512,
+    "t": 0.03885066374501473,
+    "t_over_sigma": 4.0,
+    "sigma_hat": 0.009712665936253683
+  },
+  "selected_plain_one_se_df": 47.0,
+  "cv": {
+    "mse": 0.026264213677551634,
+    "se": 0.0012989112345711924
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.025701812829101327,
+    "mse_se": 0.0011959303480907509,
+    "rmse": 0.1603178493777325,
+    "mae": 0.0681831961939703,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9994538037777956,
+    "r2_vs_mean_baseline": 0.0005461962222044203
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04149410322525912,
+    "mse_se": 0.003122339680090746,
+    "rmse": 0.203701014296098,
+    "mae": 0.07384769156406831,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0001396616555216,
+    "r2_vs_mean_baseline": -0.0001396616555215946
+  },
+  "final_model_df": 30.0,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "threshold": 0.03885066374501473,
+    "nonzero_coefficients": 30,
+    "bins": 512,
+    "wavelet": "sym8"
+  },
+  "notes": "wavelet=sym8 (PyWavelets); bins = 2^k equal-width in the transformed predictor.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 0.4,
+  "wavelet_extra": {
+    "wavelet": "sym8",
+    "n_bins": 512,
+    "sigma_hat_bins": 0.009712665936253683,
+    "sure_threshold": 0.03885066374501473,
+    "sure_threshold_over_sigma": 4.0,
+    "universal_threshold": 0.0343073706560692,
+    "cv_selected_threshold": 0.03885066374501473,
+    "n_nonzero_at_sure": 47.0,
+    "n_nonzero_at_cv_choice": 47.0,
+    "validation_mse_sure_choice_train_only": 0.025701812829101327,
+    "test_mse_sure_choice_train_only_fit": 0.041480176932771826,
+    "snr_db_signal_var_over_bin_noise_var": -3.684143325579611
+  },
+  "simulation": {
+    "mean_mse_vs_truth": {
+      "smoothing_spline_GCV": 0.002274486604242977,
+      "wavelet_SURE": 0.000385056929151687,
+      "wavelet_universal": 0.0009778905720584559
+    },
+    "sure_vs_actual_corr": 0.15476011016836097,
+    "sure_estimate_over_actual_mse": 0.7866985066859051
+  }
+}

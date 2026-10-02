@@ -1,0 +1,34 @@
+{
+  "predictor": "taxamount",
+  "predictor_label": "taxamount (log1p, z-scored)",
+  "predictor_log1p": true,
+  "split_counts": {
+    "train": 103712,
+    "val": 49439,
+    "test": 14737
+  },
+  "clip_bounds": [
+    -0.3425,
+    0.4762
+  ],
+  "large_miss_threshold_abs_logerror": 0.1476,
+  "large_miss_rate": {
+    "train": 0.09995950323974082,
+    "val": 0.0973522927243674,
+    "test": 0.09581325914365203
+  },
+  "date_ranges": {
+    "train": [
+      "2016-01-01",
+      "2017-02-28"
+    ],
+    "val": [
+      "2017-03-01",
+      "2017-07-31"
+    ],
+    "test": [
+      "2017-08-01",
+      "2017-09-25"
+    ]
+  }
+}

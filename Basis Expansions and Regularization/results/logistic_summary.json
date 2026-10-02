@@ -1,0 +1,15 @@
+{
+  "test_log_loss": 0.3113937979981084,
+  "test_log_loss_se": 0.005298083008104372,
+  "null_log_loss": 0.31578514692285414,
+  "improvement_vs_null": 0.004391348924745742,
+  "dm_p_vs_null": 7.376927224633789e-08,
+  "paired_t_p_vs_null": 4.156818222966763e-08,
+  "auc": 0.5875964262366529,
+  "auc_se": 0.007975303830630272,
+  "ece": 0.0072325647455711555,
+  "error_at_validation_youden_threshold": 0.32543937029246117,
+  "error_se": 0.0038595884566403854,
+  "majority_class_error": 0.09581325914365203,
+  "selected_df": 10.214034379701433
+}

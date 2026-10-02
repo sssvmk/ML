@@ -1,0 +1,72 @@
+{
+  "method": "b_splines",
+  "task": "regression",
+  "inputs": "x",
+  "predictor": "taxamount",
+  "selected": {
+    "K": 0
+  },
+  "selected_df": 4.0,
+  "cv_min": {
+    "K": 10
+  },
+  "cv_min_df": 14.0,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "K": 0
+  },
+  "selected_plain_one_se_df": 4.0,
+  "cv": {
+    "mse": 0.02625343160815702,
+    "se": 0.0012977608153232935
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.025690511654313783,
+    "mse_se": 0.0011954904964115514,
+    "rmse": 0.16028259934975406,
+    "mae": 0.06816544911266141,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9990143405304491,
+    "r2_vs_mean_baseline": 0.0009856594695508702
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.041516877003403736,
+    "mse_se": 0.0031252644156355863,
+    "rmse": 0.20375690663975968,
+    "mae": 0.07385944581422706,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0006885820320994,
+    "r2_vs_mean_baseline": -0.0006885820320994274
+  },
+  "final_model_df": 4.0,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "n_interior_knots": 0,
+    "cond_design": 9.02418271650192
+  },
+  "notes": "Cubic B-spline regression; equals the truncated-power cubic regression spline up to rounding.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 35.4,
+  "argmin_aic_df": 10.0,
+  "argmin_bic_df": 5.0,
+  "argmin_cp_df": 10.0,
+  "argmin_gcv_df": 10.0
+}

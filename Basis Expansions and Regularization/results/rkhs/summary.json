@@ -1,0 +1,77 @@
+{
+  "method": "rkhs",
+  "task": "regression",
+  "inputs": "x",
+  "predictor": "taxamount",
+  "selected": {
+    "h": 0.8,
+    "lam_rel": 0.0005623413251903491
+  },
+  "selected_df": 8.7960707241858,
+  "cv_min": {
+    "h": 0.4,
+    "lam_rel": 0.0001
+  },
+  "cv_min_df": 18.045225684971843,
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "h": 0.8,
+    "lam_rel": 0.1
+  },
+  "selected_plain_one_se_df": 2.8273481403594785,
+  "cv": {
+    "mse": 0.02625295933072335,
+    "se": 0.0012980182471190181
+  },
+  "validation_train_only_model": {
+    "n": 49439,
+    "mse": 0.025694750869184674,
+    "mse_se": 0.001195744633623644,
+    "rmse": 0.1602958229935661,
+    "mae": 0.06816773405764429,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9991791888022779,
+    "r2_vs_mean_baseline": 0.0008208111977221488
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04150258387516714,
+    "mse_se": 0.0031236733542404074,
+    "rmse": 0.20372182964809427,
+    "mae": 0.07385292469887551,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 1.0003440722505303,
+    "r2_vs_mean_baseline": -0.0003440722505303473
+  },
+  "final_model_df": 8.815730414517331,
+  "final_fit_rows": 153151,
+  "final_model_info": {
+    "h": 0.8,
+    "lam_rel": 0.0005623413251903491,
+    "landmarks": 298,
+    "lambda": 86.12313629422715
+  },
+  "notes": "Nystrom kernel ridge, 300 landmarks; Gaussian kernel only.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "cv_scheme": "blocked",
+    "refit": "train_val",
+    "predictor": "auto",
+    "smooth_knots": 150,
+    "tps_knots": 200,
+    "rkhs_landmarks": 300,
+    "logit_knots": 25,
+    "wavelet": "sym8",
+    "wavelet_sim_reps": 50,
+    "wavelet_sim_n": 1024,
+    "wavelet_sim_snr": 7.0,
+    "alpha": 0.05,
+    "one_se_mode": "paired"
+  },
+  "runtime_sec": 83.3,
+  "argmin_aic_df": 15.360156280074753,
+  "argmin_bic_df": 7.053821992932319,
+  "argmin_cp_df": 15.360156280074753,
+  "argmin_gcv_df": 15.360156280074753
+}
