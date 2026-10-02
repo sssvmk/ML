@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\msk80743\Use Case Design\boosting\run_all.py", line 43, in _worker
+    s = importlib.import_module(MODULE.get(name, name)).run(prep_dir, out_dir, cfg, prog)
+  File "C:\Users\msk80743\Use Case Design\boosting\methods\adaboost.py", line 71, in run
+    return common.run_method(NAME, prep_dir, out_dir, cfg, progress, make_grid=make_grid, predict_path=bl.make_predict_path(build, "ada"), complexity=complexity, extra=extra,
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             select_by="auc", notes="scikit-learn AdaBoostClassifier (SAMME); p = 1/(1+exp(-2f)).", console=console)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\Use Case Design\boosting\common.py", line 335, in run_method
+    P = predict_path(Xs[tr], ys_fit[tr], grid, Xs[idx], cfg, ctx)
+  File "C:\Users\msk80743\Use Case Design\boosting\methods\boostlib.py", line 104, in predict_path
+    out[h] = preds[grid[h]["M"]]
+             ~~~~~^^^^^^^^^^^^^^
+KeyError: 10

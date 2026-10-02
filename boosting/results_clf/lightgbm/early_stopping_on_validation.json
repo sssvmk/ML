@@ -1,0 +1,31 @@
+{
+  "best_iteration_on_validation": 988,
+  "test_metrics": {
+    "n": 6000,
+    "log_loss": 0.2267978206213783,
+    "log_loss_se": 0.005297591041422298,
+    "null_log_loss": 0.3261801988436408,
+    "brier": 0.06329499982198107,
+    "auc": 0.8898245478186242,
+    "auc_se": 0.006877542141040315,
+    "threshold": 0.17304851629927814,
+    "error": 0.203,
+    "error_se": 0.005192799501874366,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.814262023217247,
+    "specificity": 0.795071335927367,
+    "ece": 0.046282303335587395,
+    "confusion_matrix": [
+      [
+        4291,
+        1106
+      ],
+      [
+        112,
+        491
+      ]
+    ]
+  },
+  "test_auc_with_CV_chosen_M": 0.8906259266326633,
+  "CV_chosen_M": 1200
+}

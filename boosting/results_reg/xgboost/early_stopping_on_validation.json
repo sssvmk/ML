@@ -1,0 +1,23 @@
+{
+  "best_iteration_on_validation": 220,
+  "validation_metrics": {
+    "n": 49439,
+    "mse": 0.025516747521027176,
+    "mse_se": 0.0011908368222173856,
+    "rmse": 0.15973962414199921,
+    "mae": 0.06870535852871887,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9922572598090141
+  },
+  "test_metrics": {
+    "n": 14737,
+    "mse": 0.04120091042929808,
+    "mse_se": 0.0031060276030597115,
+    "rmse": 0.20298007397106269,
+    "mae": 0.0740502645636059,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9930727841727034
+  },
+  "test_mse_with_CV_chosen_M": 0.041207716401466206,
+  "CV_chosen_M": 200
+}

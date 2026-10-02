@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eslii-boosting"
+version = "0.1.0"
+description = "ESLII Ch. 10 - boosting: AdaBoost, forward stagewise, boosted trees, GBM, shrinkage/subsampling, LightGBM, XGBoost."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "lightgbm",
+    "xgboost",
+    "threadpoolctl",
+    "rich"
+]
+
+[project.scripts]
+run-all = "run_all:main"
+
+[tool.setuptools]
+py-modules = [
+    "bases",
+    "common",
+    "compare",
+    "eda_clf",
+    "eda_reg",
+    "prep_clf",
+    "prep_reg",
+    "run_all",
+    "selection",
+    "sfeatures",
+    "zfeatures"
+]
+
+[tool.setuptools.packages.find]
+include = ["methods*"]

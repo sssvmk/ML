@@ -1,0 +1,11 @@
+{
+  "winner": "lightgbm",
+  "criterion": "auc",
+  "tied_with_winner": [
+    "lightgbm"
+  ],
+  "auc": 0.8906259266326633,
+  "auc_se": 0.006884919723191745,
+  "error": 0.22066666666666668,
+  "log_loss": 0.21980908300567337
+}

@@ -1,0 +1,6 @@
+loss,fit_target,cv_mse
+absolute_error,clipped,0.02559889025418639
+huber,clipped,0.025458169739314224
+huber,raw,0.025448490185998863
+squared_error,clipped,0.02547523022196611
+squared_error,raw,0.025695825976553826
