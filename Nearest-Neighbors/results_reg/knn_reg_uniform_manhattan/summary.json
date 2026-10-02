@@ -1,0 +1,90 @@
+{
+  "method": "knn_reg_uniform_manhattan",
+  "task": "regression",
+  "selected": {
+    "k": 8,
+    "nn": 200
+  },
+  "k_variables": 8,
+  "selected_complexity": 13.0,
+  "cv_min": {
+    "k": 12,
+    "nn": 200
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 3,
+    "nn": 400
+  },
+  "selection_metric": "mse",
+  "cv": {
+    "mse": 0.025497027042398434,
+    "se": 0.001981422323926344
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025661920317844134,
+    "mse_se": 0.0011922207941611623,
+    "rmse": 0.16019338412632445,
+    "mae": 0.06947053740416269,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9979025232364828
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04126569368332737,
+    "mse_se": 0.003105202192804339,
+    "rmse": 0.20313959161947573,
+    "mae": 0.07451942675884171,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9946342663287117
+  },
+  "store": {
+    "n_reference_rows": 103712,
+    "n_features_used": 8,
+    "metric_p": 1,
+    "weights": "uniform"
+  },
+  "platt_scaling": null,
+  "tuning_rows": 20000,
+  "final_reference_rows": 103712,
+  "notes": "scikit-learn NearestNeighbors; uniform weights; Minkowski p = 1.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 5,
+    "tune_rows": 20000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "n_jobs": 4,
+    "n_configs": 16,
+    "n_configs_nn": 16,
+    "n_configs_svm": 8,
+    "svm_final_rows": 50000,
+    "n_configs_sk": 6,
+    "sk_final_rows": 60000,
+    "leak_auc": 0.9,
+    "max_iter": 0,
+    "diag_rows": 8000,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "taxamount",
+    "tax_rate",
+    "te_tract",
+    "calculatedfinishedsquarefeet",
+    "te_regionidzip",
+    "tax_per_sqft",
+    "assessmentyear",
+    "finishedsquarefeet12"
+  ],
+  "runtime_sec": 152.5,
+  "knn_regression": {
+    "weights": "uniform",
+    "metric": "manhattan",
+    "k_neighbours": 200,
+    "n_variables": 8,
+    "best_loo_k": 400
+  }
+}

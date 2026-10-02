@@ -1,0 +1,8 @@
+{
+  "one_nn_test_error": 0.14705,
+  "cover_hart_lower_bound_on_bayes_error": 0.07991072377410063,
+  "chosen_k": 200,
+  "chosen_test_error": 0.32245,
+  "majority_class_error": 0.1005,
+  "note": "asymptotically err(1-NN) <= 2 E*(1 - E*) (ESLII 13.2-13.5); the bound inverts this for a binary problem"
+}

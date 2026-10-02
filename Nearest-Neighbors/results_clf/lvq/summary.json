@@ -1,0 +1,164 @@
+{
+  "method": "lvq",
+  "task": "classification",
+  "selected": {
+    "k": 40,
+    "R": 3,
+    "eps": 0.1
+  },
+  "k_variables": 40,
+  "selected_complexity": 120.0,
+  "cv_min": {
+    "k": 40,
+    "R": 3,
+    "eps": 0.1
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 40,
+    "R": 3,
+    "eps": 0.1
+  },
+  "selection_metric": "auc",
+  "cv": {
+    "neg_auc": -0.7603240053208111,
+    "se": 0.00655240394899944
+  },
+  "validation": {
+    "n": 20000,
+    "log_loss": 0.2802618546976714,
+    "log_loss_se": 0.004361773754814977,
+    "null_log_loss": 0.32618019884364075,
+    "brier": 0.07977155333951615,
+    "auc": 0.7640658851379567,
+    "auc_se": 0.005609007284543235,
+    "threshold": 0.10916233493920974,
+    "error": 0.2765,
+    "error_se": 0.0031626551345349057,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.6577114427860696,
+    "specificity": 0.7308504724847137,
+    "ece": 0.006327592862021657,
+    "confusion_matrix": [
+      [
+        13148,
+        4842
+      ],
+      [
+        688,
+        1322
+      ]
+    ]
+  },
+  "test": {
+    "n": 20000,
+    "log_loss": 0.284139969133488,
+    "log_loss_se": 0.004430042574323535,
+    "null_log_loss": 0.32618019884364075,
+    "brier": 0.0805502211012643,
+    "auc": 0.753427443106867,
+    "auc_se": 0.005773887868515208,
+    "threshold": 0.10916233493920974,
+    "error": 0.2835,
+    "error_se": 0.0031869087686973406,
+    "majority_class_error": 0.1005,
+    "sensitivity": 0.6398009950248756,
+    "specificity": 0.7250694830461367,
+    "ece": 0.008832878902354662,
+    "confusion_matrix": [
+      [
+        13044,
+        4946
+      ],
+      [
+        724,
+        1286
+      ]
+    ]
+  },
+  "store": {
+    "fit_seconds_final": 13.8,
+    "n_fit_rows": 160000,
+    "n_features_used": 40
+  },
+  "platt_scaling": [
+    0.7930707249432576,
+    -0.33334468811600837
+  ],
+  "tuning_rows": 20000,
+  "final_reference_rows": 160000,
+  "notes": "LVQ1 loop started from scikit-learn KMeans; Platt on validation.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 5,
+    "tune_rows": 20000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "n_jobs": 2,
+    "n_configs": 16,
+    "n_configs_nn": 16,
+    "n_configs_svm": 8,
+    "svm_final_rows": 50000,
+    "n_configs_sk": 6,
+    "sk_final_rows": 60000,
+    "leak_auc": 0.9,
+    "max_iter": 0,
+    "diag_rows": 8000,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "var_81__woe",
+    "var_139__woe",
+    "var_81__rankgauss",
+    "var_139__rankgauss",
+    "var_110__woe",
+    "var_13__woe",
+    "var_166__woe",
+    "var_26__woe",
+    "var_13__rankgauss",
+    "var_146__woe",
+    "var_146__rankgauss",
+    "var_76__woe",
+    "var_53__woe",
+    "var_12__woe",
+    "var_110__rankgauss",
+    "var_12__rankgauss",
+    "var_109__rankgauss",
+    "var_26__rankgauss",
+    "var_166__rankgauss",
+    "var_76__rankgauss",
+    "var_190__woe",
+    "var_21__woe",
+    "var_2__woe",
+    "var_148__rankgauss",
+    "var_80__woe",
+    "var_109__woe",
+    "var_6__woe",
+    "var_94__rankgauss",
+    "var_148__woe",
+    "var_53__rankgauss",
+    "var_34__woe",
+    "var_80__rankgauss",
+    "var_2__rankgauss",
+    "var_174__woe",
+    "var_21__rankgauss",
+    "var_190__rankgauss",
+    "var_133__woe",
+    "var_115__woe",
+    "var_94__woe",
+    "var_6__rankgauss"
+  ],
+  "runtime_sec": 204.1,
+  "lvq": {
+    "R": 3,
+    "eps": 0.1,
+    "epochs": 5,
+    "test_auc_lvq": 0.753427443106867,
+    "test_auc_kmeans_start": 0.6784184967325684,
+    "test_auc_gain": 0.07500894637429867,
+    "mean_prototype_displacement": 4.059122046658477,
+    "fit_rows": 160000
+  }
+}

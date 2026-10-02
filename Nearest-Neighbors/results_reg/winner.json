@@ -1,0 +1,11 @@
+{
+  "winner": "knn_reg_distance_euclidean",
+  "tied_with_winner": [
+    "knn_reg_distance_euclidean",
+    "knn_reg_uniform_euclidean",
+    "knn_reg_distance_manhattan",
+    "knn_reg_uniform_manhattan"
+  ],
+  "test_mse": 0.04124426789407177,
+  "test_mse_se": 0.0031052439897559674
+}

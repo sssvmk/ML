@@ -1,0 +1,13 @@
+{
+  "winner": "lvq",
+  "criterion": "auc",
+  "tied_with_winner": [
+    "lvq",
+    "kmeans",
+    "gmm"
+  ],
+  "auc": 0.753427443106867,
+  "auc_se": 0.005773887868515208,
+  "error": 0.2835,
+  "log_loss": 0.284139969133488
+}

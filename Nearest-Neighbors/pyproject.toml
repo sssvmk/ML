@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nearest-neighbors"
+version = "0.1.0"
+description = "ESLII Ch. 13 - prototype methods and nearest neighbours"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "threadpoolctl",
+    "rich",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+run-all = "run_all:main"
+
+[tool.setuptools]
+# Exposing root files as top-level modules
+py-modules = [
+    "bases", 
+    "common", 
+    "compare", 
+    "eda_clf", 
+    "eda_reg", 
+    "prep_clf", 
+    "prep_reg", 
+    "run_all", 
+    "selection", 
+    "sfeatures", 
+    "zfeatures"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["methods"]
