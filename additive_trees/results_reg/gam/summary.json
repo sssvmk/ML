@@ -1,0 +1,85 @@
+{
+  "method": "gam",
+  "task": "regression",
+  "selected": {
+    "k": 20,
+    "df": 2.5
+  },
+  "k_variables": 20,
+  "selected_complexity": 26.990831626770788,
+  "cv_min": {
+    "k": 40,
+    "df": 3
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 5,
+    "df": 2.5
+  },
+  "selection_metric": "mse",
+  "cv": {
+    "mse": 0.02635498287012435,
+    "se": 0.002199533725691806
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025577280903082214,
+    "mse_se": 0.0011917992380474473,
+    "rmse": 0.15992898706326572,
+    "mae": 0.06945726343941122,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9946111917807675
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04124223424077155,
+    "mse_se": 0.0031079895915459973,
+    "rmse": 0.20308184123838238,
+    "mae": 0.0744221746843946,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9940688192623409
+  },
+  "store": {
+    "df_total": 26.987794560494308,
+    "backfitting_cycles": 60,
+    "final_change": 6.308562589902453e-05,
+    "n_linear_terms": 8
+  },
+  "platt_scaling": null,
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "Penalised cubic B-spline smoothers (8 interior knots), df-parameterised.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "te_tract",
+    "tax_rate",
+    "te_regionidzip",
+    "finishedsquarefeet12",
+    "taxamount",
+    "te_propertyzoningdesc",
+    "calculatedfinishedsquarefeet",
+    "te_regionidcity",
+    "assessmentyear",
+    "calculatedbathnbr",
+    "regionidneighborhood=other",
+    "poolcnt",
+    "extra_rooms",
+    "bedroomcnt",
+    "finishedsquarefeet6__missing",
+    "te_regionidneighborhood",
+    "pooltypeid7",
+    "numberofstories",
+    "propertyzoningdesc=LAR1",
+    "propertycountylandusecode=0101"
+  ],
+  "runtime_sec": 160.4
+}

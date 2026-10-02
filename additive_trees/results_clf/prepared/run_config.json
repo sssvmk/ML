@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "cv_folds": 10,
+  "tune_rows": 30000,
+  "one_se_mode": "paired",
+  "rank_trees": 60,
+  "rank_rows": 20000,
+  "hme_restarts": 2,
+  "alpha": 0.05
+}

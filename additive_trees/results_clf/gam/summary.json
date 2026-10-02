@@ -1,0 +1,104 @@
+{
+  "method": "gam",
+  "task": "classification",
+  "selected": {
+    "k": 5,
+    "df": 6
+  },
+  "k_variables": 5,
+  "selected_complexity": 6.98325623353078,
+  "cv_min": {
+    "k": 40,
+    "df": 6
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 10,
+    "df": 6
+  },
+  "selection_metric": "log_loss",
+  "cv": {
+    "log_loss": 0.04816710832444428,
+    "se": 0.03183638764834542
+  },
+  "validation": {
+    "n": 6000,
+    "log_loss": 0.00010000500033334732,
+    "log_loss_se": 0.0,
+    "null_log_loss": 0.3261801988436408,
+    "brier": 9.999999999999779e-09,
+    "auc": 1.0,
+    "auc_se": 0.0,
+    "threshold": 0.5,
+    "error": 0.0,
+    "error_se": 0.0,
+    "majority_class_error": 0.1005,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "ece": 7.989999999997999e-05,
+    "confusion_matrix": [
+      [
+        5397,
+        0
+      ],
+      [
+        0,
+        603
+      ]
+    ]
+  },
+  "test": {
+    "n": 6000,
+    "log_loss": 0.00010000500033334732,
+    "log_loss_se": 0.0,
+    "null_log_loss": 0.3261801988436408,
+    "brier": 9.999999999999779e-09,
+    "auc": 1.0,
+    "auc_se": 0.0,
+    "threshold": 0.5,
+    "error": 0.0,
+    "error_se": 0.0,
+    "majority_class_error": 0.1005,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "ece": 7.989999999997999e-05,
+    "confusion_matrix": [
+      [
+        5397,
+        0
+      ],
+      [
+        0,
+        603
+      ]
+    ]
+  },
+  "store": {
+    "df_total": 6.983570020498086,
+    "backfitting_cycles": 86,
+    "final_change": 0.0008341530855415717,
+    "n_linear_terms": 1
+  },
+  "platt_scaling": null,
+  "tuning_rows": 30000,
+  "final_reference_rows": 48001,
+  "notes": "Penalised cubic B-spline smoothers (8 interior knots), df-parameterised.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "cnt__woe",
+    "rn__woe",
+    "rn__rankgauss",
+    "rn__freq",
+    "var_81__woe"
+  ],
+  "runtime_sec": 260.9
+}

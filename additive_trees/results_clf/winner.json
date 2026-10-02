@@ -1,0 +1,15 @@
+{
+  "winner": "hme",
+  "criterion": "auc",
+  "tied_with_winner": [
+    "hme",
+    "mars",
+    "gam",
+    "prim",
+    "cart"
+  ],
+  "auc": 1.0,
+  "auc_se": 0.0,
+  "error": 0.0,
+  "log_loss": 0.00010000500033334732
+}

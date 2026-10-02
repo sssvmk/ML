@@ -1,0 +1,157 @@
+{
+  "method": "prim",
+  "task": "regression",
+  "selected": {
+    "k": 10,
+    "alpha": 0.07,
+    "beta0": 0.05,
+    "n_boxes": 5
+  },
+  "k_variables": 10,
+  "selected_complexity": 5.01,
+  "cv_min": {
+    "k": 10,
+    "alpha": 0.07,
+    "beta0": 0.15,
+    "n_boxes": 5
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 10,
+    "alpha": 0.07,
+    "beta0": 0.05,
+    "n_boxes": 1
+  },
+  "selection_metric": "mse",
+  "cv": {
+    "mse": 0.02654144018945003,
+    "se": 0.0022030398678641837
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.0256689408683001,
+    "mse_se": 0.0011955006409109746,
+    "rmse": 0.16021529536314597,
+    "mae": 0.06824978902474992,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9981755279425898
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04145371724028747,
+    "mse_se": 0.0031188238257022385,
+    "rmse": 0.20360185961893243,
+    "mae": 0.0740871352012704,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9991662311628586
+  },
+  "store": {
+    "n_boxes_found": 5,
+    "box_means": [
+      0.03291480207713524,
+      0.025479792951470424,
+      0.02946236349479107,
+      0.019142469281452884,
+      0.021171412319051144
+    ]
+  },
+  "platt_scaling": null,
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "Peeling + pasting + sequential covering; box chosen on a 30 % hold-out of the training rows.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "te_tract",
+    "tax_rate",
+    "te_regionidzip",
+    "finishedsquarefeet12",
+    "taxamount",
+    "te_propertyzoningdesc",
+    "calculatedfinishedsquarefeet",
+    "te_regionidcity",
+    "assessmentyear",
+    "calculatedbathnbr"
+  ],
+  "runtime_sec": 68.2,
+  "prim_boxes": [
+    {
+      "box": 1,
+      "n_rules": 5,
+      "n_variables": 5,
+      "support_train": 0.051430885529157665,
+      "mean_train": 0.037656528776243044,
+      "lift_train": 0.024910455514056764,
+      "support_val": 0.05479479762940189,
+      "mean_val": 0.027705312586464158,
+      "lift_val": 0.014959239324277878,
+      "support_test": 0.054760127570061747,
+      "mean_test": 0.032554611306028464,
+      "lift_test": 0.019808538043842184
+    },
+    {
+      "box": 2,
+      "n_rules": 9,
+      "n_variables": 8,
+      "support_train": 0.05286755630978093,
+      "mean_train": 0.02672848818746514,
+      "lift_train": 0.013982414925278859,
+      "support_val": 0.05697930783389632,
+      "mean_val": 0.020464182722578442,
+      "lift_val": 0.007718109460392163,
+      "support_test": 0.05632082513401642,
+      "mean_test": 0.043717611857642315,
+      "lift_test": 0.030971538595456035
+    },
+    {
+      "box": 3,
+      "n_rules": 6,
+      "n_variables": 5,
+      "support_train": 0.05595302375809935,
+      "mean_train": 0.03431211280765787,
+      "lift_train": 0.02156603954547159,
+      "support_val": 0.05706021561924796,
+      "mean_val": 0.031466007327434285,
+      "lift_val": 0.018719934065248005,
+      "support_test": 0.05856008685621226,
+      "mean_test": 0.03869503193684008,
+      "lift_test": 0.025948958674653803
+    },
+    {
+      "box": 4,
+      "n_rules": 9,
+      "n_variables": 7,
+      "support_train": 0.0437557852514656,
+      "mean_train": 0.022636070563891622,
+      "lift_train": 0.009889997301705342,
+      "support_val": 0.049515564635207024,
+      "mean_val": 0.023367738212326905,
+      "lift_val": 0.010621664950140625,
+      "support_test": 0.0482459116509466,
+      "mean_test": 0.037407290976134835,
+      "lift_test": 0.024661217713948556
+    },
+    {
+      "box": 5,
+      "n_rules": 7,
+      "n_variables": 6,
+      "support_train": 0.06154543350817649,
+      "mean_train": 0.02416666768727267,
+      "lift_train": 0.011420594425086389,
+      "support_val": 0.05265074131758329,
+      "mean_val": 0.02134783252441683,
+      "lift_val": 0.00860175926223055,
+      "support_test": 0.05598154305489584,
+      "mean_test": 0.031902303040716874,
+      "lift_test": 0.019156229778530594
+    }
+  ]
+}

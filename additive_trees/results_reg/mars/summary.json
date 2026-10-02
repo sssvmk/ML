@@ -1,0 +1,80 @@
+{
+  "method": "mars",
+  "task": "regression",
+  "selected": {
+    "k": 10,
+    "degree": 1,
+    "n_terms": 7
+  },
+  "k_variables": 10,
+  "selected_complexity": 7.002000000000001,
+  "cv_min": {
+    "k": 10,
+    "degree": 1,
+    "n_terms": 15
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 10,
+    "degree": 1,
+    "n_terms": 3
+  },
+  "selection_metric": "mse",
+  "cv": {
+    "mse": 0.026373890287539586,
+    "se": 0.0021973328406911324
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025592195844863788,
+    "mse_se": 0.0011955162024981894,
+    "rmse": 0.15997561015624784,
+    "mae": 0.0683022693630867,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9951911818147716
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.041379104234535634,
+    "mse_se": 0.003116415749573052,
+    "rmse": 0.20341854447059549,
+    "mae": 0.07402324119862345,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9973678207737333
+  },
+  "store": {
+    "terms_forward": 21,
+    "terms_selected": 7,
+    "gcv_best_terms": 14,
+    "gcv_at_best": 0.010222718690764342,
+    "gcv_at_selected": 0.010251352297551992
+  },
+  "platt_scaling": null,
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "Own numpy MARS; forward pass on <= 15k rows, backward pass + coefficients on all reference rows.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "te_tract",
+    "tax_rate",
+    "te_regionidzip",
+    "finishedsquarefeet12",
+    "taxamount",
+    "te_propertyzoningdesc",
+    "calculatedfinishedsquarefeet",
+    "te_regionidcity",
+    "assessmentyear",
+    "calculatedbathnbr"
+  ],
+  "runtime_sec": 168.4,
+  "max_interaction_order": 1
+}

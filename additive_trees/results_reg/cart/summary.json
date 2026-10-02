@@ -1,0 +1,73 @@
+{
+  "method": "cart",
+  "task": "regression",
+  "selected": {
+    "k": 10,
+    "alpha_rel": 0.001
+  },
+  "k_variables": 10,
+  "selected_complexity": 9.0,
+  "cv_min": {
+    "k": 20,
+    "alpha_rel": 0.001
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 10,
+    "alpha_rel": 0.01
+  },
+  "selection_metric": "mse",
+  "cv": {
+    "mse": 0.02645882661461681,
+    "se": 0.0021905825772209494
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025677422635591755,
+    "mse_se": 0.0011963663663670076,
+    "rmse": 0.16024176308188748,
+    "mae": 0.06839580337243778,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9985053542719141
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04143954070099101,
+    "mse_se": 0.0031168829015754233,
+    "rmse": 0.20356704227598094,
+    "mae": 0.07407821559135311,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9988245315450012
+  },
+  "store": {
+    "n_leaves": 5,
+    "depth": 4
+  },
+  "platt_scaling": null,
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "scikit-learn CART + cost-complexity pruning; top-k variables from the fold-wise ranking.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "te_tract",
+    "tax_rate",
+    "te_regionidzip",
+    "finishedsquarefeet12",
+    "taxamount",
+    "te_propertyzoningdesc",
+    "calculatedfinishedsquarefeet",
+    "te_regionidcity",
+    "assessmentyear",
+    "calculatedbathnbr"
+  ],
+  "runtime_sec": 315.3
+}

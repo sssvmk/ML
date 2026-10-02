@@ -1,0 +1,8 @@
+{
+  "winner": "gam",
+  "tied_with_winner": [
+    "gam"
+  ],
+  "test_mse": 0.04124223424077155,
+  "test_mse_se": 0.0031079895915459973
+}

@@ -1,0 +1,7 @@
+term,interaction_order,basis
+2,1,(-0.0966 - te_tract)+
+4,1,(-0.0713 - taxamount)+
+5,1,(tax_rate - 0.717)+
+7,1,(finishedsquarefeet12 - -1.54)+
+11,1,(te_propertyzoningdesc - 0.192)+
+14,1,(1.68 - te_regionidzip)+

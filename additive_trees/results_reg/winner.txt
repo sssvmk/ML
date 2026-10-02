@@ -1,0 +1,13 @@
+WINNER (lowest test MSE of raw logerror): gam
+   test MSE 0.041242 +- 0.003108 | RMSE 0.20308 | 0.9941 x the predict-the-mean MSE | k = 20 variables
+Not significantly worse than the winner (Holm-adjusted Diebold-Mariano p > 0.05): gam
+Winner vs predict-the-mean baseline: significantly better (DM p = 0.0000)
+
+            method     kind status  test_mse  test_mse_se  test_rmse  test_mae  rel_mse_vs_mean_baseline  val_mse   cv_mse    cv_se  k_variables  runtime_sec  mse_diff_winner_minus_other   dm_stat     dm_p  paired_t_p  dm_p_holm  paired_t_p_holm  not_significantly_worse_than_winner
+               gam   method     ok  0.041242     0.003108   0.203082  0.074422                  0.994069 0.025577 0.026355 0.002200         20.0        160.4                          NaN       NaN      NaN         NaN        NaN              NaN                                 True
+               hme   method     ok  0.041298     0.003113   0.203219  0.074224                  0.995414 0.025604 0.026372 0.002199         20.0        276.9                    -0.000056 -2.773360 0.005555    0.004776   0.011110         0.009553                                False
+baseline_ols_top10 baseline     ok  0.041303     0.003112        NaN       NaN                       NaN      NaN      NaN      NaN          NaN          NaN                    -0.000061 -2.292310 0.021902    0.021090   0.021902         0.021090                                False
+              mars   method     ok  0.041379     0.003116   0.203419  0.074023                  0.997368 0.025592 0.026374 0.002197         10.0        168.4                    -0.000137 -3.735302 0.000188    0.000196   0.000565         0.000587                                False
+              cart   method     ok  0.041440     0.003117   0.203567  0.074078                  0.998825 0.025677 0.026459 0.002191         10.0        315.3                    -0.000197 -4.010551 0.000061    0.000072   0.000304         0.000289                                False
+              prim   method     ok  0.041454     0.003119   0.203602  0.074087                  0.999166 0.025669 0.026541 0.002203         10.0         68.2                    -0.000211 -3.985147 0.000068    0.000047   0.000304         0.000235                                False
+     baseline_mean baseline     ok  0.041488     0.003122        NaN       NaN                       NaN      NaN      NaN      NaN          NaN          NaN                    -0.000246 -4.270478 0.000020    0.000019   0.000118         0.000114                                False

@@ -1,0 +1,95 @@
+{
+  "method": "hme",
+  "task": "regression",
+  "selected": {
+    "k": 20,
+    "depth": 2,
+    "K": 2
+  },
+  "k_variables": 20,
+  "selected_complexity": 4.02,
+  "cv_min": {
+    "k": 20,
+    "depth": 2,
+    "K": 2
+  },
+  "one_se_mode": "paired",
+  "selected_plain_one_se": {
+    "k": 10,
+    "depth": 1,
+    "K": 2
+  },
+  "selection_metric": "mse",
+  "cv": {
+    "mse": 0.026372294770614046,
+    "se": 0.0021986730543786977
+  },
+  "validation": {
+    "n": 49439,
+    "mse": 0.025603857585054134,
+    "mse_se": 0.0011934969984829938,
+    "rmse": 0.16001205449919745,
+    "mae": 0.06918211516224419,
+    "baseline_train_mean_mse": 0.025715858733992576,
+    "rel_mse_vs_mean_baseline": 0.9956446661922904
+  },
+  "test": {
+    "n": 14737,
+    "mse": 0.04129804803641856,
+    "mse_se": 0.003112749138096773,
+    "rmse": 0.2032192117798378,
+    "mae": 0.07422361250222673,
+    "baseline_train_mean_mse": 0.04148830889935345,
+    "rel_mse_vs_mean_baseline": 0.9954141089867885
+  },
+  "store": {
+    "n_experts": 4,
+    "em_iterations": [
+      25,
+      25
+    ],
+    "restart_loglik_per_row": [
+      1.2005864975067575,
+      1.1992345306826522
+    ],
+    "restart_spread": 0.0013519668241053218,
+    "rows_used_for_EM": 60000
+  },
+  "platt_scaling": null,
+  "tuning_rows": 30000,
+  "final_reference_rows": 103712,
+  "notes": "EM on capped rows; k-means init; soft gating by softmax regression.",
+  "config": {
+    "seed": 42,
+    "cv_folds": 10,
+    "tune_rows": 30000,
+    "one_se_mode": "paired",
+    "rank_trees": 60,
+    "rank_rows": 20000,
+    "hme_restarts": 2,
+    "alpha": 0.05
+  },
+  "selected_variables": [
+    "te_tract",
+    "tax_rate",
+    "te_regionidzip",
+    "finishedsquarefeet12",
+    "taxamount",
+    "te_propertyzoningdesc",
+    "calculatedfinishedsquarefeet",
+    "te_regionidcity",
+    "assessmentyear",
+    "calculatedbathnbr",
+    "regionidneighborhood=other",
+    "poolcnt",
+    "extra_rooms",
+    "bedroomcnt",
+    "finishedsquarefeet6__missing",
+    "te_regionidneighborhood",
+    "pooltypeid7",
+    "numberofstories",
+    "propertyzoningdesc=LAR1",
+    "propertycountylandusecode=0101"
+  ],
+  "runtime_sec": 276.9
+}

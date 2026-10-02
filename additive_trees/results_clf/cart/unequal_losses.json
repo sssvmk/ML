@@ -1,0 +1,10 @@
+{
+  "symmetric losses": {
+    "auc": 1.0,
+    "n_leaves": 2
+  },
+  "L01 = 5 (class 1 errors cost 5x)": {
+    "auc": 1.0,
+    "n_leaves": 2
+  }
+}

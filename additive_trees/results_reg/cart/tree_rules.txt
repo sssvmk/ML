@@ -1,0 +1,13 @@
+|--- tax_rate <= 1.51
+|   |--- te_tract <= -0.61
+|   |   |--- value: [0.00]
+|   |--- te_tract >  -0.61
+|   |   |--- taxamount <= -0.82
+|   |   |   |--- value: [0.03]
+|   |   |--- taxamount >  -0.82
+|   |   |   |--- finishedsquarefeet12 <= 1.54
+|   |   |   |   |--- value: [0.01]
+|   |   |   |--- finishedsquarefeet12 >  1.54
+|   |   |   |   |--- value: [0.03]
+|--- tax_rate >  1.51
+|   |--- value: [-0.03]

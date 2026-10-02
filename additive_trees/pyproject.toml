@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "additive_trees"
+version = "0.1.0"
+description = "ESLII Ch. 9 - GAM, CART, PRIM, MARS, HME: regression (Zillow) and classification (Santander)"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "threadpoolctl",
+    "rich"
+]
+
+[project.scripts]
+run-all = "run_all:main"
+
+[tool.setuptools]
+packages = ["methods"]
+py-modules = [
+    "bases",
+    "common",
+    "compare",
+    "eda_clf",
+    "eda_reg",
+    "prep_clf",
+    "prep_reg",
+    "run_all",
+    "selection",
+    "sfeatures",
+    "zfeatures"
+]
