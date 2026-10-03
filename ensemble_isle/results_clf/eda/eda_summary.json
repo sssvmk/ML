@@ -1,0 +1,41 @@
+{
+  "rows": 200000,
+  "feature_columns": 200,
+  "id_columns": [
+    "ID_code"
+  ],
+  "target": "target",
+  "positive_rate_all": 0.10049,
+  "positive_rate_train": 0.1004875,
+  "imbalance_ratio_neg_per_pos": 8.951486503296431,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "constant_columns": [],
+  "n_features_with_skew_abs_gt_0.5": 0,
+  "n_features_with_outliers_gt_1pct_robust_z4": 0,
+  "median_pct_unique_values": 60.434062499999996,
+  "top10_features_by_ks": [
+    "var_81",
+    "var_139",
+    "var_6",
+    "var_110",
+    "var_12",
+    "var_76",
+    "var_146",
+    "var_2",
+    "var_148",
+    "var_26"
+  ],
+  "n_features_std_ratio_far_from_1": 4,
+  "max_abs_pairwise_correlation": 0.020443425272847718,
+  "mean_abs_pairwise_correlation": 0.0036755320957180962,
+  "pca_top1_variance_share": 0.0713514098450449,
+  "design_decisions": [
+    "stratified 80/10/10 split on Target; KS check train-vs-val/test written to split_report.csv",
+    "outliers: winsorise at train 0.1/99.9 percentiles, then rank-to-Gaussian (robust to heavy tails and non-normal shapes)",
+    "features are near-independent (see correlation summary) -> per-feature nonlinear transforms (rank-gauss, WoE, frequency) are the lever, not interactions",
+    "many repeated values per feature -> leave-one-out frequency features in the 'rich' set",
+    "class-conditional std ratios differ from 1 for some features -> QDA/RDA can exploit variance differences LDA cannot",
+    "heavy class imbalance -> Youden threshold on validation; AUC reported next to error; CV selects on log-loss / AUC, not raw error"
+  ]
+}

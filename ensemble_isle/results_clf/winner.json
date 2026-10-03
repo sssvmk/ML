@@ -1,0 +1,11 @@
+{
+  "winner": "fs_path",
+  "criterion": "auc",
+  "tied_with_winner": [
+    "fs_path"
+  ],
+  "auc": 0.873397382183026,
+  "auc_se": 0.004138370834291365,
+  "error": 0.17955,
+  "log_loss": 0.22654435307535517
+}

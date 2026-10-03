@@ -1,0 +1,56 @@
+rule,length,support,coefficient_standardised,importance
+taxamount > -0.813 & tax_rate > 0.0973,2,0.09838483,-0.0028375287,0.0028375287
+taxamount > -0.805 & finishedsquarefeet12 <= -0.0815,2,0.38965473,-0.0023809718,0.0023809718
+tax_rate <= 0.868 & structuretaxvaluedollarcnt <= -1.49,2,0.05261739,0.0013411152,0.0013411152
+tax_rate > 1.82 & longitude <= 0.244,2,0.016333442,-0.0012943564,0.0012943564
+calculatedfinishedsquarefeet <= 2.63 & taxdelinquencyflag <= 3.16,2,0.9668404,-0.0011752904,0.0011752904
+te_propertyzoningdesc <= 3.84 & taxamount > -0.832,2,0.81713736,-0.0011064068,0.0011064068
+finishedsquarefeet12 <= 1.86 & taxdelinquencyyear <= 4.85,2,0.93147576,-0.0009690783,0.0009690783
+te_regionidneighborhood <= -2.41 & tax_rate > -0.0267,2,0.0076999664,-0.00094473374,0.00094473374
+tax_rate <= 1.72 & te_tract > -0.183,2,0.5798656,0.0009339556,0.0009339556
+te_regionidneighborhood <= 9.41 & buildingclasstypeid=other <= 35.1,2,1.0000521,-0.0008937519,0.0008937519
+tax_rate <= 0.00384 & tax_per_sqft <= 0.408,2,0.44817954,0.00087422365,0.00087422365
+tax_per_sqft <= -2.61 & taxamount <= -0.907,2,0.0064666467,0.00086969335,0.00086969335
+tax_rate <= 3.18 & structuretaxvaluedollarcnt <= -2.7,2,0.007133306,0.00082516414,0.00082516414
+finishedsquarefeet12 <= 1.25,1,0.8874327,-0.00073091226,0.00073091226
+tax_rate <= 0.868,1,0.96049845,0.00063671434,0.00063671434
+te_tract <= -1.13 & tax_per_sqft > -2.64,2,0.101618215,-0.0006301829,0.0006301829
+tax_rate <= 3.18,1,0.98141015,0.00062854623,0.00062854623
+te_tract <= -1.81,1,0.04316723,-0.0006020244,0.0006020244
+poolcnt <= 0.756 & landtaxvaluedollarcnt <= 2.27,2,0.79624236,0.0005514786,0.0005514786
+structure_ratio <= -1.95 & tax_rate <= -0.416,2,0.00023333337,0.0005513114,0.0005513114
+te_tract > -1.13 & te_regionidcity > 1.21,2,0.09841816,0.00050260575,0.00050260575
+finishedsquarefeet15 <= -4.96 & taxdelinquencyyear > 2.82,2,0.00036666665,0.0004812189,0.0004812189
+te_regionidneighborhood <= -2.06 & tax_rate > 0.803,2,0.0035500072,-0.00047526124,0.00047526124
+tax_rate <= 0.0901 & structuretaxvaluedollarcnt <= -1.7,2,0.019366827,0.00044741502,0.00044741502
+te_tract <= -1.39,1,0.07006768,-0.0004274847,0.0004274847
+te_propertyzoningdesc <= -3.68,1,0.005133328,-0.00041994467,0.00041994467
+te_regionidneighborhood <= -2.06,1,0.04660062,-0.00041107385,0.00041107385
+taxdelinquencyyear > 5.16 & te_regionidcity > 4.75,2,5.0000002e-05,0.00039168616,0.00039168616
+landtaxvaluedollarcnt > 1.35 & regionidzip=96962 > 6.02,2,3.3333334e-05,0.00037718727,0.00037718727
+te_regionidzip <= -0.0207 & tax_rate > 1.35,2,0.01498342,-0.00037340424,0.00037340424
+te_propertyzoningdesc <= 3.84,1,0.99703133,-0.0003626272,0.0003626272
+buildingclasstypeid=other > 35.1 & lat_x_lon > 0.541,2,1e-04,0.00035636523,0.00035636523
+te_propertycountylandusecode <= -0.781 & tax_rate > -0.177,2,0.058917496,-0.00034112614,0.00034112614
+structuretaxvaluedollarcnt <= -1.99 & bedroomcnt <= -1.35,2,0.003800008,0.00032765532,0.00032765532
+te_propertycountylandusecode <= -0.922 & structuretaxvaluedollarcnt > -2.62,2,0.17241487,-0.0002857084,0.0002857084
+te_propertycountylandusecode <= -0.922 & structuretaxvaluedollarcnt <= -2.62,2,0.0005833332,0.00026591803,0.00026591803
+propertyzoningdesc=LCA11* > 8.25 & structuretaxvaluedollarcnt <= -0.711,2,0.0005333332,0.00024735974,0.00024735974
+te_tract > -1.39 & taxamount <= -0.632,2,0.21601278,0.00021470696,0.00021470696
+tax_rate <= 1.7 & te_tract > -0.546,2,0.7299024,0.00019626108,0.00019626108
+calculatedfinishedsquarefeet > 3.02 & te_tract > 1.03,2,0.0012000003,0.00017931401,0.00017931401
+propertyzoningdesc=LCA11* > 8.25 & lon_sq > -0.278,2,0.0013000006,0.00017563839,0.00017563839
+te_propertyzoningdesc > -3.68 & finishedsquarefeet12 > 1.61,2,0.068134315,0.00017061298,0.00017061298
+tax_rate > 0.124 & taxamount > -1.04,2,0.09911817,-0.00014280119,0.00014280119
+assessmentyear <= 1.1,1,0.8708435,-5.671966e-05,5.671966e-05
+tax_rate > 0.305 & te_regionidzip <= -0.984,2,0.014700082,-3.1088202e-05,3.1088202e-05
+te_propertycountylandusecode > 6.56 & te_propertyzoningdesc > 1.84,2,0.00044999993,2.6863094e-05,2.6863094e-05
+assessmentyear <= 1.1,1,0.8708435,-6.091002e-06,6.091002e-06
+tax_rate > 0.868,1,0.039967176,-1.5459963e-06,1.5459963e-06
+te_propertyzoningdesc > 3.84,1,0.0034833404,6.988514e-07,6.988514e-07
+te_tract > -1.81,1,0.9572941,6.1084336e-07,6.1084336e-07
+te_tract > -1.39,1,0.9303576,4.997107e-07,4.997107e-07
+assessmentyear > 1.1,1,0.1295,4.1171148e-07,4.1171148e-07
+finishedsquarefeet12 > 1.25,1,0.11293507,1.6605816e-07,1.6605816e-07
+te_regionidneighborhood > -2.06,1,0.9538561,4.0691205e-08,4.0691205e-08
+te_propertyzoningdesc > -3.68,1,0.9953791,2.1108029e-08,2.1108029e-08

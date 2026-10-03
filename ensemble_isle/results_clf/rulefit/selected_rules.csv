@@ -1,0 +1,2 @@
+rule,length,support,coefficient_standardised,importance
+var_49__rankgauss <= 2.48,1,0.9937602,-0.07233848,0.07233848

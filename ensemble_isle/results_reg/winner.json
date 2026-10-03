@@ -1,0 +1,10 @@
+{
+  "winner": "fs_path",
+  "tied_with_winner": [
+    "fs_path",
+    "isle_rf",
+    "gbm_reference"
+  ],
+  "test_mse": 0.04124342820220888,
+  "test_mse_se": 0.003107440760264633
+}
