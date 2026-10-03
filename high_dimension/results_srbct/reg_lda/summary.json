@@ -1,0 +1,60 @@
+{
+  "method": "reg_lda",
+  "task": "classification",
+  "baseline": false,
+  "selected": {
+    "lda__shrinkage": 0.95
+  },
+  "cv_minimum": {
+    "lda__shrinkage": 0.01
+  },
+  "cv": {
+    "selected_loss": 0.015811965811965808,
+    "selected_se_nb": 0.0184371942441576,
+    "minimum_loss": 0.015811965811965808,
+    "n_configurations": 9,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.0,
+    "se_error": 0.0,
+    "n": 20,
+    "n_errors": 0,
+    "log_loss": 2.9999984999324416e-06,
+    "se_log_loss": 2.2057978939364068e-17,
+    "macro_ovr_auc": 1.0
+  },
+  "n_features_used": 2308,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "shrinkage LDA",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "runtime_sec": 467.1
+}

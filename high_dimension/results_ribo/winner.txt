@@ -1,0 +1,15 @@
+WINNER (lowest test MSE, non-baseline methods): fused_lasso
+   test MSE 0.2192 +- 0.1349 | RMSE 0.4682 | MAE 0.3451 | R2 vs mean 0.768 | genes used 169
+Not significantly worse than the winner (Holm-adjusted paired t, alpha=0.05; n_test=12): fused_lasso, kernel_ridge, supervised_pca, lasso
+Winner vs ridge baseline: test MSE 0.2192 vs 0.3383; NOT significantly better (Holm p = 1.000)
+Winner vs mean baseline: test MSE 0.2192 vs 0.9435; NOT significantly better (Holm p = 0.294)
+Genes used: fused_lasso 169, kernel_ridge 4088, ridge 4088, supervised_pca 25, lasso 14, mean 0
+CAUTION: 12 test samples - the test MSE standard errors are large and the tests have little power.
+
+        method  baseline  test_mse  test_mse_se  test_rmse  test_mae  test_r2_vs_mean  val_mse  cv_mse  genes_used  p_paired_t  p_holm significantly_worse
+   fused_lasso     False   0.21924      0.13489    0.46823   0.34507          0.76764  0.56742 0.28648         169         NaN     NaN                 NaN
+  kernel_ridge     False   0.31180      0.20100    0.55839   0.36038          0.66954  0.45237 0.31455        4088     0.28944 1.00000               False
+         ridge      True   0.33829      0.23635    0.58163   0.38249          0.64145  0.49588 0.34335        4088     0.29876 1.00000               False
+supervised_pca     False   0.34626      0.25826    0.58844   0.39875          0.63301  0.83118 0.36940          25     0.34298 1.00000               False
+         lasso     False   0.36896      0.26048    0.60742   0.40898          0.60895  0.59029 0.33118          14     0.28604 1.00000               False
+          mean      True   0.94351      0.47053    0.97134   0.75872          0.00000  1.14580 0.77138           0     0.05887 0.29433               False

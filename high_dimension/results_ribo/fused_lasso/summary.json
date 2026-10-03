@@ -1,0 +1,50 @@
+{
+  "method": "fused_lasso",
+  "task": "regression",
+  "baseline": false,
+  "selected": {
+    "fl__lam1": 0.1,
+    "fl__lam2": 0.3
+  },
+  "cv_minimum": {
+    "fl__lam1": 0.1,
+    "fl__lam2": 0.03
+  },
+  "cv": {
+    "selected_loss": 0.28648492807725556,
+    "selected_se_nb": 0.09288253521215054,
+    "minimum_loss": 0.24879447080514497,
+    "n_configurations": 12,
+    "folds": "3x5"
+  },
+  "validation": {
+    "mse": 0.5674242335841774,
+    "se": 0.33966255543089485,
+    "rmse": 0.753275669050964,
+    "mae": 0.5567480414595158,
+    "r2_vs_train_mean": 0.5047796107142806,
+    "n": 12
+  },
+  "test": {
+    "mse": 0.21923577855841167,
+    "se": 0.13489147573442944,
+    "rmse": 0.4682262044764386,
+    "mae": 0.3450709338203428,
+    "r2_vs_train_mean": 0.7676369991279719,
+    "n": 12
+  },
+  "n_features_used": 169,
+  "n_genes_total": 4088,
+  "n_train": 59,
+  "n_test": 12,
+  "notes": "cvxpy fused lasso on hierarchically ordered genes (an experiment).",
+  "fused_lasso": {
+    "nonzero_coefficients": 169,
+    "nonzero_blocks": 8,
+    "jumps": 16,
+    "lambda1_rel": 0.1,
+    "lambda2_rel": 0.3,
+    "ordering": "average-linkage hierarchical clustering on 1 - correlation (leaf order), training rows only"
+  },
+  "runtime_sec": 365.7
+}

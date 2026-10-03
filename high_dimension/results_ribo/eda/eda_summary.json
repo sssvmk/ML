@@ -1,0 +1,46 @@
+{
+  "task": "regression",
+  "n_samples": 59,
+  "n_genes": 4088,
+  "p_over_n": 69.28813559322033,
+  "n_constant_genes": 0,
+  "gene_sd_median": 0.3550713359944182,
+  "gene_sd_range": [
+    0.09907894084962143,
+    1.856817576461197
+  ],
+  "fraction_|z|>4": 0.0006965405154399814,
+  "recommend_winsorize": false,
+  "missing_values": 0,
+  "pca_var_explained_top5": [
+    0.3729,
+    0.1226,
+    0.0585,
+    0.0446,
+    0.0393
+  ],
+  "sample_outliers_pca_mahalanobis": [],
+  "fraction_gene_pairs_|r|>0.8_(top300_variance)": 0.053355629877369005,
+  "y_mean": -7.154668035343551,
+  "y_sd": 0.9095506188915156,
+  "y_min": -9.96578428466209,
+  "y_max": -5.67300253543424,
+  "y_skew": -0.7923644156075779,
+  "response_outliers_iqr": [
+    19,
+    51
+  ],
+  "max_abs_gene_response_correlation": 0.6457487770164284,
+  "top10_genes_by_abs_correlation": [
+    "as.matrix(riboflavin$x).YOAB_at",
+    "as.matrix(riboflavin$x).YDAR_at",
+    "as.matrix(riboflavin$x).XHLA_at",
+    "as.matrix(riboflavin$x).XKDS_at",
+    "as.matrix(riboflavin$x).YCGN_at",
+    "as.matrix(riboflavin$x).YTGB_at",
+    "as.matrix(riboflavin$x).XHLB_at",
+    "as.matrix(riboflavin$x).YTGA_at",
+    "as.matrix(riboflavin$x).LYSC_at",
+    "as.matrix(riboflavin$x).YCGM_at"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "method": "diag_lda",
+  "task": "classification",
+  "baseline": false,
+  "selected": {},
+  "cv_minimum": {},
+  "cv": {
+    "selected_loss": 0.05213675213675213,
+    "selected_se_nb": 0.031590811121880384,
+    "minimum_loss": 0.05213675213675213,
+    "n_configurations": 1,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.25,
+    "se_error": 0.09682458365518543,
+    "n": 20,
+    "n_errors": 5,
+    "log_loss": 3.1026976655312657,
+    "se_log_loss": 1.2732212519409623,
+    "macro_ovr_auc": 0.9666666666666667
+  },
+  "n_features_used": 2308,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "within-class-scaled LDA with identity covariance = diagonal LDA",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "runtime_sec": 113.2
+}

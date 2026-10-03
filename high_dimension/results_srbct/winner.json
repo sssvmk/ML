@@ -1,0 +1,14 @@
+{
+  "winner": "reg_lda",
+  "not_significantly_worse": [
+    "reg_lda",
+    "l1_logreg",
+    "supervised_pca",
+    "nsc",
+    "reg_logreg",
+    "linear_svc",
+    "diag_lda"
+  ],
+  "sparsest_of_those": "supervised_pca",
+  "test_error": 0.0
+}

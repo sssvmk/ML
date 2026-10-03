@@ -1,0 +1,56 @@
+{
+  "method": "majority",
+  "task": "classification",
+  "baseline": true,
+  "selected": {},
+  "cv_minimum": {},
+  "cv": {
+    "selected_loss": 0.6358974358974357,
+    "selected_se_nb": 0.014633688172482194,
+    "minimum_loss": 0.6358974358974357,
+    "n_configurations": 1,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.7,
+    "se_error": 0.10246950765959599,
+    "n": 20,
+    "n_errors": 14,
+    "log_loss": 1.3961651670359148,
+    "se_log_loss": 0.0883170971562868,
+    "macro_ovr_auc": 0.5
+  },
+  "n_features_used": 0,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "majority-class baseline",
+  "confusion_matrix_test": [
+    [
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      0
+    ]
+  ],
+  "runtime_sec": 1.3
+}

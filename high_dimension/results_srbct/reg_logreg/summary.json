@@ -1,0 +1,60 @@
+{
+  "method": "reg_logreg",
+  "task": "classification",
+  "baseline": false,
+  "selected": {
+    "lr__C": 0.001
+  },
+  "cv_minimum": {
+    "lr__C": 0.0031622776601683794
+  },
+  "cv": {
+    "selected_loss": 0.021367521367521364,
+    "selected_se_nb": 0.020662199026075013,
+    "minimum_loss": 0.015811965811965808,
+    "n_configurations": 12,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.25,
+    "se_error": 0.09682458365518543,
+    "n": 20,
+    "n_errors": 5,
+    "log_loss": 0.7035448312871464,
+    "se_log_loss": 0.1194396730118408,
+    "macro_ovr_auc": 1.0
+  },
+  "n_features_used": 2308,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "ridge multinomial logistic regression",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "runtime_sec": 44.6
+}

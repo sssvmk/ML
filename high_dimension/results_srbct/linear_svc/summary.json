@@ -1,0 +1,58 @@
+{
+  "method": "linear_svc",
+  "task": "classification",
+  "baseline": false,
+  "selected": {
+    "svc__C": 0.0001
+  },
+  "cv_minimum": {
+    "svc__C": 0.01
+  },
+  "cv": {
+    "selected_loss": 0.0688034188034188,
+    "selected_se_nb": 0.03697507418174917,
+    "minimum_loss": 0.03675213675213674,
+    "n_configurations": 10,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.05,
+    "se_error": 0.04873397172404482,
+    "n": 20,
+    "n_errors": 1,
+    "macro_ovr_auc": 1.0
+  },
+  "n_features_used": 2308,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "scikit-learn LinearSVC",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "runtime_sec": 32.2
+}

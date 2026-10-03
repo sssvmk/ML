@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "n_samples": 63,
+  "n_genes": 2308,
+  "p_over_n": 36.63492063492063,
+  "n_constant_genes": 0,
+  "gene_sd_median": 0.5925704777165166,
+  "gene_sd_range": [
+    0.27184883284981803,
+    1.9219916545160585
+  ],
+  "fraction_|z|>4": 0.0008184093972655498,
+  "recommend_winsorize": false,
+  "missing_values": 0,
+  "pca_var_explained_top5": [
+    0.129,
+    0.1232,
+    0.0764,
+    0.0588,
+    0.0538
+  ],
+  "sample_outliers_pca_mahalanobis": [],
+  "fraction_gene_pairs_|r|>0.8_(top300_variance)": 0.004704570791527313,
+  "class_counts": [
+    8,
+    23,
+    12,
+    20
+  ],
+  "top10_genes_by_F": [
+    "g1389",
+    "g1955",
+    "g246",
+    "g1954",
+    "g1003",
+    "g545",
+    "g1194",
+    "g2050",
+    "g107",
+    "g1319"
+  ]
+}

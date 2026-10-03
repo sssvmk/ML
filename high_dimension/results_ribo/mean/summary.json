@@ -1,0 +1,36 @@
+{
+  "method": "mean",
+  "task": "regression",
+  "baseline": true,
+  "selected": {},
+  "cv_minimum": {},
+  "cv": {
+    "selected_loss": 0.7713818228620483,
+    "selected_se_nb": 0.1558587245354099,
+    "minimum_loss": 0.7713818228620483,
+    "n_configurations": 1,
+    "folds": "3x5"
+  },
+  "validation": {
+    "mse": 1.1458014368160427,
+    "se": 0.6421342225761667,
+    "rmse": 1.0704211492753881,
+    "mae": 0.8065410839994374,
+    "r2_vs_train_mean": 0.0,
+    "n": 12
+  },
+  "test": {
+    "mse": 0.943505539761702,
+    "se": 0.4705309486516847,
+    "rmse": 0.9713421332165624,
+    "mae": 0.7587177261160059,
+    "r2_vs_train_mean": 0.0,
+    "n": 12
+  },
+  "n_features_used": 0,
+  "n_genes_total": 4088,
+  "n_train": 59,
+  "n_test": 12,
+  "notes": "predict-the-mean baseline",
+  "runtime_sec": 1.1
+}

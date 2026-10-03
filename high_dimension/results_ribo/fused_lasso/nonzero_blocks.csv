@@ -1,0 +1,9 @@
+block,start,end,n_genes,mean_coefficient,first_genes
+0,0,40,41,-0.017744413953119854,"as.matrix(riboflavin$x).RPLL_at, as.matrix(riboflavin$x).YKOK_at, as.matrix(riboflavin$x).YKRP_at, as.matrix(riboflavin$x).YWOG_at, as.matrix(riboflavin$x).YXLJ_at"
+1,57,63,7,0.00784079484747884,"as.matrix(riboflavin$x).RIBG_at, as.matrix(riboflavin$x).RIBH_at, as.matrix(riboflavin$x).RIBT_at, as.matrix(riboflavin$x).RIBA_at, as.matrix(riboflavin$x).RIBB_at"
+2,217,221,5,0.011178672789652727,"as.matrix(riboflavin$x).RPH_at, as.matrix(riboflavin$x).CSBB_at, as.matrix(riboflavin$x).PCKA_at, as.matrix(riboflavin$x).GAPB_at, as.matrix(riboflavin$x).YTCF_at"
+3,1213,1230,18,0.008699017286823697,"as.matrix(riboflavin$x).ALD_at, as.matrix(riboflavin$x).GUAB_at, as.matrix(riboflavin$x).PATA_at, as.matrix(riboflavin$x).HEMY_at, as.matrix(riboflavin$x).SINR_at"
+4,1511,1553,43,-0.0006959677460905491,"as.matrix(riboflavin$x).YDDJ_r_at, as.matrix(riboflavin$x).PHRI_r_at, as.matrix(riboflavin$x).YDDK_at, as.matrix(riboflavin$x).YDDM_at, as.matrix(riboflavin$x).THIA_at"
+5,1578,1586,9,-0.015763338878569608,"as.matrix(riboflavin$x).YVRK_at, as.matrix(riboflavin$x).YMAD_at, as.matrix(riboflavin$x).YRVJ_at, as.matrix(riboflavin$x).YQIK_at, as.matrix(riboflavin$x).YQIH_at"
+6,1592,1626,35,0.007989963614279191,"as.matrix(riboflavin$x).YKUH_at, as.matrix(riboflavin$x).YORB_i_at, as.matrix(riboflavin$x).XKDS_at, as.matrix(riboflavin$x).YKUG_at, as.matrix(riboflavin$x).XKDP_at"
+7,1750,1759,10,-0.0035324882904312002,"as.matrix(riboflavin$x).ARGC_at, as.matrix(riboflavin$x).ARGG_at, as.matrix(riboflavin$x).ARGH_at, as.matrix(riboflavin$x).ARGD_at, as.matrix(riboflavin$x).CARA_at"

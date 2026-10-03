@@ -1,0 +1,40 @@
+{
+  "method": "ridge",
+  "task": "regression",
+  "baseline": true,
+  "selected": {
+    "ridge__alpha": 1778.2794100389228
+  },
+  "cv_minimum": {
+    "ridge__alpha": 316.22776601683796
+  },
+  "cv": {
+    "selected_loss": 0.3433451154953746,
+    "selected_se_nb": 0.09149593763629554,
+    "minimum_loss": 0.3004818472452831,
+    "n_configurations": 27,
+    "folds": "3x5"
+  },
+  "validation": {
+    "mse": 0.49588378611151107,
+    "se": 0.34108219315675387,
+    "rmse": 0.7041901633163524,
+    "mae": 0.4566424878179851,
+    "r2_vs_train_mean": 0.5672166483841434,
+    "n": 12
+  },
+  "test": {
+    "mse": 0.33829097304465083,
+    "se": 0.23634748702500577,
+    "rmse": 0.5816278647422687,
+    "mae": 0.38248825256284213,
+    "r2_vs_train_mean": 0.6414531141702763,
+    "n": 12
+  },
+  "n_features_used": 4088,
+  "n_genes_total": 4088,
+  "n_train": 59,
+  "n_test": 12,
+  "notes": "ridge baseline",
+  "runtime_sec": 16.0
+}

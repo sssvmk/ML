@@ -1,0 +1,11 @@
+{
+  "winner": "fused_lasso",
+  "not_significantly_worse": [
+    "fused_lasso",
+    "kernel_ridge",
+    "supervised_pca",
+    "lasso"
+  ],
+  "test_mse": 0.21923577855841167,
+  "se": 0.13489147573442944
+}

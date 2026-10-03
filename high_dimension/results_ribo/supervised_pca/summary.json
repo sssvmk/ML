@@ -1,0 +1,49 @@
+{
+  "method": "supervised_pca",
+  "task": "regression",
+  "baseline": false,
+  "selected": {
+    "pca__n_components": 1,
+    "screen__k": 25
+  },
+  "cv_minimum": {
+    "pca__n_components": 6,
+    "screen__k": 100
+  },
+  "cv": {
+    "selected_loss": 0.36940177759135256,
+    "selected_se_nb": 0.1226331246634851,
+    "minimum_loss": 0.2774733172094118,
+    "n_configurations": 48,
+    "folds": "3x5"
+  },
+  "validation": {
+    "mse": 0.8311815259956313,
+    "se": 0.3677767365045034,
+    "rmse": 0.9116915739413365,
+    "mae": 0.6798362640180962,
+    "r2_vs_train_mean": 0.2745850203283724,
+    "n": 12
+  },
+  "test": {
+    "mse": 0.3462569963559932,
+    "se": 0.25826303190826055,
+    "rmse": 0.5884360597006214,
+    "mae": 0.39874872000213984,
+    "r2_vs_train_mean": 0.6330101077695356,
+    "n": 12
+  },
+  "n_features_used": 25,
+  "n_genes_total": 4088,
+  "n_train": 59,
+  "n_test": 12,
+  "notes": "screen genes by F-score, PCA, linear regression - all inside the CV folds.",
+  "supervised_pca": {
+    "genes_kept": 25,
+    "components": 1,
+    "explained_variance_ratio": [
+      0.4561
+    ]
+  },
+  "runtime_sec": 160.8
+}

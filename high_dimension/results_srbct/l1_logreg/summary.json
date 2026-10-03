@@ -1,0 +1,65 @@
+{
+  "method": "l1_logreg",
+  "task": "classification",
+  "baseline": false,
+  "selected": {
+    "lr__C": 0.1873817422860384
+  },
+  "cv_minimum": {
+    "lr__C": 0.1873817422860384
+  },
+  "cv": {
+    "selected_loss": 0.0,
+    "selected_se_nb": 0.0,
+    "minimum_loss": 0.0,
+    "n_configurations": 12,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.0,
+    "se_error": 0.0,
+    "n": 20,
+    "n_errors": 0,
+    "log_loss": 0.29846338766812913,
+    "se_log_loss": 0.0443940340963123,
+    "macro_ovr_auc": 1.0
+  },
+  "n_features_used": 53,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "saga L1 multinomial logistic regression",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "stability": {
+    "genes_ever_selected": 119,
+    "genes_selected_in_>=80%_of_runs": 33,
+    "runs": 50
+  },
+  "runtime_sec": 488.2
+}

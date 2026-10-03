@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "high_dimension"
+version = "0.1.0"
+description = "ESLII Ch. 18 - high-dimensional problems (p >> N): Riboflavin regression and SRBCT classification"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "cvxpy",
+    "threadpoolctl",
+    "rich",
+    "ISLP"
+]
+
+[project.scripts]
+run-all = "run_all:main"
+
+[tool.setuptools]
+py-modules = ["run_all", "hd_runner", "hd_data", "hd_lib", "hd_compare", "hd_eda"]
+packages = ["methods"]

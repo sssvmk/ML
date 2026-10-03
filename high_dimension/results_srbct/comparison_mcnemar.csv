@@ -1,0 +1,8 @@
+method,test_error,p_mcnemar,p_holm,significantly_worse
+l1_logreg,0.0,1.0,1.0,False
+supervised_pca,0.0,1.0,1.0,False
+nsc,0.05,1.0,1.0,False
+reg_logreg,0.25,0.0625,0.375,False
+linear_svc,0.05,1.0,1.0,False
+diag_lda,0.25,0.0625,0.375,False
+majority,0.7,0.0001220703125,0.0008544921875,True

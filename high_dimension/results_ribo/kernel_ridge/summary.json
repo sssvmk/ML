@@ -1,0 +1,42 @@
+{
+  "method": "kernel_ridge",
+  "task": "regression",
+  "baseline": false,
+  "selected": {
+    "krr__regressor__alpha": 1000.0,
+    "krr__regressor__kernel": "linear"
+  },
+  "cv_minimum": {
+    "krr__regressor__alpha": 316.22776601683796,
+    "krr__regressor__kernel": "linear"
+  },
+  "cv": {
+    "selected_loss": 0.31454912901238125,
+    "selected_se_nb": 0.0844993291215368,
+    "minimum_loss": 0.30048184724528315,
+    "n_configurations": 49,
+    "folds": "3x5"
+  },
+  "validation": {
+    "mse": 0.4523721095875573,
+    "se": 0.29780543063247705,
+    "rmse": 0.6725861354410729,
+    "mae": 0.46659443069581047,
+    "r2_vs_train_mean": 0.6051915322740294,
+    "n": 12
+  },
+  "test": {
+    "mse": 0.3117953926966302,
+    "se": 0.2009961586691251,
+    "rmse": 0.5583864187967238,
+    "mae": 0.36038234260949503,
+    "r2_vs_train_mean": 0.6695351754104387,
+    "n": 12
+  },
+  "n_features_used": 4088,
+  "n_genes_total": 4088,
+  "n_train": 59,
+  "n_test": 12,
+  "notes": "scikit-learn KernelRidge, linear / RBF kernels.",
+  "runtime_sec": 51.5
+}

@@ -1,0 +1,64 @@
+{
+  "method": "nsc",
+  "task": "classification",
+  "baseline": false,
+  "selected": {
+    "nsc__shrink_threshold": 3.05
+  },
+  "cv_minimum": {
+    "nsc__shrink_threshold": 3.05
+  },
+  "cv": {
+    "selected_loss": 0.010683760683760682,
+    "selected_se_nb": 0.015880498611964146,
+    "minimum_loss": 0.010683760683760682,
+    "n_configurations": 25,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.05,
+    "se_error": 0.04873397172404482,
+    "n": 20,
+    "n_errors": 1,
+    "log_loss": 0.3788200090728157,
+    "se_log_loss": 0.37881617344557095,
+    "macro_ovr_auc": 1.0
+  },
+  "n_features_used": 163,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "scikit-learn NearestCentroid(shrink_threshold)",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "nsc": {
+    "delta": 3.05,
+    "genes_surviving": 163
+  },
+  "runtime_sec": 31.2
+}

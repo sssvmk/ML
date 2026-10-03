@@ -1,0 +1,71 @@
+{
+  "method": "supervised_pca",
+  "task": "classification",
+  "baseline": false,
+  "selected": {
+    "pca__n_components": 3,
+    "screen__k": 50
+  },
+  "cv_minimum": {
+    "pca__n_components": 3,
+    "screen__k": 50
+  },
+  "cv": {
+    "selected_loss": 0.0,
+    "selected_se_nb": 0.0,
+    "minimum_loss": 0.0,
+    "n_configurations": 35,
+    "folds": "3x5"
+  },
+  "validation": null,
+  "test": {
+    "error": 0.0,
+    "se_error": 0.0,
+    "n": 20,
+    "n_errors": 0,
+    "log_loss": 0.03750782128083228,
+    "se_log_loss": 0.022547938342623478,
+    "macro_ovr_auc": 1.0
+  },
+  "n_features_used": 50,
+  "n_genes_total": 2308,
+  "n_train": 63,
+  "n_test": 20,
+  "notes": "screen, PCA, logistic regression",
+  "confusion_matrix_test": [
+    [
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "supervised_pca": {
+    "genes_kept": 50,
+    "components": 3,
+    "explained_variance_ratio": [
+      0.2969,
+      0.2385,
+      0.1725
+    ]
+  },
+  "runtime_sec": 102.9
+}

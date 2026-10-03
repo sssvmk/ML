@@ -1,0 +1,45 @@
+{
+  "method": "lasso",
+  "task": "regression",
+  "baseline": false,
+  "selected": {
+    "lasso__alpha": 0.15848931924611143
+  },
+  "cv_minimum": {
+    "lasso__alpha": 0.05011872336272722
+  },
+  "cv": {
+    "selected_loss": 0.3311821812737771,
+    "selected_se_nb": 0.11475414039996315,
+    "minimum_loss": 0.26552200273510834,
+    "n_configurations": 32,
+    "folds": "3x5"
+  },
+  "validation": {
+    "mse": 0.5902928542079161,
+    "se": 0.37255392340839305,
+    "rmse": 0.7683051829891011,
+    "mae": 0.565662914723673,
+    "r2_vs_train_mean": 0.4848209862188477,
+    "n": 12
+  },
+  "test": {
+    "mse": 0.36896127285264013,
+    "se": 0.2604777281771673,
+    "rmse": 0.6074218244783769,
+    "mae": 0.40898459212411437,
+    "r2_vs_train_mean": 0.6089463630008707,
+    "n": 12
+  },
+  "n_features_used": 14,
+  "n_genes_total": 4088,
+  "n_train": 59,
+  "n_test": 12,
+  "notes": "scikit-learn Lasso, one-SE rule.",
+  "stability": {
+    "genes_ever_selected": 90,
+    "genes_selected_in_>=80%_of_runs": 6,
+    "runs": 50
+  },
+  "runtime_sec": 528.3
+}
