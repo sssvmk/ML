@@ -1,0 +1,11 @@
+{
+  "winner": "rf_defaults",
+  "tied_with_winner": [
+    "rf_defaults",
+    "extratrees",
+    "bagging",
+    "rf_tuned"
+  ],
+  "test_mse": 0.04119820941805024,
+  "test_mse_se": 0.0030968703181605784
+}

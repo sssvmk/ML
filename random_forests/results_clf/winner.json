@@ -1,0 +1,11 @@
+{
+  "winner": "extratrees",
+  "criterion": "auc",
+  "tied_with_winner": [
+    "extratrees"
+  ],
+  "auc": 0.838289375800265,
+  "auc_se": 0.004562498645688284,
+  "error": 0.2434,
+  "log_loss": 0.2830717056650395
+}

@@ -1,0 +1,2 @@
+frac,mf,leaf,k,complexity,cv_mse,cv_se,val_mse_tuning_fit,cv_oob_mse,is_cv_min,is_one_se,is_one_se_plain
+1.0,79,5,239,30.0,0.02542477274662361,0.0019794331354117856,0.02565577399224374,0.010279133021135024,True,True,True

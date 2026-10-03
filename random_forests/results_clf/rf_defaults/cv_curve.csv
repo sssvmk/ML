@@ -1,0 +1,2 @@
+frac,mf,leaf,k,cw,complexity,cv_neg_auc,cv_se,cv_auc,cv_log_loss,val_auc_tuning_fit,cv_error_pooled_youden,cv_oob_auc,cv_oob_log_loss,is_cv_min,is_one_se,is_one_se_plain
+1.0,24,1,600,,110.0,-0.8169715624213563,0.005284873457826383,0.8169715624213563,0.28405605939032685,0.8213281701553378,0.29175,0.7749941146822862,0.288659198267745,True,True,True

@@ -1,0 +1,82 @@
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\queues.py", line 159, in _feed
+    obj_ = dumps(obj, reducers=reducers)
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\reduction.py", line 215, in dumps
+    dump(obj, buf, reducers=reducers, protocol=protocol)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\reduction.py", line 208, in dump
+    _LokyPickler(file, reducers=reducers, protocol=protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\cloudpickle\cloudpickle.py", line 1245, in dump
+    return super().dump(obj)
+           ~~~~~~~~~~~~^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\_memmapping_reducer.py", line 451, in __call__
+    for dumped_filename in dump(a, filename):
+                           ~~~~^^^^^^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 553, in dump
+    NumpyPickler(f, protocol=protocol).dump(value)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 484, in dump
+    self.save(obj)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 352, in save
+    wrapper.write_array(obj, self)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 134, in write_array
+    pickler.file_handle.write(chunk.tobytes('C'))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\msk80743\Use Case Design\random_forests\run_all.py", line 48, in _worker
+    s = importlib.import_module(MODULE.get(name, name)).run(prep_dir, out_dir, cfg, prog)
+  File "C:\Users\msk80743\Use Case Design\random_forests\methods\rf_entry.py", line 47, in run
+    return common.run_method(name, prep_dir, out_dir, cfg, progress, make_grid=make_grid, predict_path=rl.make_predict_path(kind), complexity=complexity, extra=extra,
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             select_by="mse" if task == "regression" else "auc", notes=f"scikit-learn {'ExtraTrees' if kind == 'et' else 'RandomForest'} ({mode}).", console=console)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\Use Case Design\random_forests\common.py", line 442, in run_method
+    extra({"prep": prep, "out": out, "curve": curve, "summary": summary, "grid": grid, "i_sel": i_sel, "Xs": Xs, "ys_fit": ys_fit, "ys_ev": ys_ev, "folds": folds,
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           "X_tr": X_tr, "y_tr": y_tr, "y_fit_tr": y_fit_tr, "X_va": X_va, "y_va": y_va, "X_te": X_te, "y_te": y_te, "p_te": p_te, "p_va": p_va, "cfg": cfg,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           "predict_path": predict_path, "log": log, "store": ctxf["store"], "order": ranks["sub"], "metrics": ctxf["metrics"]})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\Use Case Design\random_forests\methods\rf_entry.py", line 43, in extra
+    rl.standard_extra(ctx, name)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\msk80743\Use Case Design\random_forests\methods\rflib.py", line 178, in standard_extra
+    pi = permutation_importance(model, Xv, yv, scoring="neg_mean_squared_error" if reg else "roc_auc", n_repeats=cfg.perm_repeats, random_state=cfg.seed, n_jobs=cfg.n_jobs)
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\inspection\_permutation_importance.py", line 287, in permutation_importance
+    scores = Parallel(n_jobs=n_jobs)(
+        delayed(_calculate_permutation_scores)(
+    ...<10 lines>...
+        for col_idx in range(X.shape[1])
+    )
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py", line 2007, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py", line 1650, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py", line 1754, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py", line 1789, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py", line 745, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\msk80743\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py", line 763, in _return_or_raise
+    raise self._result
+_pickle.PicklingError: Could not pickle the task to send it to the workers.

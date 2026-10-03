@@ -1,0 +1,7 @@
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn      # RandomForest / ExtraTrees, OOB predictions, permutation_importance, MDS, ExtraTrees (variable ranking), Platt scaling
+threadpoolctl
+rich              # live progress bars (falls back to plain prints)

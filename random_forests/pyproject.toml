@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "random-forests"
+version = "0.1.0"
+description = "ESLII Ch. 15 - random forests: regression (Zillow) and classification (Santander)."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "threadpoolctl",
+    "rich",
+    "joblib"
+]
+
+[project.scripts]
+run-all = "run_all:main"

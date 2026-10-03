@@ -1,0 +1,27 @@
+{
+  "n_trees_final": 300,
+  "max_features_effective": 17,
+  "min_samples_leaf": 20,
+  "n_features_used": 300,
+  "proximity_rows": 3000,
+  "permutation_rows": 2000,
+  "top5_split_importance": [
+    "var_81__rankgauss",
+    "var_139__rankgauss",
+    "var_81__woe",
+    "var_12__rankgauss",
+    "var_139__woe"
+  ],
+  "top5_permutation_importance": [
+    "var_146__woe",
+    "var_146__rankgauss",
+    "var_109__rankgauss",
+    "var_139__rankgauss",
+    "var_174__rankgauss"
+  ],
+  "test_log_loss_clipped_votes": 0.2733250443845254,
+  "test_brier_clipped_votes": 0.0790961234205752,
+  "test_log_loss_platt_calibrated": 0.249732858686965,
+  "test_brier_platt_calibrated": 0.07184757625717743,
+  "oob_score_final_forest": 0.8995125
+}

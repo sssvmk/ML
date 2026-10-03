@@ -1,0 +1,23 @@
+{
+  "n_trees_final": 300,
+  "max_features_effective": 79,
+  "min_samples_leaf": 50,
+  "n_features_used": 239,
+  "proximity_rows": 3000,
+  "permutation_rows": 2000,
+  "top5_split_importance": [
+    "tax_rate",
+    "te_tract",
+    "taxamount",
+    "te_regionidzip",
+    "structuretaxvaluedollarcnt"
+  ],
+  "top5_permutation_importance": [
+    "taxamount",
+    "tax_per_sqft",
+    "te_regionidzip",
+    "finishedsquarefeet12",
+    "te_propertycountylandusecode"
+  ],
+  "oob_score_final_forest": 0.035618913691989995
+}
