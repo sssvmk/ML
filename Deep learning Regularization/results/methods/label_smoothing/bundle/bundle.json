@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "label_smoothing",
+    "title": "Noise on output targets (label smoothing)",
+    "hp": {
+      "lr": 0.05933266221575393,
+      "eps": 0.11436849362761901
+    },
+    "val": {
+      "loss": 0.18843871355056763,
+      "accuracy": 0.9818018198180182,
+      "accuracy_se": 0.00133660839059375,
+      "auc": 0.999636832092599
+    },
+    "test_accuracy": 0.9812,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

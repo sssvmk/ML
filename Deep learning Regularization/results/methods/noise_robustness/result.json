@@ -1,0 +1,63 @@
+{
+  "method": "noise_robustness",
+  "title": "Noise robustness (inputs + weights + targets)",
+  "section": "7.5",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.08369042894376064,
+    "sigma_in": 0.01672929090610901,
+    "sigma_w": 0.0027010527749605487,
+    "eps": 0.07960875022580143
+  },
+  "val": {
+    "loss": 0.14887583255767822,
+    "accuracy": 0.9818018198180182,
+    "accuracy_se": 0.00133660839059375,
+    "auc": 0.9994155628050292
+  },
+  "test": {
+    "loss": 0.14896632730960846,
+    "accuracy": 0.9811,
+    "accuracy_se": 0.0013617191340360914,
+    "auc": 0.9992443201364034,
+    "auc_ci95": [
+      0.9988406979756456,
+      0.9996314163422435
+    ]
+  },
+  "val_fgsm_accuracy": 0.42325767423257676,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.8614150881767273,
+    "weight_sparsity": 0.013490833342075348,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.08913103491067886,
+      "val_loss": 0.14887583255767822,
+      "train_acc": 0.9999,
+      "val_acc": 0.9818018198180182
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.46491417635805393,
+    "train_loss": 0.08913103491067886,
+    "train_acc": 0.9999,
+    "val_loss": 0.14887583255767822,
+    "val_acc": 0.9818018198180182,
+    "val_auc": 0.9994155628050292,
+    "lr": 0.03158088485965324,
+    "epoch_seconds": 1.4657893180847168
+  },
+  "seconds": 101.45138764381409,
+  "run_id": "d7de1a20470241218fd944509e03c4c1",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\noise_robustness\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\noise_robustness\\loss_curve.png"
+}

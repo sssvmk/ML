@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "sparse_representations",
+    "title": "Sparse representations (activation L1)",
+    "hp": {
+      "lr": 0.05,
+      "lam": 0.01
+    },
+    "val": {
+      "loss": 0.07219228893518448,
+      "accuracy": 0.9825017498250175,
+      "accuracy_se": 0.0013111194599104267,
+      "auc": 0.9995131570753639
+    },
+    "test_accuracy": 0.9814,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

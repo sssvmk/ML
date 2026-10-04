@@ -1,0 +1,66 @@
+{
+  "method": "parameter_sharing",
+  "title": "Parameter tying and parameter sharing",
+  "section": "7.9",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "mode": "hard",
+    "depth": 3,
+    "lam_tie": 0.1
+  },
+  "val": {
+    "loss": 0.13805873692035675,
+    "accuracy": 0.9799020097990201,
+    "accuracy_se": 0.0014032851378705275,
+    "auc": 0.999366734000539
+  },
+  "test": {
+    "loss": 0.11548595875501633,
+    "accuracy": 0.9816,
+    "accuracy_se": 0.0013439285695303889,
+    "auc": 0.9996721031612695,
+    "auc_ci95": [
+      0.999556164505537,
+      0.9997617427785216
+    ]
+  },
+  "val_fgsm_accuracy": 0.682031796820318,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.7339775562286377,
+    "weight_sparsity": 0.012343750335276127,
+    "n_params": 269322,
+    "n_params_untied_same_depth": 400906
+  },
+  "diagnosis": {
+    "verdict": [
+      "overfitting"
+    ],
+    "notes": [
+      "validation loss rose 0.036 above its minimum (epoch 3)"
+    ],
+    "final": {
+      "train_loss": 4.352722316980362e-05,
+      "val_loss": 0.13805873692035675,
+      "train_acc": 1.0,
+      "val_acc": 0.9799020097990201
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 4.6537252584282054e-05,
+    "train_loss": 4.352722316980362e-05,
+    "train_acc": 1.0,
+    "val_loss": 0.13805873692035675,
+    "val_acc": 0.9799020097990201,
+    "val_auc": 0.999366734000539,
+    "lr": 0.018867680126765367,
+    "epoch_seconds": 0.7566177845001221
+  },
+  "seconds": 73.39671564102173,
+  "run_id": "931fe604b4a3499c8e325f7e8ae7e5de",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\parameter_sharing\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\parameter_sharing\\loss_curve.png"
+}

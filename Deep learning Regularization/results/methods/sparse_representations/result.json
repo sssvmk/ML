@@ -1,0 +1,61 @@
+{
+  "method": "sparse_representations",
+  "title": "Sparse representations (activation L1)",
+  "section": "7.10",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "lam": 0.01
+  },
+  "val": {
+    "loss": 0.07219228893518448,
+    "accuracy": 0.9825017498250175,
+    "accuracy_se": 0.0013111194599104267,
+    "auc": 0.9995131570753639
+  },
+  "test": {
+    "loss": 0.071346715092659,
+    "accuracy": 0.9814,
+    "accuracy_se": 0.0013510751274448047,
+    "auc": 0.9996712620995052,
+    "auc_ci95": [
+      0.9995707166504003,
+      0.9997470313189761
+    ]
+  },
+  "val_fgsm_accuracy": 0.2963703629637036,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.8155182003974915,
+    "weight_sparsity": 0.013861436396837234,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0009869723580777645,
+      "val_loss": 0.07219228893518448,
+      "train_acc": 1.0,
+      "val_acc": 0.9825017498250175
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.007776578159075547,
+    "train_loss": 0.0009869723580777645,
+    "train_acc": 1.0,
+    "val_loss": 0.07219228893518448,
+    "val_acc": 0.9825017498250175,
+    "val_auc": 0.9995131570753639,
+    "lr": 0.018867680126765367,
+    "epoch_seconds": 0.8945462703704834
+  },
+  "seconds": 52.51301383972168,
+  "run_id": "0d735068b22047a5a4bd52ef1a499e34",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\sparse_representations\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\sparse_representations\\loss_curve.png"
+}

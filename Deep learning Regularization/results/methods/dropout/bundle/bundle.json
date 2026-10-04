@@ -1,0 +1,33 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.23555278841790406,
+    "p_hidden": 0.1397716475108518,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "dropout",
+    "title": "Dropout",
+    "hp": {
+      "lr": 0.040842279473800806,
+      "p_in": 0.23555278841790406,
+      "p_hidden": 0.1397716475108518
+    },
+    "val": {
+      "loss": 0.06699076294898987,
+      "accuracy": 0.9839016098390161,
+      "accuracy_se": 0.0012584771841549457,
+      "auc": 0.9996219260209387
+    },
+    "test_accuracy": 0.9818,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

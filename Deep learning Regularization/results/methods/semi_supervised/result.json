@@ -1,0 +1,68 @@
+{
+  "method": "semi_supervised",
+  "title": "Semi-supervised learning (shared-encoder autoencoder)",
+  "section": "7.6",
+  "regime": "1000 labels + unlabeled rest",
+  "champion_eligible": false,
+  "best_hp": {
+    "lr": 0.016656299388278922,
+    "lam": 0.30937502276340934
+  },
+  "val": {
+    "loss": 0.4654487669467926,
+    "accuracy": 0.891010898910109,
+    "accuracy_se": 0.003116099594955573,
+    "auc": 0.9908084880085465
+  },
+  "test": {
+    "loss": 0.4219478368759155,
+    "accuracy": 0.8991,
+    "accuracy_se": 0.0030119626491708026,
+    "auc": 0.9925091744475438,
+    "auc_ci95": [
+      0.9917363329475652,
+      0.9932093756069158
+    ]
+  },
+  "val_fgsm_accuracy": 0.0494950504949505,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.4983093738555908,
+    "weight_sparsity": 0.014670801348984241,
+    "n_params": 336282,
+    "n_labeled": 1000,
+    "ablation_labeled_only_val_acc": 0.8935106489351065,
+    "ablation_labeled_only_val_loss": 0.5731727480888367
+  },
+  "diagnosis": {
+    "verdict": [
+      "overfitting",
+      "generalization_gap"
+    ],
+    "notes": [
+      "validation loss rose 0.061 above its minimum (epoch 1)",
+      "train accuracy exceeds validation accuracy by 0.109"
+    ],
+    "final": {
+      "train_loss": 0.0003050588711630553,
+      "val_loss": 0.4654487669467926,
+      "train_acc": 1.0,
+      "val_acc": 0.891010898910109
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.023024136919880766,
+    "train_loss": 0.0003050588711630553,
+    "train_acc": 1.0,
+    "val_loss": 0.4654487669467926,
+    "val_acc": 0.891010898910109,
+    "val_auc": 0.9908084880085465,
+    "lr": 0.006285314579073686,
+    "epoch_seconds": 1.0754966735839844
+  },
+  "seconds": 117.7761299610138,
+  "run_id": "9447b779e1fa414b924bf887cf80bb7a",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\semi_supervised\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\semi_supervised\\loss_curve.png"
+}

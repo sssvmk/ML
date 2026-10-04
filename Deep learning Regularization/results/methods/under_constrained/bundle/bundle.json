@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "under_constrained",
+    "title": "Regularization and under-constrained problems",
+    "hp": {
+      "lr": 0.05,
+      "alpha": 0.001
+    },
+    "val": {
+      "loss": 0.5438107848167419,
+      "accuracy": 0.8718128187181282,
+      "accuracy_se": 0.0033428139857242605,
+      "auc": 0.987353905143735
+    },
+    "test_accuracy": 0.8791,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

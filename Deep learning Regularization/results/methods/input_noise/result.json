@@ -1,0 +1,61 @@
+{
+  "method": "input_noise",
+  "title": "Noise on inputs",
+  "section": "7.5 (inputs)",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "sigma": 0.1
+  },
+  "val": {
+    "loss": 0.08716600388288498,
+    "accuracy": 0.983001699830017,
+    "accuracy_se": 0.0012925821905238732,
+    "auc": 0.9996324838951282
+  },
+  "test": {
+    "loss": 0.07978790253400803,
+    "accuracy": 0.983,
+    "accuracy_se": 0.0012927103310486853,
+    "auc": 0.9997538227581272,
+    "auc_ci95": [
+      0.9996844523794591,
+      0.9998266835696434
+    ]
+  },
+  "val_fgsm_accuracy": 0.539046095390461,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.7410640716552734,
+    "weight_sparsity": 0.013167086988687515,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0002100843412335962,
+      "val_loss": 0.08716600388288498,
+      "train_acc": 1.0,
+      "val_acc": 0.983001699830017
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.001541340264878956,
+    "train_loss": 0.0002100843412335962,
+    "train_acc": 1.0,
+    "val_loss": 0.08716600388288498,
+    "val_acc": 0.983001699830017,
+    "val_auc": 0.9996324838951282,
+    "lr": 0.018867680126765367,
+    "epoch_seconds": 0.7172160148620605
+  },
+  "seconds": 63.36998414993286,
+  "run_id": "11f250a86a4e4fac98272e5f0b17b1ae",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\input_noise\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\input_noise\\loss_curve.png"
+}

@@ -1,0 +1,17 @@
+{
+  "registered_model": "MNIST-Reg",
+  "version": "1",
+  "method": "augmentation",
+  "reload_check": {
+    "passed": true,
+    "max_abs_diff": 0.0
+  },
+  "gates": {
+    "reload_check": true,
+    "meets_accuracy_target": true,
+    "accuracy_target": null,
+    "beats_champion_on_validation": true,
+    "all_passed": true
+  },
+  "alias_state": "candidate"
+}

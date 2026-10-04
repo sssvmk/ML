@@ -1,0 +1,33 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "adversarial",
+    "title": "Adversarial training (FGSM)",
+    "hp": {
+      "lr": 0.07875660249889861,
+      "eps": 0.055245405728306586,
+      "mix": 0.3935967122017216
+    },
+    "val": {
+      "loss": 0.06976214051246643,
+      "accuracy": 0.9839016098390161,
+      "accuracy_se": 0.0012584771841549457,
+      "auc": 0.9997430063547952
+    },
+    "test_accuracy": 0.9858,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

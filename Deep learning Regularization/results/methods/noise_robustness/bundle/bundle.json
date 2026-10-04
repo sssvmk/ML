@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "noise_robustness",
+    "title": "Noise robustness (inputs + weights + targets)",
+    "hp": {
+      "lr": 0.08369042894376064,
+      "sigma_in": 0.01672929090610901,
+      "sigma_w": 0.0027010527749605487,
+      "eps": 0.07960875022580143
+    },
+    "val": {
+      "loss": 0.14887583255767822,
+      "accuracy": 0.9818018198180182,
+      "accuracy_se": 0.00133660839059375,
+      "auc": 0.9994155628050292
+    },
+    "test_accuracy": 0.9811,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

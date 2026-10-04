@@ -1,0 +1,61 @@
+{
+  "method": "label_smoothing",
+  "title": "Noise on output targets (label smoothing)",
+  "section": "7.5.1",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05933266221575393,
+    "eps": 0.11436849362761901
+  },
+  "val": {
+    "loss": 0.18843871355056763,
+    "accuracy": 0.9818018198180182,
+    "accuracy_se": 0.00133660839059375,
+    "auc": 0.999636832092599
+  },
+  "test": {
+    "loss": 0.18811403214931488,
+    "accuracy": 0.9812,
+    "accuracy_se": 0.0013581811366677142,
+    "auc": 0.9994798559296921,
+    "auc_ci95": [
+      0.9992838229337427,
+      0.9996698834143157
+    ]
+  },
+  "val_fgsm_accuracy": 0.30646935306469353,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.8228067755699158,
+    "weight_sparsity": 0.013976451940834522,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.12967988848686218,
+      "val_loss": 0.18843871355056763,
+      "train_acc": 0.9996,
+      "val_acc": 0.9818018198180182
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.6214388884764466,
+    "train_loss": 0.12967988848686218,
+    "train_acc": 0.9996,
+    "val_loss": 0.18843871355056763,
+    "val_acc": 0.9818018198180182,
+    "val_auc": 0.999636832092599,
+    "lr": 0.022389393835125254,
+    "epoch_seconds": 0.4835624694824219
+  },
+  "seconds": 49.60907769203186,
+  "run_id": "61cb336e45c548c38328807e31c549a4",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\label_smoothing\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\label_smoothing\\loss_curve.png"
+}

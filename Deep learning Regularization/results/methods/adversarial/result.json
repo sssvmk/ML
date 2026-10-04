@@ -1,0 +1,62 @@
+{
+  "method": "adversarial",
+  "title": "Adversarial training (FGSM)",
+  "section": "7.13",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.07875660249889861,
+    "eps": 0.055245405728306586,
+    "mix": 0.3935967122017216
+  },
+  "val": {
+    "loss": 0.06976214051246643,
+    "accuracy": 0.9839016098390161,
+    "accuracy_se": 0.0012584771841549457,
+    "auc": 0.9997430063547952
+  },
+  "test": {
+    "loss": 0.05687195435166359,
+    "accuracy": 0.9858,
+    "accuracy_se": 0.0011831466519413385,
+    "auc": 0.9998301022843139,
+    "auc_ci95": [
+      0.9997772699598686,
+      0.9998825887295161
+    ]
+  },
+  "val_fgsm_accuracy": 0.8367163283671633,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.8592135310173035,
+    "weight_sparsity": 0.04415297880768776,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.003199845552444458,
+      "val_loss": 0.06976214051246643,
+      "train_acc": 0.9993,
+      "val_acc": 0.9839016098390161
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.03305287845214824,
+    "train_loss": 0.003199845552444458,
+    "train_acc": 0.9993,
+    "val_loss": 0.06976214051246643,
+    "val_acc": 0.9839016098390161,
+    "val_auc": 0.9997430063547952,
+    "lr": 0.029719087676400573,
+    "epoch_seconds": 1.29445481300354
+  },
+  "seconds": 85.27424383163452,
+  "run_id": "5edbe8ec0c224ec49e7f6e558eeabb74",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\adversarial\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\adversarial\\loss_curve.png"
+}

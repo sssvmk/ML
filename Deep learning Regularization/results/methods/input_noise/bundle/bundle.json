@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "input_noise",
+    "title": "Noise on inputs",
+    "hp": {
+      "lr": 0.05,
+      "sigma": 0.1
+    },
+    "val": {
+      "loss": 0.08716600388288498,
+      "accuracy": 0.983001699830017,
+      "accuracy_se": 0.0012925821905238732,
+      "auc": 0.9996324838951282
+    },
+    "test_accuracy": 0.983,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

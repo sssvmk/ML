@@ -1,0 +1,73 @@
+{
+  "method": "under_constrained",
+  "title": "Regularization and under-constrained problems",
+  "section": "7.3",
+  "regime": "500 training examples (< 784 inputs)",
+  "champion_eligible": false,
+  "best_hp": {
+    "lr": 0.05,
+    "alpha": 0.001
+  },
+  "val": {
+    "loss": 0.5438107848167419,
+    "accuracy": 0.8718128187181282,
+    "accuracy_se": 0.0033428139857242605,
+    "auc": 0.987353905143735
+  },
+  "test": {
+    "loss": 0.5043172240257263,
+    "accuracy": 0.8791,
+    "accuracy_se": 0.0032601102742085275,
+    "auc": 0.9888676844427662,
+    "auc_ci95": [
+      0.9878695849552633,
+      0.9899939708553736
+    ]
+  },
+  "val_fgsm_accuracy": 0.10288971102889712,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.5986786484718323,
+    "weight_sparsity": 0.014692100696265697,
+    "n_params": 235146,
+    "n_train_examples": 500,
+    "n_inputs": 784,
+    "rank_XtX": 500,
+    "XtX_is_singular": true,
+    "ridge_best_alpha": 100.0,
+    "ridge_val_acc": 0.8142185781421858,
+    "pinv_val_acc": 0.2736726327367263,
+    "pinv_vs_ridge_alpha0_max_abs_diff": 4.305080032018793e-06,
+    "ablation_no_regularizer_val_acc": 0.8717128287171283,
+    "ablation_no_regularizer_val_loss": 0.5602956414222717
+  },
+  "diagnosis": {
+    "verdict": [
+      "generalization_gap"
+    ],
+    "notes": [
+      "train accuracy exceeds validation accuracy by 0.128"
+    ],
+    "final": {
+      "train_loss": 0.0027714171446859837,
+      "val_loss": 0.5438107848167419,
+      "train_acc": 1.0,
+      "val_acc": 0.8718128187181282
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.39694725060462954,
+    "train_loss": 0.0027714171446859837,
+    "train_acc": 1.0,
+    "val_loss": 0.5438107848167419,
+    "val_acc": 0.8718128187181282,
+    "val_auc": 0.987353905143735,
+    "lr": 0.018867680126765367,
+    "epoch_seconds": 0.007492780685424805
+  },
+  "seconds": 15.311062812805176,
+  "run_id": "3abe79130d3146419357407016c74987",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\under_constrained\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\under_constrained\\loss_curve.png"
+}

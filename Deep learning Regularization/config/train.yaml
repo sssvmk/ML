@@ -1,0 +1,40 @@
+# Every entry point reads this file. Override from the CLI with  --set section.key=value
+seed: 42
+
+data:
+  source: mnist            # mnist (torchvision) | npz:/path/mnist.npz | synthetic (smoke tests only)
+  root: ./data             # where torchvision stores / finds MNIST
+  val_size: 10000          # carved out of the 60k official train set (MNIST has no validation split)
+  batch_size: 128
+  synthetic_train: 6000    # used only when source=synthetic
+  synthetic_test: 1500
+
+model:
+  hidden: [256, 128]       # fully connected, ReLU hidden units
+  init: he_normal          # he_normal | default (PyTorch's nn.Linear default)
+
+train:
+  epochs: 20               # every method trains the same fixed budget (early_stopping restores best epoch)
+  momentum: 0.9            # SGD + momentum
+  lr_decay: 0.95           # exponential learning-rate decay, applied per epoch
+  device: auto             # auto | cpu | cuda
+
+tune:                      # hyperparameter tuning is part of the pipeline: Optuna, one study per method
+  n_trials: 12
+  epochs: 5                # budget per trial
+  metric: accuracy         # accuracy | loss | auc  (always measured on the validation set)
+
+method_settings:           # regime knobs that are not tuned
+  under_constrained: {n_train: 500}        # fewer examples than the 784 inputs
+  semi_supervised:   {n_labeled: 1000}     # remaining training images are used without labels
+  bagging:           {n_members: 5, tune_members: 3}
+  tangent:           {n_prototypes: 2000}
+  robustness_eps: 0.1                      # FGSM epsilon used to report robust accuracy for every method
+
+tracking:
+  uri: null                # null -> sqlite:///<out>/mlflow.db
+  experiment: MNIST-Regularization
+  registered_model_name: MNIST-Reg
+
+promotion:                 # gates for the `champion` alias (candidate alias is always set)
+  min_accuracy: null       # e.g. 0.98 ; null = no absolute target configured

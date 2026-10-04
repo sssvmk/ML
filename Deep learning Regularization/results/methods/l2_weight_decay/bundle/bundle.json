@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "l2_weight_decay",
+    "title": "L2 regularization (weight decay)",
+    "hp": {
+      "lr": 0.02423307369924326,
+      "alpha": 5.627048260242941e-05
+    },
+    "val": {
+      "loss": 0.07979763299226761,
+      "accuracy": 0.9802019798020198,
+      "accuracy_se": 0.0013929866540065017,
+      "auc": 0.9995443606727779
+    },
+    "test_accuracy": 0.9801,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

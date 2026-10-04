@@ -1,0 +1,62 @@
+{
+  "method": "early_stopping",
+  "title": "Early stopping",
+  "section": "7.8",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "patience": 5
+  },
+  "val": {
+    "loss": 0.08538497984409332,
+    "accuracy": 0.9795020497950205,
+    "accuracy_se": 0.0014168901391677189,
+    "auc": 0.9994906921993113
+  },
+  "test": {
+    "loss": 0.07881533354520798,
+    "accuracy": 0.9781,
+    "accuracy_se": 0.0014635706337584131,
+    "auc": 0.9996691330727725,
+    "auc_ci95": [
+      0.9995828867936718,
+      0.9997538305322782
+    ]
+  },
+  "val_fgsm_accuracy": 0.32786721327867213,
+  "extras": {
+    "epochs_run": 12,
+    "best_epoch": 7,
+    "activation_sparsity": 0.7383416891098022,
+    "weight_sparsity": 0.013154307380318642,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00044247254845686257,
+      "val_loss": 0.09168633073568344,
+      "train_acc": 1.0,
+      "val_acc": 0.9799020097990201
+    }
+  },
+  "history_final": {
+    "epoch": 12,
+    "train_obj": 0.0005753919375620513,
+    "train_loss": 0.00044247254845686257,
+    "train_acc": 1.0,
+    "val_loss": 0.09168633073568344,
+    "val_acc": 0.9799020097990201,
+    "val_auc": 0.9995659713961279,
+    "lr": 0.028440004613822983,
+    "epoch_seconds": 0.9158403873443604
+  },
+  "seconds": 62.71127104759216,
+  "run_id": "a670256873cd45a883fc3aaad9d1c7f3",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\early_stopping\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\early_stopping\\loss_curve.png"
+}

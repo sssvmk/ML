@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "constrained_norm",
+    "title": "Norm penalties as constrained optimization (max-norm)",
+    "hp": {
+      "lr": 0.020298058052421523,
+      "max_norm": 2.9778463062233476
+    },
+    "val": {
+      "loss": 0.08325885236263275,
+      "accuracy": 0.9793020697930207,
+      "accuracy_se": 0.001423639671483346,
+      "auc": 0.9995569081249756
+    },
+    "test_accuracy": 0.9786,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

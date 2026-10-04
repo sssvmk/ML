@@ -1,0 +1,61 @@
+{
+  "method": "bagging",
+  "title": "Bagging (ensemble of bootstrap-trained MLPs)",
+  "section": "7.11",
+  "regime": "ensemble of 5 MLPs",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05
+  },
+  "val": {
+    "loss": 0.07409460842609406,
+    "accuracy": 0.9822017798220178,
+    "accuracy_se": 0.0013221079973633598,
+    "auc": 0.999611528948904
+  },
+  "test": {
+    "loss": 0.06121951341629028,
+    "accuracy": 0.9832,
+    "accuracy_se": 0.0012852143790045316,
+    "auc": 0.9997832580223667,
+    "auc_ci95": [
+      0.9997246663727372,
+      0.9998371951182063
+    ]
+  },
+  "val_fgsm_accuracy": 0.7296270372962703,
+  "extras": {
+    "n_members": 5,
+    "n_params": 1175730,
+    "member_val_acc_mean": 0.9775022497750225,
+    "member_val_acc_min": 0.9765023497650235,
+    "ensemble_val_acc": 0.9822017798220178
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.011270858347415924,
+      "val_loss": 0.07409460842609406,
+      "train_acc": 0.9975,
+      "val_acc": 0.9822017798220178
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.00016656698221895482,
+    "train_loss": 0.011270858347415924,
+    "train_acc": 0.9975,
+    "val_loss": 0.07409460842609406,
+    "val_acc": 0.9822017798220178,
+    "val_auc": 0.999611528948904,
+    "lr": 0.018867680126765367,
+    "epoch_seconds": 2.3966667652130127
+  },
+  "seconds": 132.78890252113342,
+  "run_id": "48b5e17153d14692a725de60d6222d48",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\bagging\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\bagging\\loss_curve.png"
+}

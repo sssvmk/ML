@@ -1,0 +1,68 @@
+{
+  "method": "tangent",
+  "title": "Tangent prop / tangent distance / manifold tangents",
+  "section": "7.14",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.028057582076672527,
+    "lam": 2.0218499516556734,
+    "source": "affine"
+  },
+  "val": {
+    "loss": 0.08098454028367996,
+    "accuracy": 0.9802019798020198,
+    "accuracy_se": 0.0013929866540065017,
+    "auc": 0.9995812360071967
+  },
+  "test": {
+    "loss": 0.07023720443248749,
+    "accuracy": 0.9806,
+    "accuracy_se": 0.0013792621215708047,
+    "auc": 0.9997696531750542,
+    "auc_ci95": [
+      0.9997055734129852,
+      0.9998202565848417
+    ]
+  },
+  "val_fgsm_accuracy": 0.31226877312268775,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.6052531003952026,
+    "weight_sparsity": 0.014027569442987442,
+    "n_params": 235146,
+    "n_prototypes": 2000,
+    "tangent_source": "affine",
+    "tangent_distance_1nn_val_acc": 0.9312068819999695,
+    "tangent_distance_1nn_val_auc": 0.9961473858850892,
+    "euclidean_1nn_val_acc": 0.9066093564033508,
+    "euclidean_1nn_val_auc": 0.9938314051520353
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0005619619623757899,
+      "val_loss": 0.08098454028367996,
+      "train_acc": 1.0,
+      "val_acc": 0.9802019798020198
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.0006449114945246969,
+    "train_loss": 0.0005619619623757899,
+    "train_acc": 1.0,
+    "val_loss": 0.08098454028367996,
+    "val_acc": 0.9802019798020198,
+    "val_auc": 0.9995812360071967,
+    "lr": 0.010587629675062445,
+    "epoch_seconds": 3.9493460655212402
+  },
+  "seconds": 317.888384103775,
+  "run_id": "1a863bb75f144376b17f57959207523c",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\tangent\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\tangent\\loss_curve.png"
+}

@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "early_stopping",
+    "title": "Early stopping",
+    "hp": {
+      "lr": 0.05,
+      "patience": 5
+    },
+    "val": {
+      "loss": 0.08538497984409332,
+      "accuracy": 0.9795020497950205,
+      "accuracy_se": 0.0014168901391677189,
+      "auc": 0.9994906921993113
+    },
+    "test_accuracy": 0.9781,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

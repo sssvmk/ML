@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {
+      "parity": 2,
+      "high": 2
+    },
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "multitask",
+    "title": "Multitask learning (digit + parity + magnitude)",
+    "hp": {
+      "lr": 0.02423307369924326,
+      "lam": 0.11855672177620809
+    },
+    "val": {
+      "loss": 0.0891718938946724,
+      "accuracy": 0.9803019698030196,
+      "accuracy_se": 0.001389535425767898,
+      "auc": 0.9994974347047444
+    },
+    "test_accuracy": 0.9835,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

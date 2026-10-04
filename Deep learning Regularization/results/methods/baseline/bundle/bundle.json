@@ -1,0 +1,31 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "baseline",
+    "title": "Baseline (no regularization)",
+    "hp": {
+      "lr": 0.05
+    },
+    "val": {
+      "loss": 0.09640020877122879,
+      "accuracy": 0.9801019898010199,
+      "accuracy_se": 0.0013964286367789708,
+      "auc": 0.9995744787433747
+    },
+    "test_accuracy": 0.9797,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

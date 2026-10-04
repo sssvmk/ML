@@ -1,0 +1,29 @@
+{
+  "spec": {
+    "arch": "tied",
+    "width": 256,
+    "depth": 3,
+    "mode": "hard",
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "parameter_sharing",
+    "title": "Parameter tying and parameter sharing",
+    "hp": {
+      "lr": 0.05,
+      "mode": "hard",
+      "depth": 3,
+      "lam_tie": 0.1
+    },
+    "val": {
+      "loss": 0.13805873692035675,
+      "accuracy": 0.9799020097990201,
+      "accuracy_se": 0.0014032851378705275,
+      "auc": 0.999366734000539
+    },
+    "test_accuracy": 0.9816,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

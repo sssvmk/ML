@@ -1,0 +1,62 @@
+{
+  "method": "constrained_norm",
+  "title": "Norm penalties as constrained optimization (max-norm)",
+  "section": "7.2",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.020298058052421523,
+    "max_norm": 2.9778463062233476
+  },
+  "val": {
+    "loss": 0.08325885236263275,
+    "accuracy": 0.9793020697930207,
+    "accuracy_se": 0.001423639671483346,
+    "auc": 0.9995569081249756
+  },
+  "test": {
+    "loss": 0.07698674499988556,
+    "accuracy": 0.9786,
+    "accuracy_se": 0.0014471364828515648,
+    "auc": 0.9996976432642924,
+    "auc_ci95": [
+      0.9996227271236524,
+      0.9997675695125686
+    ]
+  },
+  "val_fgsm_accuracy": 0.23817618238176183,
+  "extras": {
+    "epochs_run": 20,
+    "activation_sparsity": 0.5685077905654907,
+    "weight_sparsity": 0.014087206684052944,
+    "n_params": 235146,
+    "fraction_units_at_constraint": 0.0
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0011276286095380783,
+      "val_loss": 0.08325885236263275,
+      "train_acc": 1.0,
+      "val_acc": 0.9793020697930207
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.0012821085319864322,
+    "train_loss": 0.0011276286095380783,
+    "train_acc": 1.0,
+    "val_loss": 0.08325885236263275,
+    "val_acc": 0.9793020697930207,
+    "val_auc": 0.9995569081249756,
+    "lr": 0.007659545330552066,
+    "epoch_seconds": 0.5194573402404785
+  },
+  "seconds": 54.45955681800842,
+  "run_id": "e960fa96c7bc4bee98fa08f312e4058e",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\constrained_norm\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\constrained_norm\\loss_curve.png"
+}

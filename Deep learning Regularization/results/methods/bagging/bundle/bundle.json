@@ -1,0 +1,84 @@
+{
+  "spec": {
+    "arch": "ensemble",
+    "members": [
+      {
+        "arch": "mlp",
+        "hidden": [
+          256,
+          128
+        ],
+        "p_in": 0.0,
+        "p_hidden": 0.0,
+        "init": "he_normal",
+        "aux_heads": {},
+        "with_decoder": false
+      },
+      {
+        "arch": "mlp",
+        "hidden": [
+          256,
+          128
+        ],
+        "p_in": 0.0,
+        "p_hidden": 0.0,
+        "init": "he_normal",
+        "aux_heads": {},
+        "with_decoder": false
+      },
+      {
+        "arch": "mlp",
+        "hidden": [
+          256,
+          128
+        ],
+        "p_in": 0.0,
+        "p_hidden": 0.0,
+        "init": "he_normal",
+        "aux_heads": {},
+        "with_decoder": false
+      },
+      {
+        "arch": "mlp",
+        "hidden": [
+          256,
+          128
+        ],
+        "p_in": 0.0,
+        "p_hidden": 0.0,
+        "init": "he_normal",
+        "aux_heads": {},
+        "with_decoder": false
+      },
+      {
+        "arch": "mlp",
+        "hidden": [
+          256,
+          128
+        ],
+        "p_in": 0.0,
+        "p_hidden": 0.0,
+        "init": "he_normal",
+        "aux_heads": {},
+        "with_decoder": false
+      }
+    ]
+  },
+  "meta": {
+    "method": "bagging",
+    "title": "Bagging (ensemble of bootstrap-trained MLPs)",
+    "hp": {
+      "lr": 0.05
+    },
+    "val": {
+      "loss": 0.07409460842609406,
+      "accuracy": 0.9822017798220178,
+      "accuracy_se": 0.0013221079973633598,
+      "auc": 0.999611528948904
+    },
+    "test_accuracy": 0.9832,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

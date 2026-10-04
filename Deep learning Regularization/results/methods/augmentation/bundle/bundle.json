@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "augmentation",
+    "title": "Dataset augmentation",
+    "hp": {
+      "lr": 0.019733115965076906,
+      "max_shift": 1.6319239585843495,
+      "max_rot": 13.681695777998716,
+      "max_scale": 0.004530608029935657
+    },
+    "val": {
+      "loss": 0.044895466417074203,
+      "accuracy": 0.9859014098590141,
+      "accuracy_se": 0.0011789160298349075,
+      "auc": 0.9997931186584141
+    },
+    "test_accuracy": 0.9874,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

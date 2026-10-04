@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": false
+  },
+  "meta": {
+    "method": "weight_noise",
+    "title": "Noise on weights",
+    "hp": {
+      "lr": 0.03158984719834987,
+      "sigma": 0.005877307534804903
+    },
+    "val": {
+      "loss": 0.08431269973516464,
+      "accuracy": 0.9825017498250175,
+      "accuracy_se": 0.0013111194599104267,
+      "auc": 0.9995628968878888
+    },
+    "test_accuracy": 0.9802,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

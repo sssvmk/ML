@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "p_in": 0.0,
+    "p_hidden": 0.0,
+    "init": "he_normal",
+    "aux_heads": {},
+    "with_decoder": true
+  },
+  "meta": {
+    "method": "semi_supervised",
+    "title": "Semi-supervised learning (shared-encoder autoencoder)",
+    "hp": {
+      "lr": 0.016656299388278922,
+      "lam": 0.30937502276340934
+    },
+    "val": {
+      "loss": 0.4654487669467926,
+      "accuracy": 0.891010898910109,
+      "accuracy_se": 0.003116099594955573,
+      "auc": 0.9908084880085465
+    },
+    "test_accuracy": 0.8991,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "lr": 0.05,
+  "mode": "hard",
+  "depth": 3,
+  "lam_tie": 0.1
+}
