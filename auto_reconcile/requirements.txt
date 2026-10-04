@@ -1,0 +1,4 @@
+numpy
+pandas
+mlxtend
+# pyspark  # Uncomment if running in a standalone Spark environment

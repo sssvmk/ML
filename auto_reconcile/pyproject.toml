@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-reconcile"
+version = "0.1.0"
+description = "Automatic reconciliation of SAP open items"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "mlxtend"
+]
+
+[project.optional-dependencies]
+spark = ["pyspark"]
