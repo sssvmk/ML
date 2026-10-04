@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "nesterov",
+    "title": "Nesterov momentum",
+    "hp": {
+      "lr": 0.11536162338241392,
+      "l2": 1.879466824163843e-07,
+      "l1": 8.111941985431926e-09,
+      "alpha": 0.5898682098281826
+    },
+    "val": {
+      "loss": 0.10169953852891922,
+      "accuracy": 0.9787021297870213,
+      "accuracy_se": 0.00144368233066343,
+      "auc": 0.9995351788545881
+    },
+    "test_accuracy": 0.9791,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

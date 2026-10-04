@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_random",
+    "title": "Random Gaussian / uniform initialization",
+    "hp": {
+      "lr": 0.03654769917956455,
+      "l2": 5.589524205217922e-07,
+      "l1": 1.146210740342504e-06,
+      "dist": "uniform",
+      "std": 0.009745399020374083
+    },
+    "val": {
+      "loss": 0.08290630578994751,
+      "accuracy": 0.9816018398160185,
+      "accuracy_se": 0.0013437954494496603,
+      "auc": 0.999635931047459
+    },
+    "test_accuracy": 0.9822,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "method": "greedy_pretraining",
+  "title": "Supervised greedy layer-wise pretraining",
+  "section": "8.7.4",
+  "group": "meta-algorithms",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.02626345067409599,
+    "l2": 0.00015821587577190854,
+    "l1": 7.041830285016006e-05,
+    "pre_frac": 0.628771501876081,
+    "pre_lr": 0.06993822840294987,
+    "freeze": false
+  },
+  "val": {
+    "loss": 0.07153194397687912,
+    "accuracy": 0.9802019798020198,
+    "accuracy_se": 0.0013929866540065017,
+    "auc": 0.9994438424220901
+  },
+  "test": {
+    "loss": 0.06236245855689049,
+    "accuracy": 0.9811,
+    "accuracy_se": 0.0013617191340360914,
+    "auc": 0.9996934641931088,
+    "auc_ci95": [
+      0.9996163732744885,
+      0.9997783605807284
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 7,
+    "passes": 20,
+    "init_loss": 3.7626712322235107,
+    "init_loss_over_lnK": 1.6341073533707795,
+    "init_act_std": [
+      1.553706407546997,
+      1.3430832624435425
+    ],
+    "init_grad_norm_first_over_last": 0.7567967974095254,
+    "init_grad_norms": [
+      2.947716474533081,
+      5.264130592346191,
+      3.8949906826019287
+    ],
+    "pretrain_epochs": 13,
+    "stages": 1,
+    "last_stage_train_loss": 0.0003867201996690025,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00808257982134819,
+      "val_loss": 0.07153194397687912,
+      "train_acc": 0.9998,
+      "val_acc": 0.9802019798020198
+    }
+  },
+  "history_final": {
+    "epoch": 7,
+    "train_obj": 0.4116504856158658,
+    "train_loss": 0.00808257982134819,
+    "train_acc": 0.9998,
+    "val_loss": 0.07153194397687912,
+    "val_acc": 0.9802019798020198,
+    "val_auc": 0.9994438424220901,
+    "lr": 0.01930604961035765,
+    "epoch_seconds": 0.7960035800933838,
+    "passes": 20
+  },
+  "seconds": 54.79441237449646,
+  "run_id": "80209973c7964852afef36950601a787",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\greedy_pretraining\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\greedy_pretraining\\loss_curve.png"
+}

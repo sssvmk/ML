@@ -1,0 +1,98 @@
+{
+  "method": "coordinate_descent",
+  "title": "Block coordinate descent (one layer at a time)",
+  "section": "8.7.2",
+  "group": "meta-algorithms",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.02302528599479886,
+    "l2": 0.002792471643386222,
+    "l1": 9.3202995673644e-06,
+    "cycle": 2
+  },
+  "val": {
+    "loss": 0.086388498544693,
+    "accuracy": 0.9753024697530247,
+    "accuracy_se": 0.001551939229844452,
+    "auc": 0.9993425199652556
+  },
+  "test": {
+    "loss": 0.07621242851018906,
+    "accuracy": 0.9783,
+    "accuracy_se": 0.0014570212764403975,
+    "auc": 0.9996343163145915,
+    "auc_ci95": [
+      0.9995534344437466,
+      0.9997136455552351
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "block_schedule": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      0,
+      0
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.04771111533045769,
+      "val_loss": 0.086388498544693,
+      "train_acc": 0.9908,
+      "val_acc": 0.9753024697530247
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.2788119325167122,
+    "train_loss": 0.04771111533045769,
+    "train_acc": 0.9908,
+    "val_loss": 0.086388498544693,
+    "val_acc": 0.9753024697530247,
+    "val_auc": 0.9993425199652556,
+    "lr": 0.008688674619543106,
+    "epoch_seconds": 0.6452019214630127,
+    "passes": 20
+  },
+  "seconds": 63.230141401290894,
+  "run_id": "a83d402e701547919172125829208941",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\coordinate_descent\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\coordinate_descent\\loss_curve.png"
+}

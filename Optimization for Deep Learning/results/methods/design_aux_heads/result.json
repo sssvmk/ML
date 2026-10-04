@@ -1,0 +1,90 @@
+{
+  "method": "design_aux_heads",
+  "title": "Model design: auxiliary heads (deep supervision)",
+  "section": "8.7.5 (c)",
+  "group": "meta-algorithms",
+  "regime": "deep MLP, 6 layers, heads discarded after training",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "depth": 6,
+    "aux_weight": 0.3
+  },
+  "val": {
+    "loss": 0.13809822499752045,
+    "accuracy": 0.9829017098290171,
+    "accuracy_se": 0.0012963123936146675,
+    "auc": 0.9994359998817377
+  },
+  "test": {
+    "loss": 0.1073860377073288,
+    "accuracy": 0.984,
+    "accuracy_se": 0.0012547509713086503,
+    "auc": 0.999680796501688,
+    "auc_ci95": [
+      0.9995749925236854,
+      0.9997717854065684
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.790069341659546,
+    "init_loss_over_lnK": 1.2117117192101792,
+    "init_act_std": [
+      0.8008091449737549,
+      0.7858700752258301,
+      0.8425689935684204,
+      0.8260926008224487,
+      0.7599818110466003,
+      0.7335888743400574
+    ],
+    "init_grad_norm_first_over_last": 0.9242641185832687,
+    "init_grad_norms": [
+      2.952312469482422,
+      1.9734760522842407,
+      2.138414144515991,
+      2.6944046020507812,
+      2.852442979812622,
+      2.7185420989990234,
+      3.194230318069458
+    ],
+    "n_params": 532490,
+    "depth": 6,
+    "ablation_no_aux_val_acc": 0.9811018898110189,
+    "ablation_no_aux_val_loss": 0.13114741444587708
+  },
+  "diagnosis": {
+    "verdict": [
+      "overfitting"
+    ],
+    "notes": [
+      "validation loss rose 0.051 above its minimum (epoch 5)"
+    ],
+    "final": {
+      "train_loss": 2.135957038262859e-05,
+      "val_loss": 0.13809822499752045,
+      "train_acc": 1.0,
+      "val_acc": 0.9829017098290171
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.023256409115514593,
+    "train_loss": 2.135957038262859e-05,
+    "train_acc": 1.0,
+    "val_loss": 0.13809822499752045,
+    "val_acc": 0.9829017098290171,
+    "val_auc": 0.9994359998817377,
+    "lr": 0.018867680126765363,
+    "epoch_seconds": 2.7320892810821533,
+    "passes": 20
+  },
+  "seconds": 231.7203598022461,
+  "run_id": "3bc8701b43b445858eccd3f4cb3ef7be",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_aux_heads\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_aux_heads\\loss_curve.png"
+}

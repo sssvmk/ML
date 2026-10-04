@@ -1,0 +1,76 @@
+{
+  "method": "design_activations",
+  "title": "Model design: near-linear activations (ReLU, leaky ReLU, ELU, maxout vs tanh, sigmoid)",
+  "section": "8.7.5 (a)",
+  "group": "meta-algorithms",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "activation": "relu"
+  },
+  "val": {
+    "loss": 0.09102222323417664,
+    "accuracy": 0.9808019198080192,
+    "accuracy_se": 0.0013721381543346305,
+    "auc": 0.9995584143809403
+  },
+  "test": {
+    "loss": 0.08480880409479141,
+    "accuracy": 0.9812,
+    "accuracy_se": 0.0013581811366677142,
+    "auc": 0.9997300361219368,
+    "auc_ci95": [
+      0.9996615938830726,
+      0.9997930628202387
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0003065321361646056,
+      "val_loss": 0.09102222323417664,
+      "train_acc": 1.0,
+      "val_acc": 0.9808019198080192
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.006610700053910423,
+    "train_loss": 0.0003065321361646056,
+    "train_acc": 1.0,
+    "val_loss": 0.09102222323417664,
+    "val_acc": 0.9808019198080192,
+    "val_auc": 0.9995584143809403,
+    "lr": 0.018867680126765363,
+    "epoch_seconds": 0.7946445941925049,
+    "passes": 20
+  },
+  "seconds": 79.34728789329529,
+  "run_id": "3c048bd998ca471ab907bef441021fc9",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_activations\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_activations\\loss_curve.png"
+}

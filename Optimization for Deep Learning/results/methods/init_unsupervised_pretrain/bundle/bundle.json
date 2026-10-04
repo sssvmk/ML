@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_unsupervised_pretrain",
+    "title": "Unsupervised (autoencoder) pretraining as initialization",
+    "hp": {
+      "lr": 0.029101203688718658,
+      "l2": 0.0001567510304592107,
+      "l1": 4.20317115951854e-08,
+      "pre_frac": 0.1345916866342367,
+      "pre_lr": 0.07619737057245343
+    },
+    "val": {
+      "loss": 0.08335179835557938,
+      "accuracy": 0.9789021097890211,
+      "accuracy_se": 0.0014370352872914226,
+      "auc": 0.9995311090335204
+    },
+    "test_accuracy": 0.9806,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

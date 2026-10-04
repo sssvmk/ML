@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_orthogonal",
+    "title": "Orthogonal initialization with gain (Saxe et al.)",
+    "hp": {
+      "lr": 0.05,
+      "l2": 1e-05,
+      "l1": 1e-07,
+      "gain": 1.4142135623730951
+    },
+    "val": {
+      "loss": 0.09769102185964584,
+      "accuracy": 0.9811018898110189,
+      "accuracy_se": 0.0013615842870896907,
+      "auc": 0.9995260671987178
+    },
+    "test_accuracy": 0.9801,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "method": "rmsprop_nesterov",
+  "title": "RMSProp with Nesterov momentum",
+  "section": "8.5.2",
+  "group": "adaptive learning rate",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.0004480975918214954,
+    "l2": 6.870101665590006e-08,
+    "l1": 2.8888383623653223e-08,
+    "rho": 0.87144055944227,
+    "alpha": 0.7052314928976662
+  },
+  "val": {
+    "loss": 0.1592487245798111,
+    "accuracy": 0.9786021397860214,
+    "accuracy_se": 0.0014469933656531184,
+    "auc": 0.9993821361975785
+  },
+  "test": {
+    "loss": 0.15974092483520508,
+    "accuracy": 0.9764,
+    "accuracy_se": 0.0015179934123704213,
+    "auc": 0.9994739867557065,
+    "auc_ci95": [
+      0.9993116992403344,
+      0.9996092860695108
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "overfitting"
+    ],
+    "notes": [
+      "validation loss rose 0.067 above its minimum (epoch 5)"
+    ],
+    "final": {
+      "train_loss": 0.006484809331595898,
+      "val_loss": 0.1592487245798111,
+      "train_acc": 0.9988,
+      "val_acc": 0.9786021397860214
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.005085104175229228,
+    "train_loss": 0.006484809331595898,
+    "train_acc": 0.9988,
+    "val_loss": 0.1592487245798111,
+    "val_acc": 0.9786021397860214,
+    "val_auc": 0.9993821361975785,
+    "lr": 0.0004480975918214954,
+    "epoch_seconds": 0.8285956382751465,
+    "passes": 20
+  },
+  "seconds": 70.66688680648804,
+  "run_id": "6f276861ec0c4195a9726250a410f6cf",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop_nesterov\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop_nesterov\\loss_curve.png"
+}

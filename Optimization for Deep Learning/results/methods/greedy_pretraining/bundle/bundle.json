@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "greedy_pretraining",
+    "title": "Supervised greedy layer-wise pretraining",
+    "hp": {
+      "lr": 0.02626345067409599,
+      "l2": 0.00015821587577190854,
+      "l1": 7.041830285016006e-05,
+      "pre_frac": 0.628771501876081,
+      "pre_lr": 0.06993822840294987,
+      "freeze": false
+    },
+    "val": {
+      "loss": 0.07153194397687912,
+      "accuracy": 0.9802019798020198,
+      "accuracy_se": 0.0013929866540065017,
+      "auc": 0.9994438424220901
+    },
+    "test_accuracy": 0.9811,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

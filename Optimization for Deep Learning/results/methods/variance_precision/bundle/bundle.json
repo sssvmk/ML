@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": true,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "variance_precision",
+    "title": "Variance/precision parameter init (Gaussian output, learned precision)",
+    "hp": {
+      "lr": 0.0008468008575248334,
+      "l2": 0.005061576888752304,
+      "l1": 4.570563099801454e-06,
+      "precision_init": "one"
+    },
+    "val": {
+      "loss": 4.141246795654297,
+      "accuracy": 0.982001799820018,
+      "accuracy_se": 0.0013293794687932877,
+      "auc": 0.9931312165569915
+    },
+    "test_accuracy": 0.9809,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

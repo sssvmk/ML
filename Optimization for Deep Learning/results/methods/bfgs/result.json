@@ -1,0 +1,76 @@
+{
+  "method": "bfgs",
+  "title": "BFGS (dense inverse-Hessian, reduced network)",
+  "section": "8.6.3",
+  "group": "second-order",
+  "regime": "reduced network 784-8-10 (dense n x n matrix)",
+  "champion_eligible": false,
+  "best_hp": {
+    "l2": 3.90796715682288e-05,
+    "l1": 6.02688912868252e-09,
+    "c2": 0.5701975341512912
+  },
+  "val": {
+    "loss": 0.5640739798545837,
+    "accuracy": 0.8388161183881612,
+    "accuracy_se": 0.0036768208945839164,
+    "auc": 0.9780953645978215
+  },
+  "test": {
+    "loss": 0.5248916149139404,
+    "accuracy": 0.8477,
+    "accuracy_se": 0.003593114387269072,
+    "auc": 0.9800169629614766,
+    "auc_ci95": [
+      0.9784452590568528,
+      0.9815848351629861
+    ]
+  },
+  "passes": 136.0,
+  "extras": {
+    "iterations_run": 100,
+    "passes": 136.0,
+    "init_loss": 3.7257518768310547,
+    "init_loss_over_lnK": 1.6180734810484108,
+    "init_act_std": [
+      1.0255039930343628
+    ],
+    "init_grad_norm_first_over_last": 7.305283984104427,
+    "init_grad_norms": [
+      11.07009506225586,
+      1.5153545141220093
+    ],
+    "skipped_updates": 0,
+    "n_params": 6370
+  },
+  "diagnosis": {
+    "verdict": [
+      "underfitting"
+    ],
+    "notes": [
+      "train accuracy only 0.857"
+    ],
+    "final": {
+      "train_loss": 0.5200293064117432,
+      "val_loss": 0.5640739798545837,
+      "train_acc": 0.8569,
+      "val_acc": 0.8388161183881612
+    }
+  },
+  "history_final": {
+    "epoch": 100,
+    "train_obj": 0.5340752688935027,
+    "train_loss": 0.5200293064117432,
+    "train_acc": 0.8569,
+    "val_loss": 0.5640739798545837,
+    "val_acc": 0.8388161183881612,
+    "val_auc": 0.9780953645978215,
+    "lr": 2.0,
+    "epoch_seconds": 0.17821168899536133,
+    "passes": 136.0
+  },
+  "seconds": 52.22856593132019,
+  "run_id": "f2f88d41574a43f2b4e83c3cc3d60684",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bfgs\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bfgs\\loss_curve.png"
+}

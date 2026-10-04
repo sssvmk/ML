@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "curriculum",
+    "title": "Curriculum learning (easy-to-hard sampling)",
+    "hp": {
+      "lr": 0.03076078974173495,
+      "l2": 9.850687472995661e-05,
+      "l1": 2.1105320163542097e-06,
+      "start_frac": 0.24280939906956817,
+      "pace_frac": 0.2045458930528508
+    },
+    "val": {
+      "loss": 0.07583952695131302,
+      "accuracy": 0.9807019298070193,
+      "accuracy_se": 0.0013756366636425885,
+      "auc": 0.9995803159256258
+    },
+    "test_accuracy": 0.9811,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "method": "bias_relu_positive",
+  "title": "Small positive ReLU bias",
+  "section": "8.4 (12.10)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.040842279473800806,
+    "l2": 0.0005141096648805752,
+    "l1": 9.962513222055125e-09,
+    "bias": 0.2571172192068058
+  },
+  "val": {
+    "loss": 0.06490936875343323,
+    "accuracy": 0.9812018798120188,
+    "accuracy_se": 0.00135804663302561,
+    "auc": 0.9995783671743741
+  },
+  "test": {
+    "loss": 0.05293140932917595,
+    "accuracy": 0.9834,
+    "accuracy_se": 0.0012776713192366787,
+    "auc": 0.9998029922296057,
+    "auc_ci95": [
+      0.9997456650045414,
+      0.9998482932423376
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 4.223257064819336,
+    "init_loss_over_lnK": 1.8341372389099613,
+    "init_act_std": [
+      0.8982169032096863,
+      1.104051947593689
+    ],
+    "init_grad_norm_first_over_last": 1.2612663100085855,
+    "init_grad_norms": [
+      8.523150444030762,
+      6.728898048400879,
+      6.757613658905029
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.005543092265725136,
+      "val_loss": 0.06490936875343323,
+      "train_acc": 1.0,
+      "val_acc": 0.9812018798120188
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.06676522799286404,
+    "train_loss": 0.005543092265725136,
+    "train_acc": 1.0,
+    "val_loss": 0.06490936875343323,
+    "val_acc": 0.9812018798120188,
+    "val_auc": 0.9995783671743741,
+    "lr": 0.015411981295192567,
+    "epoch_seconds": 1.4198215007781982,
+    "passes": 20
+  },
+  "seconds": 94.6669909954071,
+  "run_id": "e46a2123869c4707b7297a3a41b05eed",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_relu_positive\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_relu_positive\\loss_curve.png"
+}

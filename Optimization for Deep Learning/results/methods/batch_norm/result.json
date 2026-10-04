@@ -1,0 +1,75 @@
+{
+  "method": "batch_norm",
+  "title": "Batch normalization",
+  "section": "8.7.1",
+  "group": "meta-algorithms",
+  "regime": "BatchNorm before each ReLU",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.0730953983591291,
+    "l2": 5.589524205217922e-07,
+    "l1": 1.146210740342504e-06
+  },
+  "val": {
+    "loss": 0.07140723615884781,
+    "accuracy": 0.9843015698430156,
+    "accuracy_se": 0.0012429981658534466,
+    "auc": 0.9996968709298001
+  },
+  "test": {
+    "loss": 0.06282735615968704,
+    "accuracy": 0.9824,
+    "accuracy_se": 0.0013149235719234769,
+    "auc": 0.9998138644704762,
+    "auc_ci95": [
+      0.9997669013635972,
+      0.9998667563868587
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.810762882232666,
+    "init_loss_over_lnK": 1.2206988096921263,
+    "init_act_std": [
+      0.582504153251648,
+      0.590975284576416
+    ],
+    "init_grad_norm_first_over_last": 2.47332092807344,
+    "init_grad_norms": [
+      2.987741470336914,
+      1.4558640718460083,
+      1.2079877853393555
+    ],
+    "n_params": 235914
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0002204803458880633,
+      "val_loss": 0.07140723615884781,
+      "train_acc": 1.0,
+      "val_acc": 0.9843015698430156
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.014111674967196192,
+    "train_loss": 0.0002204803458880633,
+    "train_acc": 1.0,
+    "val_loss": 0.07140723615884781,
+    "val_acc": 0.9843015698430156,
+    "val_auc": 0.9996968709298001,
+    "lr": 0.02758281189957075,
+    "epoch_seconds": 0.9481396675109863,
+    "passes": 20
+  },
+  "seconds": 72.44936203956604,
+  "run_id": "100e1ddb80b74e258aa373b72f8d2df3",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_norm\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_norm\\loss_curve.png"
+}

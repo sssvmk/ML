@@ -1,0 +1,80 @@
+{
+  "method": "newton",
+  "title": "Newton's method (damped, truncated / Hessian-free)",
+  "section": "8.6.1",
+  "group": "second-order",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "l2": 8.632008168602522e-08,
+    "l1": 6.0252157362038635e-09,
+    "damping": 0.001819899369726822,
+    "cg_iters": 36
+  },
+  "val": {
+    "loss": 0.12621945142745972,
+    "accuracy": 0.9768023197680232,
+    "accuracy_se": 0.0015052336076376372,
+    "auc": 0.9993694663552762
+  },
+  "test": {
+    "loss": 0.11280841380357742,
+    "accuracy": 0.9773,
+    "accuracy_se": 0.0014894532553927314,
+    "auc": 0.9996514201470837,
+    "auc_ci95": [
+      0.9995575993812841,
+      0.9997316411944122
+    ]
+  },
+  "passes": 437.33877344214716,
+  "extras": {
+    "iterations_run": 100,
+    "passes": 437.33877344214716,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "final_damping": 0.0027298490545902324,
+    "rejected_steps": 0,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "overfitting"
+    ],
+    "notes": [
+      "validation loss rose 0.035 above its minimum (epoch 26)"
+    ],
+    "final": {
+      "train_loss": 6.62512393319048e-05,
+      "val_loss": 0.12621945142745972,
+      "train_acc": 1.0,
+      "val_acc": 0.9768023197680232
+    }
+  },
+  "history_final": {
+    "epoch": 100,
+    "train_obj": 0.00017952659920409715,
+    "train_loss": 6.62512393319048e-05,
+    "train_acc": 1.0,
+    "val_loss": 0.12621945142745972,
+    "val_acc": 0.9768023197680232,
+    "val_auc": 0.9993694663552762,
+    "lr": 0.5,
+    "epoch_seconds": 1.5943303108215332,
+    "passes": 437.33877344214716
+  },
+  "seconds": 230.03896117210388,
+  "run_id": "5dbf609d54b64425ab34f3bf2b1f8a77",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\newton\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\newton\\loss_curve.png"
+}

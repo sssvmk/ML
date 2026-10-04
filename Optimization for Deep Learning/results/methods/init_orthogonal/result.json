@@ -1,0 +1,76 @@
+{
+  "method": "init_orthogonal",
+  "title": "Orthogonal initialization with gain (Saxe et al.)",
+  "section": "8.4 (12.4)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "gain": 1.4142135623730951
+  },
+  "val": {
+    "loss": 0.09769102185964584,
+    "accuracy": 0.9811018898110189,
+    "accuracy_se": 0.0013615842870896907,
+    "auc": 0.9995260671987178
+  },
+  "test": {
+    "loss": 0.07976490259170532,
+    "accuracy": 0.9801,
+    "accuracy_se": 0.0013965668619869236,
+    "auc": 0.9997786933958046,
+    "auc_ci95": [
+      0.9997261821970329,
+      0.9998293609750414
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.7116384506225586,
+    "init_loss_over_lnK": 1.6119440979253123,
+    "init_act_std": [
+      0.798218309879303,
+      0.8512006402015686
+    ],
+    "init_grad_norm_first_over_last": 1.5518364138041534,
+    "init_grad_norms": [
+      5.745246410369873,
+      4.013011932373047,
+      3.7022242546081543
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00028871584800072014,
+      "val_loss": 0.09769102185964584,
+      "train_acc": 1.0,
+      "val_acc": 0.9811018898110189
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.006662312700101932,
+    "train_loss": 0.00028871584800072014,
+    "train_acc": 1.0,
+    "val_loss": 0.09769102185964584,
+    "val_acc": 0.9811018898110189,
+    "val_auc": 0.9995260671987178,
+    "lr": 0.018867680126765363,
+    "epoch_seconds": 0.7611408233642578,
+    "passes": 20
+  },
+  "seconds": 70.33176159858704,
+  "run_id": "af27fde3ff8f44919ef6e6907ed6856c",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_orthogonal\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_orthogonal\\loss_curve.png"
+}

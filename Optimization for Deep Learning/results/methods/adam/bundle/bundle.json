@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "adam",
+    "title": "Adam",
+    "hp": {
+      "lr": 0.0004872311972287137,
+      "l2": 1.4861036408534595e-06,
+      "l1": 9.90555257959056e-07,
+      "rho1": 0.8502192764334855,
+      "rho2": 0.9937580820098603
+    },
+    "val": {
+      "loss": 0.11428661644458771,
+      "accuracy": 0.9756024397560243,
+      "accuracy_se": 0.0015427228948902915,
+      "auc": 0.9994720947530291
+    },
+    "test_accuracy": 0.9764,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

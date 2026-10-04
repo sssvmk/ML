@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_random_walk",
+    "title": "Gain-tuned random-walk initialization (Sussillo)",
+    "hp": {
+      "lr": 0.03114498722449431,
+      "l2": 0.00013851041848413206,
+      "l1": 2.5422264441956258e-08,
+      "ratio": 1.1240835271723653
+    },
+    "val": {
+      "loss": 0.0782933458685875,
+      "accuracy": 0.9801019898010199,
+      "accuracy_se": 0.0013964286367789708,
+      "auc": 0.9995719078666161
+    },
+    "test_accuracy": 0.9813,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

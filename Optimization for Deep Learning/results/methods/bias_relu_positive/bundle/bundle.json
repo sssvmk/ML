@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "bias_relu_positive",
+    "title": "Small positive ReLU bias",
+    "hp": {
+      "lr": 0.040842279473800806,
+      "l2": 0.0005141096648805752,
+      "l1": 9.962513222055125e-09,
+      "bias": 0.2571172192068058
+    },
+    "val": {
+      "loss": 0.06490936875343323,
+      "accuracy": 0.9812018798120188,
+      "accuracy_se": 0.00135804663302561,
+      "auc": 0.9995783671743741
+    },
+    "test_accuracy": 0.9834,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

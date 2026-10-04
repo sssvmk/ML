@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      256,
+      256
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": true,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "design_skip",
+    "title": "Model design: skip connections (deep residual MLP)",
+    "hp": {
+      "lr": 0.019733115965076906,
+      "l2": 2.8046969219357056e-06,
+      "l1": 5.449280398972808e-07,
+      "depth": 3
+    },
+    "val": {
+      "loss": 0.10329344123601913,
+      "accuracy": 0.9784021597840216,
+      "accuracy_se": 0.0014535907466658113,
+      "auc": 0.9994919544610118
+    },
+    "test_accuracy": 0.9777,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

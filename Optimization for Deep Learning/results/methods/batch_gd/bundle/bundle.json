@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "batch_gd",
+    "title": "Batch (full-dataset) gradient descent",
+    "hp": {
+      "lr": 0.06533369619026641,
+      "l2": 0.0015741890047456662,
+      "l1": 1.0129197956845748e-06
+    },
+    "val": {
+      "loss": 0.2904444932937622,
+      "accuracy": 0.9145085491450855,
+      "accuracy_se": 0.0027959764877608707,
+      "auc": 0.993724468936049
+    },
+    "test_accuracy": 0.9238,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

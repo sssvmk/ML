@@ -1,0 +1,39 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_scale_search",
+    "title": "Initial scale as a hyperparameter (search / LSUV)",
+    "hp": {
+      "lr": 0.07965261308120507,
+      "l2": 0.00017718847354806813,
+      "l1": 1.2674255898937224e-09,
+      "mode": "search",
+      "scale_0": 0.35543498097189247,
+      "scale_1": 0.3272447970178924,
+      "scale_out": 0.32864757839415243
+    },
+    "val": {
+      "loss": 0.06621751189231873,
+      "accuracy": 0.9814018598140186,
+      "accuracy_se": 0.0013509413134985342,
+      "auc": 0.9996482406841818
+    },
+    "test_accuracy": 0.984,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "method": "continuation",
+  "title": "Continuation method (annealed input blur)",
+  "section": "8.7.6 (a)",
+  "group": "meta-algorithms",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.04547458516365309,
+    "l2": 8.187693891007492e-05,
+    "l1": 3.4080665870025724e-08,
+    "sigma0": 1.2230519020533517,
+    "anneal_frac": 0.5799150912870286
+  },
+  "val": {
+    "loss": 0.06825555115938187,
+    "accuracy": 0.9836016398360165,
+    "accuracy_se": 0.0012699543757080192,
+    "auc": 0.9996824177641639
+  },
+  "test": {
+    "loss": 0.06237604469060898,
+    "accuracy": 0.9838,
+    "accuracy_se": 0.001262440493647126,
+    "auc": 0.9997924704455631,
+    "auc_ci95": [
+      0.9997236323447777,
+      0.9998491489871741
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0008676860015839338,
+      "val_loss": 0.06825555115938187,
+      "train_acc": 1.0,
+      "val_acc": 0.9836016398360165
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.03326464355496774,
+    "train_loss": 0.0008676860015839338,
+    "train_acc": 1.0,
+    "val_loss": 0.06825555115938187,
+    "val_acc": 0.9836016398360165,
+    "val_auc": 0.9996824177641639,
+    "lr": 0.017159998535303127,
+    "epoch_seconds": 0.8189249038696289,
+    "passes": 20
+  },
+  "seconds": 87.49025535583496,
+  "run_id": "ed3879ea2822470d880689445f4a0afb",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\continuation\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\continuation\\loss_curve.png"
+}

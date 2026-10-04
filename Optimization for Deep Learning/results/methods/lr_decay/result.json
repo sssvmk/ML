@@ -1,0 +1,81 @@
+{
+  "method": "lr_decay",
+  "title": "Learning-rate decay (schedule within SGD)",
+  "section": "8.3.1",
+  "group": "update rules",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.3268132041482867,
+    "l2": 0.0002742449534924103,
+    "l1": 6.665148427358314e-05,
+    "schedule": "exponential",
+    "tau_frac": 0.8,
+    "final_frac": 0.01,
+    "gamma": 0.7019510372888542,
+    "d": 0.5,
+    "step_epochs": 5
+  },
+  "val": {
+    "loss": 0.0815262496471405,
+    "accuracy": 0.9755024497550245,
+    "accuracy_se": 0.0015458017587612254,
+    "auc": 0.9992896397961475
+  },
+  "test": {
+    "loss": 0.07238247245550156,
+    "accuracy": 0.978,
+    "accuracy_se": 0.001466833323864713,
+    "auc": 0.9996116358644389,
+    "auc_ci95": [
+      0.9995229277026458,
+      0.9996870717755951
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.031088529154658318,
+      "val_loss": 0.0815262496471405,
+      "train_acc": 0.9933,
+      "val_acc": 0.9755024497550245
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.4964245292598666,
+    "train_loss": 0.031088529154658318,
+    "train_acc": 0.9933,
+    "val_loss": 0.0815262496471405,
+    "val_acc": 0.9755024497550245,
+    "val_auc": 0.9992896397961475,
+    "lr": 0.00027594915904230076,
+    "epoch_seconds": 0.6827170848846436,
+    "passes": 20
+  },
+  "seconds": 66.67297863960266,
+  "run_id": "3178df9756ed49f7a0c4a317f25342e6",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lr_decay\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lr_decay\\loss_curve.png"
+}

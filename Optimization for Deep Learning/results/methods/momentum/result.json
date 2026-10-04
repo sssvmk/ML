@@ -1,0 +1,76 @@
+{
+  "method": "momentum",
+  "title": "Momentum",
+  "section": "8.3.2",
+  "group": "update rules",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "alpha": 0.9
+  },
+  "val": {
+    "loss": 0.09922181814908981,
+    "accuracy": 0.9823017698230176,
+    "accuracy_se": 0.0013184560856977752,
+    "auc": 0.9995746821907362
+  },
+  "test": {
+    "loss": 0.09351065754890442,
+    "accuracy": 0.9806,
+    "accuracy_se": 0.0013792621215708047,
+    "auc": 0.9997132014244509,
+    "auc_ci95": [
+      0.9996211322810146,
+      0.9997893409924984
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00011919041571673006,
+      "val_loss": 0.09922181814908981,
+      "train_acc": 1.0,
+      "val_acc": 0.9823017698230176
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.006731370902060911,
+    "train_loss": 0.00011919041571673006,
+    "train_acc": 1.0,
+    "val_loss": 0.09922181814908981,
+    "val_acc": 0.9823017698230176,
+    "val_auc": 0.9995746821907362,
+    "lr": 0.05,
+    "epoch_seconds": 0.8521955013275146,
+    "passes": 20
+  },
+  "seconds": 62.33921718597412,
+  "run_id": "02391ae150a14068917726558f208814",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\momentum\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\momentum\\loss_curve.png"
+}

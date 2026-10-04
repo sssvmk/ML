@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "newton",
+    "title": "Newton's method (damped, truncated / Hessian-free)",
+    "hp": {
+      "l2": 8.632008168602522e-08,
+      "l1": 6.0252157362038635e-09,
+      "damping": 0.001819899369726822,
+      "cg_iters": 36
+    },
+    "val": {
+      "loss": 0.12621945142745972,
+      "accuracy": 0.9768023197680232,
+      "accuracy_se": 0.0015052336076376372,
+      "auc": 0.9993694663552762
+    },
+    "test_accuracy": 0.9773,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

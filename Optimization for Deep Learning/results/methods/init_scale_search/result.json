@@ -1,0 +1,79 @@
+{
+  "method": "init_scale_search",
+  "title": "Initial scale as a hyperparameter (search / LSUV)",
+  "section": "8.4 (12.7)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.07965261308120507,
+    "l2": 0.00017718847354806813,
+    "l1": 1.2674255898937224e-09,
+    "mode": "search",
+    "scale_0": 0.35543498097189247,
+    "scale_1": 0.3272447970178924,
+    "scale_out": 0.32864757839415243
+  },
+  "val": {
+    "loss": 0.06621751189231873,
+    "accuracy": 0.9814018598140186,
+    "accuracy_se": 0.0013509413134985342,
+    "auc": 0.9996482406841818
+  },
+  "test": {
+    "loss": 0.059843193739652634,
+    "accuracy": 0.984,
+    "accuracy_se": 0.0012547509713086503,
+    "auc": 0.9997582541812804,
+    "auc_ci95": [
+      0.999689731889172,
+      0.9998201592309408
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.3084824085235596,
+    "init_loss_over_lnK": 1.0025611715925102,
+    "init_act_std": [
+      0.2820219397544861,
+      0.09653359651565552
+    ],
+    "init_grad_norm_first_over_last": 2.84952931868321,
+    "init_grad_norms": [
+      0.36311396956443787,
+      0.22059355676174164,
+      0.12742945551872253
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.001391095109283924,
+      "val_loss": 0.06621751189231873,
+      "train_acc": 1.0,
+      "val_acc": 0.9814018598140186
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.02451861647922509,
+    "train_loss": 0.001391095109283924,
+    "train_acc": 1.0,
+    "val_loss": 0.06621751189231873,
+    "val_acc": 0.9814018598140186,
+    "val_auc": 0.9996482406841818,
+    "lr": 0.030057200497543672,
+    "epoch_seconds": 1.1443822383880615,
+    "passes": 20
+  },
+  "seconds": 86.28000783920288,
+  "run_id": "6a702e06221e475aaa05002dc8fabe53",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_scale_search\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_scale_search\\loss_curve.png"
+}

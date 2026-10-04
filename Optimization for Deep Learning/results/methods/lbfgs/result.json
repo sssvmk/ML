@@ -1,0 +1,77 @@
+{
+  "method": "lbfgs",
+  "title": "L-BFGS (limited-memory BFGS)",
+  "section": "8.6.3",
+  "group": "second-order",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "l2": 0.004686183228417076,
+    "l1": 2.6395527207142433e-06,
+    "history": 5,
+    "c2": 0.508082844026669
+  },
+  "val": {
+    "loss": 0.09481530636548996,
+    "accuracy": 0.9745025497450255,
+    "accuracy_se": 0.0015762247872968351,
+    "auc": 0.9992276606090122
+  },
+  "test": {
+    "loss": 0.08740340173244476,
+    "accuracy": 0.9737,
+    "accuracy_se": 0.0016002596664291702,
+    "auc": 0.999536925272475,
+    "auc_ci95": [
+      0.9994355266889065,
+      0.9996401075487678
+    ]
+  },
+  "passes": 129.0,
+  "extras": {
+    "iterations_run": 100,
+    "passes": 129.0,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "skipped_updates": 0,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.06636548787355423,
+      "val_loss": 0.09481530636548996,
+      "train_acc": 0.9839,
+      "val_acc": 0.9745025497450255
+    }
+  },
+  "history_final": {
+    "epoch": 100,
+    "train_obj": 0.23427771870046854,
+    "train_loss": 0.06636548787355423,
+    "train_acc": 0.9839,
+    "val_loss": 0.09481530636548996,
+    "val_acc": 0.9745025497450255,
+    "val_auc": 0.9992276606090122,
+    "lr": 2.0,
+    "epoch_seconds": 0.44863224029541016,
+    "passes": 129.0
+  },
+  "seconds": 105.12830352783203,
+  "run_id": "2263f45c02fe43868fa0bf0a35576a54",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lbfgs\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lbfgs\\loss_curve.png"
+}

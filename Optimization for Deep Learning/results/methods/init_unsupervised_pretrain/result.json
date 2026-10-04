@@ -1,0 +1,79 @@
+{
+  "method": "init_unsupervised_pretrain",
+  "title": "Unsupervised (autoencoder) pretraining as initialization",
+  "section": "8.4 (12.13)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.029101203688718658,
+    "l2": 0.0001567510304592107,
+    "l1": 4.20317115951854e-08,
+    "pre_frac": 0.1345916866342367,
+    "pre_lr": 0.07619737057245343
+  },
+  "val": {
+    "loss": 0.08335179835557938,
+    "accuracy": 0.9789021097890211,
+    "accuracy_se": 0.0014370352872914226,
+    "auc": 0.9995311090335204
+  },
+  "test": {
+    "loss": 0.07346141338348389,
+    "accuracy": 0.9806,
+    "accuracy_se": 0.0013792621215708047,
+    "auc": 0.9996845627780229,
+    "auc_ci95": [
+      0.9995971867237785,
+      0.9997636505720983
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 17,
+    "passes": 20,
+    "init_loss": 7.676924228668213,
+    "init_loss_over_lnK": 3.3340458304999823,
+    "init_act_std": [
+      1.4059579372406006,
+      3.1884243488311768
+    ],
+    "init_grad_norm_first_over_last": 0.3201591406293435,
+    "init_grad_norms": [
+      7.919260501861572,
+      10.737472534179688,
+      24.735387802124023
+    ],
+    "pretrain_epochs": 3,
+    "pretrain_final_recon_mse": 0.041154852796545405,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0021167853847146034,
+      "val_loss": 0.08335179835557938,
+      "train_acc": 1.0,
+      "val_acc": 0.9789021097890211
+    }
+  },
+  "history_final": {
+    "epoch": 17,
+    "train_obj": 0.06151821224885861,
+    "train_loss": 0.0021167853847146034,
+    "train_acc": 1.0,
+    "val_loss": 0.08335179835557938,
+    "val_acc": 0.9789021097890211,
+    "val_auc": 0.9995311090335204,
+    "lr": 0.012808215833272208,
+    "epoch_seconds": 0.7070326805114746,
+    "passes": 20
+  },
+  "seconds": 69.05296277999878,
+  "run_id": "19b1288093744f989e6f8dda99615619",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_unsupervised_pretrain\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_unsupervised_pretrain\\loss_curve.png"
+}

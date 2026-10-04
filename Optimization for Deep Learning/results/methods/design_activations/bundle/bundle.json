@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "design_activations",
+    "title": "Model design: near-linear activations (ReLU, leaky ReLU, ELU, maxout vs tanh, sigmoid)",
+    "hp": {
+      "lr": 0.05,
+      "l2": 1e-05,
+      "l1": 1e-07,
+      "activation": "relu"
+    },
+    "val": {
+      "loss": 0.09102222323417664,
+      "accuracy": 0.9808019198080192,
+      "accuracy_se": 0.0013721381543346305,
+      "auc": 0.9995584143809403
+    },
+    "test_accuracy": 0.9812,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "method": "conjugate_gradients",
+  "title": "Conjugate gradients (nonlinear, PR+/FR)",
+  "section": "8.6.2",
+  "group": "second-order",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "l2": 1.7670169402947916e-06,
+    "l1": 5.6698495114788556e-05,
+    "variant": "PR+",
+    "restart": 39,
+    "c2": 0.1201975341512912
+  },
+  "val": {
+    "loss": 0.07315904647111893,
+    "accuracy": 0.9784021597840216,
+    "accuracy_se": 0.0014535907466658113,
+    "auc": 0.9994806228237098
+  },
+  "test": {
+    "loss": 0.0673651471734047,
+    "accuracy": 0.9791,
+    "accuracy_se": 0.0014304960678030551,
+    "auc": 0.9996802045014792,
+    "auc_ci95": [
+      0.9996139906571594,
+      0.999754905215764
+    ]
+  },
+  "passes": 214.0,
+  "extras": {
+    "iterations_run": 100,
+    "passes": 214.0,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "cg_restarts": 0,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.01251997146755457,
+      "val_loss": 0.07315904647111893,
+      "train_acc": 0.9982,
+      "val_acc": 0.9784021597840216
+    }
+  },
+  "history_final": {
+    "epoch": 100,
+    "train_obj": 0.263839032035321,
+    "train_loss": 0.01251997146755457,
+    "train_acc": 0.9982,
+    "val_loss": 0.07315904647111893,
+    "val_acc": 0.9784021597840216,
+    "val_auc": 0.9994806228237098,
+    "lr": 1.2565165536951834,
+    "epoch_seconds": 0.7501254081726074,
+    "passes": 214.0
+  },
+  "seconds": 134.5932013988495,
+  "run_id": "7f260c92bc704e4caaeba7cf23ae31e1",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\conjugate_gradients\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\conjugate_gradients\\loss_curve.png"
+}

@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": true,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "batch_norm",
+    "title": "Batch normalization",
+    "hp": {
+      "lr": 0.0730953983591291,
+      "l2": 5.589524205217922e-07,
+      "l1": 1.146210740342504e-06
+    },
+    "val": {
+      "loss": 0.07140723615884781,
+      "accuracy": 0.9843015698430156,
+      "accuracy_se": 0.0012429981658534466,
+      "auc": 0.9996968709298001
+    },
+    "test_accuracy": 0.9824,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

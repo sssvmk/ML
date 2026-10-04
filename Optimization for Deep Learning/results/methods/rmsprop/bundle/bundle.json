@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "rmsprop",
+    "title": "RMSProp",
+    "hp": {
+      "lr": 0.000816845589476017,
+      "l2": 0.0005141096648805752,
+      "l1": 9.962513222055125e-09,
+      "rho": 0.9002757154906543
+    },
+    "val": {
+      "loss": 0.06956639885902405,
+      "accuracy": 0.9788021197880212,
+      "accuracy_se": 0.0014403629903935074,
+      "auc": 0.9995717114090674
+    },
+    "test_accuracy": 0.9801,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

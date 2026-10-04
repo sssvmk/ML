@@ -1,0 +1,76 @@
+{
+  "method": "init_glorot",
+  "title": "Normalized (Glorot/Xavier) initialization",
+  "section": "8.4 (12.3)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "gain": 1.0
+  },
+  "val": {
+    "loss": 0.09214567393064499,
+    "accuracy": 0.9827017298270173,
+    "accuracy_se": 0.001303738481750707,
+    "auc": 0.9995966999008745
+  },
+  "test": {
+    "loss": 0.0764915943145752,
+    "accuracy": 0.9819,
+    "accuracy_se": 0.0013331312763565336,
+    "auc": 0.9997821495198659,
+    "auc_ci95": [
+      0.9997204614499673,
+      0.9998398911543555
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.6155059337615967,
+    "init_loss_over_lnK": 1.1358997944178735,
+    "init_act_std": [
+      0.7249948978424072,
+      0.584959089756012
+    ],
+    "init_grad_norm_first_over_last": 2.7078137052934386,
+    "init_grad_norms": [
+      3.01334547996521,
+      1.9864933490753174,
+      1.1128333806991577
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0002611952950246632,
+      "val_loss": 0.09214567393064499,
+      "train_acc": 1.0,
+      "val_acc": 0.9827017298270173
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.005500945219657456,
+    "train_loss": 0.0002611952950246632,
+    "train_acc": 1.0,
+    "val_loss": 0.09214567393064499,
+    "val_acc": 0.9827017298270173,
+    "val_auc": 0.9995966999008745,
+    "lr": 0.018867680126765363,
+    "epoch_seconds": 0.7470898628234863,
+    "passes": 20
+  },
+  "seconds": 65.53677105903625,
+  "run_id": "2eaa91ae3845446b98a5ff1041145603",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_glorot\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_glorot\\loss_curve.png"
+}

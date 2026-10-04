@@ -1,0 +1,76 @@
+{
+  "method": "init_fixed_scale",
+  "title": "Fixed-scale heuristic U(-1/sqrt(m), 1/sqrt(m))",
+  "section": "8.4 (12.2)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "gain": 1.0
+  },
+  "val": {
+    "loss": 0.08545534312725067,
+    "accuracy": 0.9826017398260174,
+    "accuracy_se": 0.0013074345617187823,
+    "auc": 0.9996381572673088
+  },
+  "test": {
+    "loss": 0.07594767212867737,
+    "accuracy": 0.9842,
+    "accuracy_se": 0.001247010825935366,
+    "auc": 0.9997750329212621,
+    "auc_ci95": [
+      0.9997040722974866,
+      0.9998376016984869
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.309252977371216,
+    "init_loss_over_lnK": 1.0028958253909739,
+    "init_act_std": [
+      0.3408929109573364,
+      0.13752400875091553
+    ],
+    "init_grad_norm_first_over_last": 2.789142539831728,
+    "init_grad_norms": [
+      0.5648612976074219,
+      0.3258991837501526,
+      0.20252148807048798
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00024642341304570436,
+      "val_loss": 0.08545534312725067,
+      "train_acc": 1.0,
+      "val_acc": 0.9826017398260174
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.0030240079754048827,
+    "train_loss": 0.00024642341304570436,
+    "train_acc": 1.0,
+    "val_loss": 0.08545534312725067,
+    "val_acc": 0.9826017398260174,
+    "val_auc": 0.9996381572673088,
+    "lr": 0.018867680126765363,
+    "epoch_seconds": 0.8118412494659424,
+    "passes": 20
+  },
+  "seconds": 67.61448335647583,
+  "run_id": "202c8e8bfcc54e9f9f82f6e36031c09c",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_fixed_scale\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_fixed_scale\\loss_curve.png"
+}

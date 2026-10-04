@@ -1,0 +1,77 @@
+{
+  "method": "clip_value",
+  "title": "Gradient clipping: element-wise (value)",
+  "section": "8.2.4 (13.1)",
+  "group": "gradient clipping",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.040842279473800806,
+    "l2": 0.0005141096648805752,
+    "l1": 9.962513222055125e-09,
+    "v": 0.034890188454913866
+  },
+  "val": {
+    "loss": 0.062391191720962524,
+    "accuracy": 0.9814018598140186,
+    "accuracy_se": 0.0013509413134985342,
+    "auc": 0.9995964184066416
+  },
+  "test": {
+    "loss": 0.056663013994693756,
+    "accuracy": 0.9823,
+    "accuracy_se": 0.0013185867434492146,
+    "auc": 0.9997589704668375,
+    "auc_ci95": [
+      0.9996903160655153,
+      0.9998159396629843
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "clipped_element_fraction": 3.110653808746519e-05,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.005220599938184023,
+      "val_loss": 0.062391191720962524,
+      "train_acc": 1.0,
+      "val_acc": 0.9814018598140186
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.06586742832222262,
+    "train_loss": 0.005220599938184023,
+    "train_acc": 1.0,
+    "val_loss": 0.062391191720962524,
+    "val_acc": 0.9814018598140186,
+    "val_auc": 0.9995964184066416,
+    "lr": 0.015411981295192567,
+    "epoch_seconds": 0.8834450244903564,
+    "passes": 20
+  },
+  "seconds": 70.70128846168518,
+  "run_id": "15a90bd82b59412aba059f6f4ba58c49",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_value\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_value\\loss_curve.png"
+}

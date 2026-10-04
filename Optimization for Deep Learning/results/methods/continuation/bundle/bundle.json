@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "continuation",
+    "title": "Continuation method (annealed input blur)",
+    "hp": {
+      "lr": 0.04547458516365309,
+      "l2": 8.187693891007492e-05,
+      "l1": 3.4080665870025724e-08,
+      "sigma0": 1.2230519020533517,
+      "anneal_frac": 0.5799150912870286
+    },
+    "val": {
+      "loss": 0.06825555115938187,
+      "accuracy": 0.9836016398360165,
+      "accuracy_se": 0.0012699543757080192,
+      "auc": 0.9996824177641639
+    },
+    "test_accuracy": 0.9838,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

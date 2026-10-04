@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_supervised_pretrain",
+    "title": "Supervised pretraining on a related / unrelated task",
+    "hp": {
+      "lr": 0.02699657592452432,
+      "l2": 3.6146501477851745e-06,
+      "l1": 1.5965632314170815e-07,
+      "task": "related",
+      "pre_frac": 0.28324780472035305,
+      "pre_lr": 0.06544185131336379
+    },
+    "val": {
+      "loss": 0.1100064292550087,
+      "accuracy": 0.9798020197980202,
+      "accuracy_se": 0.0014066997900561767,
+      "auc": 0.9992614705114043
+    },
+    "test_accuracy": 0.9771,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

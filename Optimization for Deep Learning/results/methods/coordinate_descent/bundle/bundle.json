@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "coordinate_descent",
+    "title": "Block coordinate descent (one layer at a time)",
+    "hp": {
+      "lr": 0.02302528599479886,
+      "l2": 0.002792471643386222,
+      "l1": 9.3202995673644e-06,
+      "cycle": 2
+    },
+    "val": {
+      "loss": 0.086388498544693,
+      "accuracy": 0.9753024697530247,
+      "accuracy_se": 0.001551939229844452,
+      "auc": 0.9993425199652556
+    },
+    "test_accuracy": 0.9783,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

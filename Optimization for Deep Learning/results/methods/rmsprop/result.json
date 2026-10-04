@@ -1,0 +1,76 @@
+{
+  "method": "rmsprop",
+  "title": "RMSProp",
+  "section": "8.5.2",
+  "group": "adaptive learning rate",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.000816845589476017,
+    "l2": 0.0005141096648805752,
+    "l1": 9.962513222055125e-09,
+    "rho": 0.9002757154906543
+  },
+  "val": {
+    "loss": 0.06956639885902405,
+    "accuracy": 0.9788021197880212,
+    "accuracy_se": 0.0014403629903935074,
+    "auc": 0.9995717114090674
+  },
+  "test": {
+    "loss": 0.068882055580616,
+    "accuracy": 0.9801,
+    "accuracy_se": 0.0013965668619869236,
+    "auc": 0.9996743215420976,
+    "auc_ci95": [
+      0.9995856463667026,
+      0.9997542157544477
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.013679621741175652,
+      "val_loss": 0.06956639885902405,
+      "train_acc": 0.9967,
+      "val_acc": 0.9788021197880212
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.06560400582680252,
+    "train_loss": 0.013679621741175652,
+    "train_acc": 0.9967,
+    "val_loss": 0.06956639885902405,
+    "val_acc": 0.9788021197880212,
+    "val_auc": 0.9995717114090674,
+    "lr": 0.000816845589476017,
+    "epoch_seconds": 0.7031488418579102,
+    "passes": 20
+  },
+  "seconds": 65.64492797851562,
+  "run_id": "b9a3b8729e7c4c8698ed11dd23fd5d62",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop\\loss_curve.png"
+}

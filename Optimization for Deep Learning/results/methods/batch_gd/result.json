@@ -1,0 +1,75 @@
+{
+  "method": "batch_gd",
+  "title": "Batch (full-dataset) gradient descent",
+  "section": "8.1.3",
+  "group": "update rules",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.06533369619026641,
+    "l2": 0.0015741890047456662,
+    "l1": 1.0129197956845748e-06
+  },
+  "val": {
+    "loss": 0.2904444932937622,
+    "accuracy": 0.9145085491450855,
+    "accuracy_se": 0.0027959764877608707,
+    "auc": 0.993724468936049
+  },
+  "test": {
+    "loss": 0.2669047713279724,
+    "accuracy": 0.9238,
+    "accuracy_se": 0.002653178471192619,
+    "auc": 0.9947431656765005,
+    "auc_ci95": [
+      0.9940849939581782,
+      0.9953980686529958
+    ]
+  },
+  "passes": 100.0,
+  "extras": {
+    "iterations_run": 100,
+    "passes": 100.0,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.2612447738647461,
+      "val_loss": 0.2904444932937622,
+      "train_acc": 0.9283,
+      "val_acc": 0.9145085491450855
+    }
+  },
+  "history_final": {
+    "epoch": 100,
+    "train_obj": 0.8873187303543091,
+    "train_loss": 0.2612447738647461,
+    "train_acc": 0.9283,
+    "val_loss": 0.2904444932937622,
+    "val_acc": 0.9145085491450855,
+    "val_auc": 0.993724468936049,
+    "lr": 0.06533369619026641,
+    "epoch_seconds": 0.22045063972473145,
+    "passes": 100.0
+  },
+  "seconds": 71.2179012298584,
+  "run_id": "4b82b348d08e447fa57ed8650da491cf",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_gd\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_gd\\loss_curve.png"
+}

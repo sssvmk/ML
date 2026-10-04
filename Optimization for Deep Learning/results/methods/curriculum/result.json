@@ -1,0 +1,77 @@
+{
+  "method": "curriculum",
+  "title": "Curriculum learning (easy-to-hard sampling)",
+  "section": "8.7.6 (b)",
+  "group": "meta-algorithms",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.03076078974173495,
+    "l2": 9.850687472995661e-05,
+    "l1": 2.1105320163542097e-06,
+    "start_frac": 0.24280939906956817,
+    "pace_frac": 0.2045458930528508
+  },
+  "val": {
+    "loss": 0.07583952695131302,
+    "accuracy": 0.9807019298070193,
+    "accuracy_se": 0.0013756366636425885,
+    "auc": 0.9995803159256258
+  },
+  "test": {
+    "loss": 0.06797660887241364,
+    "accuracy": 0.9811,
+    "accuracy_se": 0.0013617191340360914,
+    "auc": 0.9997311740393391,
+    "auc_ci95": [
+      0.9996677069856468,
+      0.9997927554490643
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0022114908788353205,
+      "val_loss": 0.07583952695131302,
+      "train_acc": 1.0,
+      "val_acc": 0.9807019298070193
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.055859688146178386,
+    "train_loss": 0.0022114908788353205,
+    "train_acc": 1.0,
+    "val_loss": 0.07583952695131302,
+    "val_acc": 0.9807019298070193,
+    "val_auc": 0.9995803159256258,
+    "lr": 0.011607694825874808,
+    "epoch_seconds": 0.7432942390441895,
+    "passes": 20
+  },
+  "seconds": 67.52764534950256,
+  "run_id": "f74c79513355440cbf3b8cc15c9b7405",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\curriculum\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\curriculum\\loss_curve.png"
+}

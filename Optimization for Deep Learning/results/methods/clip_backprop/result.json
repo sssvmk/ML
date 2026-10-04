@@ -1,0 +1,77 @@
+{
+  "method": "clip_backprop",
+  "title": "Gradient clipping: back-propagated gradient w.r.t. hidden units",
+  "section": "8.2.4 (13.3)",
+  "group": "gradient clipping",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.05,
+    "l2": 1e-05,
+    "l1": 1e-07,
+    "v": 0.005
+  },
+  "val": {
+    "loss": 0.09035583585500717,
+    "accuracy": 0.9815018498150185,
+    "accuracy_se": 0.0013473734897716519,
+    "auc": 0.9995617312269032
+  },
+  "test": {
+    "loss": 0.08489720523357391,
+    "accuracy": 0.9806,
+    "accuracy_se": 0.0013792621215708047,
+    "auc": 0.999728821417478,
+    "auc_ci95": [
+      0.9996576274066552,
+      0.9997969341403313
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "clipped_backprop_element_fraction": 2.8724532823989815e-06,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0003060586750507355,
+      "val_loss": 0.09035583585500717,
+      "train_acc": 1.0,
+      "val_acc": 0.9815018498150185
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.006616708144140832,
+    "train_loss": 0.0003060586750507355,
+    "train_acc": 1.0,
+    "val_loss": 0.09035583585500717,
+    "val_acc": 0.9815018498150185,
+    "val_auc": 0.9995617312269032,
+    "lr": 0.018867680126765363,
+    "epoch_seconds": 0.839493989944458,
+    "passes": 20
+  },
+  "seconds": 61.22151732444763,
+  "run_id": "6acc79ad18454c2ca16c9c63adbbad72",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_backprop\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_backprop\\loss_curve.png"
+}

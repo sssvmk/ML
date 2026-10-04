@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "bias_output_marginal",
+    "title": "Output bias = training-data marginal (softmax(b) = class frequencies)",
+    "hp": {
+      "lr": 0.026199203362537414,
+      "l2": 0.00017250508907842597,
+      "l1": 3.846855295864764e-08,
+      "strength": 0.01796187561481999,
+      "out_weight_scale": 0.2693637964282293
+    },
+    "val": {
+      "loss": 0.07554767280817032,
+      "accuracy": 0.9793020697930207,
+      "accuracy_se": 0.001423639671483346,
+      "auc": 0.9996006133216582
+    },
+    "test_accuracy": 0.9809,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

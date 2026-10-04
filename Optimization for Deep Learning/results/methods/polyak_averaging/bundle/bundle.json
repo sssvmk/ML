@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "polyak_averaging",
+    "title": "Polyak averaging (exponential moving average of weights)",
+    "hp": {
+      "lr": 0.040842279473800806,
+      "l2": 0.0005141096648805752,
+      "l1": 9.962513222055125e-09,
+      "one_minus_tau": 0.004983142493044818
+    },
+    "val": {
+      "loss": 0.0632348507642746,
+      "accuracy": 0.981001899810019,
+      "accuracy_se": 0.0013651120411258435,
+      "auc": 0.9995718336042332
+    },
+    "test_accuracy": 0.9829,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

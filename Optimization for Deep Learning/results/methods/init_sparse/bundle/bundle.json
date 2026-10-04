@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "init_sparse",
+    "title": "Sparse initialization (k non-zero weights per unit)",
+    "hp": {
+      "lr": 0.08369042894376064,
+      "l2": 6.870101665590006e-08,
+      "l1": 2.8888383623653223e-08,
+      "k": 8,
+      "std": 0.2689189948444277
+    },
+    "val": {
+      "loss": 0.10732491314411163,
+      "accuracy": 0.982001799820018,
+      "accuracy_se": 0.0013293794687932877,
+      "auc": 0.9996131652445663
+    },
+    "test_accuracy": 0.9829,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "method": "nesterov",
+  "title": "Nesterov momentum",
+  "section": "8.3.3",
+  "group": "update rules",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.11536162338241392,
+    "l2": 1.879466824163843e-07,
+    "l1": 8.111941985431926e-09,
+    "alpha": 0.5898682098281826
+  },
+  "val": {
+    "loss": 0.10169953852891922,
+    "accuracy": 0.9787021297870213,
+    "accuracy_se": 0.00144368233066343,
+    "auc": 0.9995351788545881
+  },
+  "test": {
+    "loss": 0.09152881056070328,
+    "accuracy": 0.9791,
+    "accuracy_se": 0.0014304960678030551,
+    "auc": 0.999676607716753,
+    "auc_ci95": [
+      0.9995826997516852,
+      0.9997569029169623
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00027345988200977445,
+      "val_loss": 0.10169953852891922,
+      "train_acc": 1.0,
+      "val_acc": 0.9787021297870213
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.000509513209733752,
+    "train_loss": 0.00027345988200977445,
+    "train_acc": 1.0,
+    "val_loss": 0.10169953852891922,
+    "val_acc": 0.9787021297870213,
+    "val_auc": 0.9995351788545881,
+    "lr": 0.11536162338241392,
+    "epoch_seconds": 0.770740270614624,
+    "passes": 20
+  },
+  "seconds": 66.18750953674316,
+  "run_id": "31f52e2e0f684c69824ec6b04da822a1",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\nesterov\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\nesterov\\loss_curve.png"
+}

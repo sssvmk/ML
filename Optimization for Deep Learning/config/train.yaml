@@ -1,0 +1,49 @@
+# Every entry point reads this file. Override from the CLI with  --set section.key=value
+seed: 42
+
+data:
+  source: mnist            # mnist (torchvision) | npz:/path/mnist.npz | synthetic (smoke tests only)
+  root: ./data
+  val_size: 10000          # carved out of the 60k official train set (MNIST has no validation split)
+  batch_size: 128
+  synthetic_train: 6000    # used only when source=synthetic
+  synthetic_test: 1500
+
+model:
+  hidden: [256, 128]       # fully connected, ReLU hidden units
+  init: he_normal          # he_normal | default (PyTorch's nn.Linear default)
+
+train:                     # minibatch methods: budget in epochs (passes over the training set)
+  epochs: 20
+  momentum: 0.9            # used by every method that is not itself an update-rule study
+  lr_decay: 0.95           # exponential per-epoch decay used by the same methods
+  device: auto             # auto | cpu | cuda
+
+full_batch:                # batch GD, conjugate gradients, BFGS, L-BFGS, Newton: budget in ITERATIONS
+  iterations: 100
+  gtol: 1.0e-5             # stop early when max |gradient component| <= gtol
+
+tune:                      # hyperparameter tuning is part of the pipeline: Optuna, one study per method
+  n_trials: 12
+  epochs: 5                # trial budget for minibatch methods
+  fullbatch_iters: 12      # trial budget for full-batch methods
+  metric: accuracy         # accuracy | loss | auc  (always measured on the validation set)
+
+regularization:            # every method trains with L1 + L2 weight penalties; strengths are tuned
+  l2_range: [1.0e-8, 1.0e-2]
+  l1_range: [1.0e-9, 1.0e-4]
+  l1_smoothing: 1.0e-3     # smooth |w| ~ sqrt(w^2 + eps^2) so line searches / curvature stay valid
+
+method_settings:           # regime knobs that are not tuned
+  bfgs:            {hidden: [8]}          # dense BFGS stores an n x n matrix -> tiny network
+  newton:          {curvature_batch: 5000}
+  lbfgs:           {history: 10}
+  curriculum:      {scorer_epochs: 2}
+
+tracking:
+  uri: null                # null -> sqlite:///<out>/mlflow.db
+  experiment: MNIST-Optimization
+  registered_model_name: MNIST-Opt
+
+promotion:
+  min_accuracy: null       # e.g. 0.98 ; null = no absolute target configured

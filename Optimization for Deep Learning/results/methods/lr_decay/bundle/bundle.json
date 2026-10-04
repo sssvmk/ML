@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "lr_decay",
+    "title": "Learning-rate decay (schedule within SGD)",
+    "hp": {
+      "lr": 0.3268132041482867,
+      "l2": 0.0002742449534924103,
+      "l1": 6.665148427358314e-05,
+      "schedule": "exponential",
+      "tau_frac": 0.8,
+      "final_frac": 0.01,
+      "gamma": 0.7019510372888542,
+      "d": 0.5,
+      "step_epochs": 5
+    },
+    "val": {
+      "loss": 0.0815262496471405,
+      "accuracy": 0.9755024497550245,
+      "accuracy_se": 0.0015458017587612254,
+      "auc": 0.9992896397961475
+    },
+    "test_accuracy": 0.978,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "method": "adagrad",
+  "title": "AdaGrad",
+  "section": "8.5.1",
+  "group": "adaptive learning rate",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.01701841881702917,
+    "l2": 0.0005141096648805752,
+    "l1": 9.962513222055125e-09
+  },
+  "val": {
+    "loss": 0.0693638026714325,
+    "accuracy": 0.9786021397860214,
+    "accuracy_se": 0.0014469933656531184,
+    "auc": 0.9995375820745258
+  },
+  "test": {
+    "loss": 0.05906914547085762,
+    "accuracy": 0.9822,
+    "accuracy_se": 0.0013222390101642,
+    "auc": 0.9997294677784208,
+    "auc_ci95": [
+      0.9996552390524939,
+      0.9998002362709633
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.008323625661432743,
+      "val_loss": 0.0693638026714325,
+      "train_acc": 0.9998,
+      "val_acc": 0.9786021397860214
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.07316008995265569,
+    "train_loss": 0.008323625661432743,
+    "train_acc": 0.9998,
+    "val_loss": 0.0693638026714325,
+    "val_acc": 0.9786021397860214,
+    "val_auc": 0.9995375820745258,
+    "lr": 0.01701841881702917,
+    "epoch_seconds": 0.7433595657348633,
+    "passes": 20
+  },
+  "seconds": 65.17028141021729,
+  "run_id": "3db81f61fdb5449295fa4884a5de3e34",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adagrad\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adagrad\\loss_curve.png"
+}

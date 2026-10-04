@@ -1,0 +1,36 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "clip_backprop",
+    "title": "Gradient clipping: back-propagated gradient w.r.t. hidden units",
+    "hp": {
+      "lr": 0.05,
+      "l2": 1e-05,
+      "l1": 1e-07,
+      "v": 0.005
+    },
+    "val": {
+      "loss": 0.09035583585500717,
+      "accuracy": 0.9815018498150185,
+      "accuracy_se": 0.0013473734897716519,
+      "auc": 0.9995617312269032
+    },
+    "test_accuracy": 0.9806,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

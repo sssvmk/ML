@@ -1,0 +1,75 @@
+{
+  "method": "bias_zero",
+  "title": "Zero biases",
+  "section": "8.4 (12.8)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.040842279473800806,
+    "l2": 0.0005141096648805752,
+    "l1": 9.962513222055125e-09
+  },
+  "val": {
+    "loss": 0.06475399434566498,
+    "accuracy": 0.9807019298070193,
+    "accuracy_se": 0.0013756366636425885,
+    "auc": 0.9995471354559626
+  },
+  "test": {
+    "loss": 0.055838555097579956,
+    "accuracy": 0.9823,
+    "accuracy_se": 0.0013185867434492146,
+    "auc": 0.9997742727929205,
+    "auc_ci95": [
+      0.9997204977320666,
+      0.9998274384849589
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 3.591381311416626,
+    "init_loss_over_lnK": 1.5597170859587046,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 1.5130615401653489,
+    "init_grad_norms": [
+      6.312709808349609,
+      4.42600154876709,
+      4.172143459320068
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.005453118123114109,
+      "val_loss": 0.06475399434566498,
+      "train_acc": 1.0,
+      "val_acc": 0.9807019298070193
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.06660685450236209,
+    "train_loss": 0.005453118123114109,
+    "train_acc": 1.0,
+    "val_loss": 0.06475399434566498,
+    "val_acc": 0.9807019298070193,
+    "val_auc": 0.9995471354559626,
+    "lr": 0.015411981295192567,
+    "epoch_seconds": 1.2858242988586426,
+    "passes": 20
+  },
+  "seconds": 96.2928671836853,
+  "run_id": "ab43123c06264bcb8bd18ba8c51fdaed",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_zero\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_zero\\loss_curve.png"
+}

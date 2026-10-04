@@ -1,0 +1,77 @@
+{
+  "method": "init_sparse",
+  "title": "Sparse initialization (k non-zero weights per unit)",
+  "section": "8.4 (12.6)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.08369042894376064,
+    "l2": 6.870101665590006e-08,
+    "l1": 2.8888383623653223e-08,
+    "k": 8,
+    "std": 0.2689189948444277
+  },
+  "val": {
+    "loss": 0.10732491314411163,
+    "accuracy": 0.982001799820018,
+    "accuracy_se": 0.0013293794687932877,
+    "auc": 0.9996131652445663
+  },
+  "test": {
+    "loss": 0.09176235646009445,
+    "accuracy": 0.9829,
+    "accuracy_se": 0.00129644089722594,
+    "auc": 0.9997300620861088,
+    "auc_ci95": [
+      0.9996309491480545,
+      0.999820791889478
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.331260919570923,
+    "init_loss_over_lnK": 1.0124537532463522,
+    "init_act_std": [
+      0.4559418559074402,
+      0.21903270483016968
+    ],
+    "init_grad_norm_first_over_last": 2.4286317814764242,
+    "init_grad_norms": [
+      0.7740371227264404,
+      0.5231921672821045,
+      0.3187132477760315
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00013999472139403224,
+      "val_loss": 0.10732491314411163,
+      "train_acc": 1.0,
+      "val_acc": 0.982001799820018
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.0003772867159433951,
+    "train_loss": 0.00013999472139403224,
+    "train_acc": 1.0,
+    "val_loss": 0.10732491314411163,
+    "val_acc": 0.982001799820018,
+    "val_auc": 0.9996131652445663,
+    "lr": 0.03158088485965323,
+    "epoch_seconds": 1.1567676067352295,
+    "passes": 20
+  },
+  "seconds": 100.59298539161682,
+  "run_id": "eabc59af9b35435dbe616c8daa3c54cd",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_sparse\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_sparse\\loss_curve.png"
+}

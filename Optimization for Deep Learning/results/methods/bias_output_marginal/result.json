@@ -1,0 +1,78 @@
+{
+  "method": "bias_output_marginal",
+  "title": "Output bias = training-data marginal (softmax(b) = class frequencies)",
+  "section": "8.4 (12.9)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.026199203362537414,
+    "l2": 0.00017250508907842597,
+    "l1": 3.846855295864764e-08,
+    "strength": 0.01796187561481999,
+    "out_weight_scale": 0.2693637964282293
+  },
+  "val": {
+    "loss": 0.07554767280817032,
+    "accuracy": 0.9793020697930207,
+    "accuracy_se": 0.001423639671483346,
+    "auc": 0.9996006133216582
+  },
+  "test": {
+    "loss": 0.06854946911334991,
+    "accuracy": 0.9809,
+    "accuracy_se": 0.0013687655021953178,
+    "auc": 0.9997233631590017,
+    "auc_ci95": [
+      0.999641878839251,
+      0.9997947084415636
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.4549055099487305,
+    "init_loss_over_lnK": 1.066151916564622,
+    "init_act_std": [
+      0.8136221170425415,
+      0.8788039684295654
+    ],
+    "init_grad_norm_first_over_last": 0.6351044712302915,
+    "init_grad_norms": [
+      1.0680925846099854,
+      0.6018896102905273,
+      1.6817588806152344
+    ],
+    "class_prior_entropy": 2.301158905029297,
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0018450460629537702,
+      "val_loss": 0.07554767280817032,
+      "train_acc": 1.0,
+      "val_acc": 0.9793020697930207
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.05680195608764768,
+    "train_loss": 0.0018450460629537702,
+    "train_acc": 1.0,
+    "val_loss": 0.07554767280817032,
+    "val_acc": 0.9793020697930207,
+    "val_auc": 0.9996006133216582,
+    "lr": 0.009886363772408629,
+    "epoch_seconds": 1.2765498161315918,
+    "passes": 20
+  },
+  "seconds": 101.86254835128784,
+  "run_id": "ad5761737dbd4ed197ff2b239ff1a587",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_output_marginal\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_output_marginal\\loss_curve.png"
+}

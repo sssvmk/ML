@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "design_aux_heads",
+    "title": "Model design: auxiliary heads (deep supervision)",
+    "hp": {
+      "lr": 0.05,
+      "l2": 1e-05,
+      "l1": 1e-07,
+      "depth": 6,
+      "aux_weight": 0.3
+    },
+    "val": {
+      "loss": 0.13809822499752045,
+      "accuracy": 0.9829017098290171,
+      "accuracy_se": 0.0012963123936146675,
+      "auc": 0.9994359998817377
+    },
+    "test_accuracy": 0.984,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "sgd",
+    "title": "Minibatch stochastic gradient descent",
+    "hp": {
+      "lr": 0.2311294500510414,
+      "l2": 1.879466824163843e-07,
+      "l1": 8.111941985431926e-09
+    },
+    "val": {
+      "loss": 0.10195990651845932,
+      "accuracy": 0.9789021097890211,
+      "accuracy_se": 0.0014370352872914226,
+      "auc": 0.9994545681922512
+    },
+    "test_accuracy": 0.9803,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

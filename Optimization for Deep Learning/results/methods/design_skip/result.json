@@ -1,0 +1,82 @@
+{
+  "method": "design_skip",
+  "title": "Model design: skip connections (deep residual MLP)",
+  "section": "8.7.5 (b)",
+  "group": "meta-algorithms",
+  "regime": "deep MLP, 3 equal-width layers",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.019733115965076906,
+    "l2": 2.8046969219357056e-06,
+    "l1": 5.449280398972808e-07,
+    "depth": 3
+  },
+  "val": {
+    "loss": 0.10329344123601913,
+    "accuracy": 0.9784021597840216,
+    "accuracy_se": 0.0014535907466658113,
+    "auc": 0.9994919544610118
+  },
+  "test": {
+    "loss": 0.09368212521076202,
+    "accuracy": 0.9777,
+    "accuracy_se": 0.0014765740753514532,
+    "auc": 0.9996481385634877,
+    "auc_ci95": [
+      0.9995653770867766,
+      0.9997309326905084
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 6.4144463539123535,
+    "init_loss_over_lnK": 2.785758655968568,
+    "init_act_std": [
+      0.8067438006401062,
+      1.1391195058822632,
+      1.737187147140503
+    ],
+    "init_grad_norm_first_over_last": 0.695986464966223,
+    "init_grad_norms": [
+      13.691686630249023,
+      6.690427303314209,
+      9.617086410522461,
+      19.672346115112305
+    ],
+    "n_params": 335114,
+    "depth": 3,
+    "ablation_no_skips_val_acc": 0.9787021297870213,
+    "ablation_no_skips_val_loss": 0.10035176575183868,
+    "ablation_no_skips_init_grad_first_over_last": 1.1262435825169446
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.0007149868761189282,
+      "val_loss": 0.10329344123601913,
+      "train_acc": 1.0,
+      "val_acc": 0.9784021597840216
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.013079840306054575,
+    "train_loss": 0.0007149868761189282,
+    "train_acc": 1.0,
+    "val_loss": 0.10329344123601913,
+    "val_acc": 0.9784021597840216,
+    "val_auc": 0.9994919544610118,
+    "lr": 0.007446362398668757,
+    "epoch_seconds": 1.3189680576324463,
+    "passes": 20
+  },
+  "seconds": 99.76503276824951,
+  "run_id": "841e903b46f84131a146bc1a5216bc9a",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_skip\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_skip\\loss_curve.png"
+}

@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "rmsprop_nesterov",
+    "title": "RMSProp with Nesterov momentum",
+    "hp": {
+      "lr": 0.0004480975918214954,
+      "l2": 6.870101665590006e-08,
+      "l1": 2.8888383623653223e-08,
+      "rho": 0.87144055944227,
+      "alpha": 0.7052314928976662
+    },
+    "val": {
+      "loss": 0.1592487245798111,
+      "accuracy": 0.9786021397860214,
+      "accuracy_se": 0.0014469933656531184,
+      "auc": 0.9993821361975785
+    },
+    "test_accuracy": 0.9764,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

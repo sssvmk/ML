@@ -1,0 +1,12 @@
+# Versions this project was tested with are noted in comments; the lower bounds are what the code needs.
+torch>=2.2            # tested: 2.14.1 (CPU)
+torchvision>=0.17     # tested: 0.29.1 (MNIST download)
+mlflow>=3.0           # tested: 3.16.1 (code uses log_model(name=...) from MLflow 3)
+optuna>=3.5           # tested: 5.0.0
+scikit-learn>=1.3
+numpy
+pandas
+matplotlib
+pyyaml
+pillow
+pytest

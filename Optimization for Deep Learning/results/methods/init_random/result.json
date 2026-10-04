@@ -1,0 +1,77 @@
+{
+  "method": "init_random",
+  "title": "Random Gaussian / uniform initialization",
+  "section": "8.4 (12.1)",
+  "group": "initialization",
+  "regime": "full labels",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.03654769917956455,
+    "l2": 5.589524205217922e-07,
+    "l1": 1.146210740342504e-06,
+    "dist": "uniform",
+    "std": 0.009745399020374083
+  },
+  "val": {
+    "loss": 0.08290630578994751,
+    "accuracy": 0.9816018398160185,
+    "accuracy_se": 0.0013437954494496603,
+    "auc": 0.999635931047459
+  },
+  "test": {
+    "loss": 0.07347864657640457,
+    "accuracy": 0.9822,
+    "accuracy_se": 0.0013222390101642,
+    "auc": 0.9997469287340032,
+    "auc_ci95": [
+      0.9996550015583577,
+      0.9998171344795479
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.302677631378174,
+    "init_loss_over_lnK": 1.000040188909591,
+    "init_act_std": [
+      0.1611151099205017,
+      0.017554039135575294
+    ],
+    "init_grad_norm_first_over_last": 1.1070425724925792,
+    "init_grad_norms": [
+      0.029172711074352264,
+      0.029587985947728157,
+      0.0263519324362278
+    ],
+    "n_params": 235146
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.00045030645560473204,
+      "val_loss": 0.08290630578994751,
+      "train_acc": 1.0,
+      "val_acc": 0.9816018398160185
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.005767665190097716,
+    "train_loss": 0.00045030645560473204,
+    "train_acc": 1.0,
+    "val_loss": 0.08290630578994751,
+    "val_acc": 0.9816018398160185,
+    "val_auc": 0.999635931047459,
+    "lr": 0.013791405949785375,
+    "epoch_seconds": 0.7829513549804688,
+    "passes": 20
+  },
+  "seconds": 68.00094223022461,
+  "run_id": "e09178564b254629ac8b91b9041a2992",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random\\loss_curve.png"
+}

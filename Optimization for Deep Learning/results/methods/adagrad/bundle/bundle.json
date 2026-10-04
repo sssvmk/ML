@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "adagrad",
+    "title": "AdaGrad",
+    "hp": {
+      "lr": 0.01701841881702917,
+      "l2": 0.0005141096648805752,
+      "l1": 9.962513222055125e-09
+    },
+    "val": {
+      "loss": 0.0693638026714325,
+      "accuracy": 0.9786021397860214,
+      "accuracy_se": 0.0014469933656531184,
+      "auc": 0.9995375820745258
+    },
+    "test_accuracy": 0.9822,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

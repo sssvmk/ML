@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "arch": "mlp",
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "batch_norm": false,
+    "residual": false,
+    "gated": false,
+    "gaussian_output": false,
+    "aux_heads": [],
+    "init": "he_normal"
+  },
+  "meta": {
+    "method": "bias_zero",
+    "title": "Zero biases",
+    "hp": {
+      "lr": 0.040842279473800806,
+      "l2": 0.0005141096648805752,
+      "l1": 9.962513222055125e-09
+    },
+    "val": {
+      "loss": 0.06475399434566498,
+      "accuracy": 0.9807019298070193,
+      "accuracy_se": 0.0013756366636425885,
+      "auc": 0.9995471354559626
+    },
+    "test_accuracy": 0.9823,
+    "data_hash": "1e35582d42a90940",
+    "seed": 42,
+    "input": "float32 [n,784] in [0,1], white digit on black"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "method": "bias_gate",
+  "title": "Gate biases near 1 (gated hidden units)",
+  "section": "8.4 (12.11)",
+  "group": "initialization",
+  "regime": "gated hidden layers",
+  "champion_eligible": true,
+  "best_hp": {
+    "lr": 0.040842279473800806,
+    "l2": 0.0005141096648805752,
+    "l1": 9.962513222055125e-09,
+    "gate_bias": 1.0854066304816694
+  },
+  "val": {
+    "loss": 0.06830678880214691,
+    "accuracy": 0.9806019398060194,
+    "accuracy_se": 0.001379125573229087,
+    "auc": 0.9995195998578389
+  },
+  "test": {
+    "loss": 0.05840040743350983,
+    "accuracy": 0.9812,
+    "accuracy_se": 0.0013581811366677142,
+    "auc": 0.9997668273823141,
+    "auc_ci95": [
+      0.9997040149351873,
+      0.999829869106366
+    ]
+  },
+  "passes": 20.0,
+  "extras": {
+    "epochs_run": 20,
+    "passes": 20,
+    "init_loss": 2.7132763862609863,
+    "init_loss_over_lnK": 1.1783609624315423,
+    "init_act_std": [
+      0.6182113289833069,
+      0.45059192180633545
+    ],
+    "init_grad_norm_first_over_last": 1.957683140480101,
+    "init_grad_norms": [
+      2.585989236831665,
+      1.8295509815216064,
+      1.3209437131881714
+    ],
+    "n_params": 469002
+  },
+  "diagnosis": {
+    "verdict": [
+      "healthy"
+    ],
+    "notes": [],
+    "final": {
+      "train_loss": 0.004695697221904993,
+      "val_loss": 0.06830678880214691,
+      "train_acc": 1.0,
+      "val_acc": 0.9806019398060194
+    }
+  },
+  "history_final": {
+    "epoch": 20,
+    "train_obj": 0.09385904867548726,
+    "train_loss": 0.004695697221904993,
+    "train_acc": 1.0,
+    "val_loss": 0.06830678880214691,
+    "val_acc": 0.9806019398060194,
+    "val_auc": 0.9995195998578389,
+    "lr": 0.015411981295192567,
+    "epoch_seconds": 2.136016368865967,
+    "passes": 20
+  },
+  "seconds": 163.69948434829712,
+  "run_id": "3067faafc70b4052a32e073fcb427ecd",
+  "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_gate\\bundle",
+  "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_gate\\loss_curve.png"
+}
