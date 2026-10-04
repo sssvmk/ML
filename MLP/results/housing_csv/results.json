@@ -1,0 +1,113 @@
+{
+  "dataset": "housing_data",
+  "task": "regression",
+  "config": {
+    "hidden": [
+      512,
+      512,
+      512,
+      512
+    ],
+    "optimizer": "adamw",
+    "lr": 0.0010112551133561916,
+    "momentum": 0.9,
+    "batch_size": 64,
+    "epochs": 60,
+    "gamma": 0.8951659201621682,
+    "weight_decay": 0.0008365047330010574,
+    "dropout": 0.05,
+    "patience": 8
+  },
+  "seed": 42,
+  "n_params": 795137,
+  "split": {
+    "presplit": false,
+    "strategy": "NOT pre-split: a single table of 20,640 rows was split 12,384 train / 4,128 validation / 4,128 test (random, seed 42). Preprocessing (imputation, scaling, one-hot) was fit on the training rows only."
+  },
+  "audit": {
+    "sizes": {
+      "train": 12384,
+      "val": 4128,
+      "test": 4128
+    },
+    "fractions": {
+      "train": 0.6,
+      "val": 0.2,
+      "test": 0.2
+    },
+    "nonfinite": {
+      "train": {
+        "features": 0,
+        "target": 0
+      },
+      "val": {
+        "features": 0,
+        "target": 0
+      },
+      "test": {
+        "features": 0,
+        "target": 0
+      }
+    },
+    "overlap_identical_rows": {
+      "train&val": 0,
+      "train&test": 0,
+      "val&test": 0
+    },
+    "warnings": [],
+    "errors": [],
+    "target_stats": {
+      "train": {
+        "target_mean": 206807.734375,
+        "target_std": 115096.1640625
+      },
+      "val": {
+        "target_mean": 208355.53125,
+        "target_std": 117194.234375
+      },
+      "test": {
+        "target_mean": 205500.3125,
+        "target_std": 114486.96875
+      }
+    },
+    "ok": true
+  },
+  "acceptance_target": "no acceptance target set",
+  "best_epoch": 35,
+  "final_val_loss": 0.21577137471862542,
+  "test_metrics": {
+    "loss": 0.2180669605731964,
+    "mse": 2888527319.200682,
+    "mse_se": 133139672.95420292,
+    "mse_ci95_low": 2627573560.2104445,
+    "mse_ci95_high": 3149481078.19092,
+    "rmse": 53745.02134338289,
+    "rmse_se": 1238.6233145537221,
+    "mae": 35844.45869481286,
+    "mae_se": 623.3681580333177,
+    "r2": 0.7795705595624761,
+    "mse_diff_vs_linear": -2023319229.1432552,
+    "mse_diff_vs_linear_se": 123435007.69439594
+  },
+  "reference": {
+    "linear_regression_test_mse": 4911846389.836942,
+    "linear_regression_test_rmse": 70084.56598878915,
+    "predict_mean_test_rmse": 114480.56237506813
+  },
+  "diagnosis": {
+    "best_epoch": 35,
+    "epochs_run": 43,
+    "train_loss_at_best": 0.17241495632077988,
+    "val_loss_at_best": 0.21577137471862542,
+    "val_over_train_loss": 1.2514655301549389,
+    "verdict": "no large train/validation gap",
+    "note": "heuristic; train loss is a running average over the epoch (with dropout active)"
+  },
+  "mlflow": {
+    "tracking_uri": "sqlite:///C:/Users/msk80743/Use Case Design/MLP/results/housing_csv/mlflow.db",
+    "experiment": "MLP-housing_data",
+    "parent_run_id": "3decbefcc2164903945e13c9cd511ec6",
+    "final_run_id": "31a29440f19f451abc60d48d41076c3c",
+    "promotion": "promoted: first version, no champion yet"
+  }
+}

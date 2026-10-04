@@ -1,0 +1,115 @@
+{
+  "dataset": "santander_train",
+  "task": "classification",
+  "config": {
+    "hidden": [
+      32,
+      16
+    ],
+    "optimizer": "adamw",
+    "lr": 0.004603946746263087,
+    "momentum": 0.9,
+    "batch_size": 256,
+    "epochs": 60,
+    "gamma": 0.9776946698721581,
+    "weight_decay": 1.454099225282842e-05,
+    "dropout": 0.30000000000000004,
+    "patience": 8
+  },
+  "seed": 42,
+  "n_params": 6994,
+  "split": {
+    "presplit": false,
+    "strategy": "NOT pre-split: a single table of 200,000 rows was split 120,000 train / 40,000 validation / 40,000 test (stratified by class, random, seed 42). Preprocessing (imputation, scaling, one-hot) was fit on the training rows only."
+  },
+  "audit": {
+    "sizes": {
+      "train": 120000,
+      "val": 40000,
+      "test": 40000
+    },
+    "fractions": {
+      "train": 0.6,
+      "val": 0.2,
+      "test": 0.2
+    },
+    "nonfinite": {
+      "train": {
+        "features": 0,
+        "target": 0
+      },
+      "val": {
+        "features": 0,
+        "target": 0
+      },
+      "test": {
+        "features": 0,
+        "target": 0
+      }
+    },
+    "overlap_identical_rows": {
+      "train&val": 0,
+      "train&test": 0,
+      "val&test": 0
+    },
+    "warnings": [],
+    "errors": [],
+    "class_counts": {
+      "train": [
+        107941,
+        12059
+      ],
+      "val": [
+        35981,
+        4019
+      ],
+      "test": [
+        35980,
+        4020
+      ]
+    },
+    "max_class_proportion_gap_vs_train": {
+      "train": 0.0,
+      "val": 0.0,
+      "test": 0.0
+    },
+    "ok": true
+  },
+  "acceptance_target": "no acceptance target set",
+  "best_epoch": 5,
+  "final_val_loss": 0.24037927515506743,
+  "test_metrics": {
+    "loss": 0.2385759800672531,
+    "auc_macro_ovr": 0.8520421084543929,
+    "auc_se": 0.0029199318766806822,
+    "auc_ci95_low": 0.8463835654332214,
+    "auc_ci95_high": 0.8578635255806227,
+    "accuracy": 0.91135,
+    "accuracy_se": 0.001421207209821401,
+    "log_loss": 0.23857600785291389,
+    "log_loss_se": 0.00278715659501649,
+    "macro_f1": 0.6433615652649693,
+    "auc_class_0": 0.8520421309240346,
+    "auc_class_1": 0.8520420859847512
+  },
+  "reference": {
+    "logistic_regression_test_auc": 0.8543891783439668,
+    "majority_class_test_accuracy": 0.8995
+  },
+  "diagnosis": {
+    "best_epoch": 5,
+    "epochs_run": 13,
+    "train_loss_at_best": 0.23953111790021261,
+    "val_loss_at_best": 0.24037927515506743,
+    "val_over_train_loss": 1.003540906343568,
+    "verdict": "no large train/validation gap",
+    "note": "heuristic; train loss is a running average over the epoch (with dropout active)"
+  },
+  "mlflow": {
+    "tracking_uri": "sqlite:///C:/Users/msk80743/Use Case Design/MLP/results/santander/mlflow.db",
+    "experiment": "MLP-santander_train",
+    "parent_run_id": "ef5f6b081f3e40a2a39d3cbb70df8aa0",
+    "final_run_id": "1c79d39f54fd477c8f00c8574b613aec",
+    "promotion": "promoted: first version, no champion yet"
+  }
+}

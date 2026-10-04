@@ -1,0 +1,13 @@
+# Minimum versions. Tested with: Python 3.12, torch 2.14.1, mlflow 3.16.1, optuna 5.0.0,
+# scikit-learn 1.8.0, pandas 3.0.2, matplotlib 3.10.8. (mlflow >= 3.0 is required: the code uses
+# mlflow.pyfunc.log_model(name=...).)
+torch>=2.2
+torchvision>=0.17      # MNIST download (mnist runs and infer.py --test-index only)
+mlflow>=3.0
+optuna>=3.5
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+pillow>=10.0           # infer.py --image
+pytest>=8.0            # tests

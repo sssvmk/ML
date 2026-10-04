@@ -1,0 +1,116 @@
+{
+  "dataset": "zillow_full",
+  "task": "regression",
+  "config": {
+    "hidden": [
+      128,
+      128,
+      128
+    ],
+    "optimizer": "sgd",
+    "lr": 0.01066043860753437,
+    "momentum": 0.8352773319459507,
+    "batch_size": 256,
+    "epochs": 60,
+    "gamma": 0.9594888377721201,
+    "weight_decay": 0.0016284370118796604,
+    "dropout": 0.15000000000000002,
+    "patience": 8
+  },
+  "seed": 42,
+  "n_params": 55169,
+  "split": {
+    "presplit": false,
+    "strategy": "NOT pre-split: a single table of 167,888 rows was split 100,732 train / 33,578 validation / 33,578 test (random, seed 42). Preprocessing (imputation, scaling, one-hot) was fit on the training rows only."
+  },
+  "audit": {
+    "sizes": {
+      "train": 100732,
+      "val": 33578,
+      "test": 33578
+    },
+    "fractions": {
+      "train": 0.6,
+      "val": 0.2,
+      "test": 0.2
+    },
+    "nonfinite": {
+      "train": {
+        "features": 0,
+        "target": 0
+      },
+      "val": {
+        "features": 0,
+        "target": 0
+      },
+      "test": {
+        "features": 0,
+        "target": 0
+      }
+    },
+    "overlap_identical_rows": {
+      "train&val": 76,
+      "train&test": 61,
+      "val&test": 16
+    },
+    "warnings": [
+      "76 identical feature rows appear in both 'train' and 'val' (possible leakage or genuine duplicates)",
+      "61 identical feature rows appear in both 'train' and 'test' (possible leakage or genuine duplicates)",
+      "16 identical feature rows appear in both 'val' and 'test' (possible leakage or genuine duplicates)"
+    ],
+    "errors": [],
+    "target_stats": {
+      "train": {
+        "target_mean": 0.012975827790796757,
+        "target_std": 0.16324765980243683
+      },
+      "val": {
+        "target_mean": 0.015858685597777367,
+        "target_std": 0.1743089258670807
+      },
+      "test": {
+        "target_mean": 0.01474530529230833,
+        "target_std": 0.16417615115642548
+      }
+    },
+    "ok": true
+  },
+  "acceptance_target": "no acceptance target set",
+  "best_epoch": 1,
+  "final_val_loss": 1.1434444836418782,
+  "test_metrics": {
+    "loss": 1.0152742862701416,
+    "mse": 0.027056587074354287,
+    "mse_se": 0.0014783819744177,
+    "mse_ci95_low": 0.024158958404495594,
+    "mse_ci95_high": 0.02995421574421298,
+    "rmse": 0.1644888661106103,
+    "rmse_se": 0.004493866391612074,
+    "mae": 0.06906815546010202,
+    "mae_se": 0.0008146983601219111,
+    "r2": -0.003843112156444617,
+    "mse_diff_vs_linear": 0.0002631084403366387,
+    "mse_diff_vs_linear_se": 6.064706040729097e-05
+  },
+  "reference": {
+    "linear_regression_test_mse": 0.026793478279069808,
+    "linear_regression_test_rmse": 0.1636871353499407,
+    "predict_mean_test_rmse": 0.16418323408255975
+  },
+  "diagnosis": {
+    "best_epoch": 1,
+    "epochs_run": 2,
+    "train_loss_at_best": 1.0681605715854465,
+    "val_loss_at_best": 1.1434444836418782,
+    "val_over_train_loss": 1.0704799578444366,
+    "verdict": "no large train/validation gap",
+    "note": "heuristic; train loss is a running average over the epoch (with dropout active)"
+  },
+  "mlflow": {
+    "tracking_uri": "sqlite:///C:/Users/msk80743/Use Case Design/MLP/results/zillow/mlflow.db",
+    "experiment": "MLP-zillow_full",
+    "parent_run_id": "b5528c08f91947f992dc3743b60e4d46",
+    "final_run_id": "9e1119471c494c0dbbfc0b0e1c30e03c",
+    "promotion": "promoted: first version, no champion yet"
+  }
+}

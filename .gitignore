@@ -9,5 +9,11 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.npy
-*.npy
 *.npz
+data/
+runs/
+mlruns/
+mlartifacts/
+mlflow.db
+*.db
+
