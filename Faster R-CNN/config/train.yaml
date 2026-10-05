@@ -1,0 +1,87 @@
+# Baseline: Faster R-CNN (MobileNetV3-Large 320 FPN, COCO-pretrained) fine-tuned on Pascal VOC 2007.
+# Values marked ASSUMED are listed in TODO.md until you confirm them.
+experiment_name: rcnn-voc2007
+run_name: null
+phase: baseline                 # tag only: baseline | candidate | refit
+seed: 42
+
+data:
+  dataset: voc2007              # voc2007 | synthetic (offline smoke tests only)
+  root: ./data
+  download: true                # false -> fail with instructions if VOC2007 is not already under data/
+  num_classes: 20               # foreground classes; overwritten from the dataset
+  val_fraction: 0.10            # carved from VOC2007 trainval; test (4952 images) stays untouched until `test`
+  batch_size: 4
+  num_workers: 4
+  pin_memory: false
+  include_difficult_train: true # difficult objects are trained on but ignored in evaluation (VOC protocol)
+  aug: standard                 # none | flip | standard (flip+photometric) | strong (adds zoom-out, IoU-crop)
+  subset_train: null            # int -> use only N train images (debugging)
+  subset_eval: null             # int -> use only N val/test images (debugging)
+  synthetic_size: 64            # synthetic dataset only
+  synthetic_classes: 3
+  synthetic_image_size: 96
+
+model:
+  arch: fasterrcnn_mobilenet_v3_large_320_fpn   # | fasterrcnn_mobilenet_v3_large_fpn | fasterrcnn_resnet50_fpn | ..._v2
+  pretrained: coco              # coco (COCO detector, new 21-way head) | imagenet (backbone only) | none
+  trainable_backbone_layers: 3  # fewer = more frozen = less overfitting and faster
+  min_size: [320]               # training picks one at random; evaluation uses the LAST entry
+  max_size: 640
+  box_head_dropout: 0.0         # 0 = off; try 0.2 if the diagnosis says overfitting
+  box_batch_size_per_image: 128 # RoIs sampled per image for the box head (torchvision default 512)
+  score_floor: 0.05             # detections below this are dropped at inference
+  nms_thresh: 0.5
+  detections_per_img: 100
+
+metric:
+  name: map50_voc07             # official VOC2007 metric: 11-point AP at IoU 0.5, mean over classes
+  target_value: 0.60            # ASSUMED, not confirmed
+  higher_is_better: true
+
+training:
+  max_epochs: 12
+  optimizer: sgd                # sgd (momentum) | adamw
+  lr: 0.005                     # linear-scaling rule from the torchvision recipe: 0.02 per 16 images -> 0.005 at 4
+  momentum: 0.9
+  nesterov: false
+  weight_decay: 0.0001          # weights only; biases and norm parameters are not decayed
+  backbone_lr_mult: 1.0         # < 1 = discriminative LR (e.g. 0.1) for the pretrained backbone
+  schedule: cosine              # cosine | multistep | plateau (after linear warmup)
+  warmup_iters: 500
+  warmup_factor: 0.001
+  lr_min_ratio: 0.01
+  milestones: [0.67, 0.89]      # multistep only (fractions of training)
+  gamma: 0.1
+  plateau_patience: 2           # plateau only
+  plateau_gamma: 0.1
+  grad_clip: 10.0
+  amp: true                     # fp16 autocast, CUDA only
+  ema:
+    enabled: true               # Polyak averaging of weights; the EMA weights are evaluated and saved
+    decay: 0.999
+    tau: 500
+  eval_ema: true
+  early_stopping:
+    enabled: true
+    patience: 3                 # epochs without validation improvement
+    min_delta: 0.002
+    min_epochs: 3
+  eval_train_subset: 100        # un-augmented train images scored each epoch (train/val gap); 0 = off
+  device: auto
+  resume_from: null
+
+sanity:                         # Deep Learning book Ch. 11 debugging, run before training
+  enabled: true
+  initial_loss_tol: 0.5         # |classifier loss - ln(K+1)| at initialisation
+  overfit_batch: 4
+  overfit_steps: 60
+  overfit_drop: 0.6             # tiny-batch loss must fall below this fraction of its start
+  fail_hard: true
+
+diagnostics:
+  error_score_thr: 0.5          # score threshold for the error breakdown and drift statistics
+
+promotion:
+  min_improvement: 0.0
+  require_target: true

@@ -1,0 +1,15 @@
+# Placeholders until the serving requirements are known (see TODO.md).
+model_name: fasterrcnn-mobilenet-v3-large-320-fpn-voc2007
+model_alias: champion
+mode: realtime                  # batch | realtime
+latency_budget_ms: null
+throughput_target: null
+default_score_threshold: 0.5
+max_detections: 100
+max_upload_bytes: 10485760
+max_image_side: 4096
+monitoring:
+  psi_warn: 0.10
+  psi_alert: 0.25
+  channel_mean_z_alert: 3.0
+  detections_ratio_alert: 2.0   # alert if mean detections/image changes by more than this factor

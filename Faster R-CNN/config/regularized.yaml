@@ -1,0 +1,85 @@
+# Regularised variant (hypothesis, not a proven improvement): strong augmentation, multi-scale training,
+# box-head dropout, 5x weight decay, discriminative backbone LR, more frozen layers. Compare with the baseline in MLflow.
+experiment_name: rcnn-voc2007
+run_name: null
+phase: candidate
+seed: 42
+data:
+  dataset: voc2007
+  root: ./data
+  download: true
+  num_classes: 20
+  val_fraction: 0.1
+  batch_size: 4
+  num_workers: 4
+  pin_memory: false
+  include_difficult_train: true
+  aug: strong
+  subset_train: null
+  subset_eval: null
+  synthetic_size: 64
+  synthetic_classes: 3
+  synthetic_image_size: 96
+model:
+  arch: fasterrcnn_mobilenet_v3_large_320_fpn
+  pretrained: coco
+  trainable_backbone_layers: 2
+  min_size:
+  - 256
+  - 288
+  - 320
+  max_size: 640
+  box_head_dropout: 0.2
+  box_batch_size_per_image: 128
+  score_floor: 0.05
+  nms_thresh: 0.5
+  detections_per_img: 100
+metric:
+  name: map50_voc07
+  target_value: 0.6
+  higher_is_better: true
+training:
+  max_epochs: 16
+  optimizer: sgd
+  lr: 0.005
+  momentum: 0.9
+  nesterov: false
+  weight_decay: 0.0005
+  backbone_lr_mult: 0.1
+  schedule: cosine
+  warmup_iters: 500
+  warmup_factor: 0.001
+  lr_min_ratio: 0.01
+  milestones:
+  - 0.67
+  - 0.89
+  gamma: 0.1
+  plateau_patience: 2
+  plateau_gamma: 0.1
+  grad_clip: 10.0
+  amp: true
+  ema:
+    enabled: true
+    decay: 0.999
+    tau: 500
+  eval_ema: true
+  early_stopping:
+    enabled: true
+    patience: 4
+    min_delta: 0.002
+    min_epochs: 3
+  eval_train_subset: 100
+  device: auto
+  resume_from: null
+sanity:
+  enabled: true
+  initial_loss_tol: 0.5
+  overfit_batch: 4
+  overfit_steps: 60
+  overfit_drop: 0.6
+  fail_hard: true
+diagnostics:
+  error_score_thr: 0.5
+promotion:
+  min_improvement: 0.0
+  require_target: true

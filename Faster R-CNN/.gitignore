@@ -1,0 +1,9 @@
+data/
+mlruns/
+mlartifacts/
+mlflow.db
+reports/runs/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pt
