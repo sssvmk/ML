@@ -1,0 +1,14 @@
+# Databricks "Machine Learning" GPU runtime already provides torch, torchvision, mlflow, numpy, pandas, pillow, matplotlib,
+# pyyaml and requests; pin only what you need to reproduce. Tested here: python 3.12, torch 2.14.1, torchvision 0.29.1, mlflow 3.16.1.
+torch>=2.4
+torchvision>=0.19
+mlflow>=3.0
+numpy
+pandas
+pillow
+matplotlib
+pyyaml
+requests
+# tests only
+pytest
+nbformat
