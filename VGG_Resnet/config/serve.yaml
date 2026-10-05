@@ -1,0 +1,11 @@
+# Fill after Checkpoint 4 (see TODO.md). Values here are placeholders, not measured budgets.
+mode: realtime                  # batch | realtime
+model_name: resnet20-cifar10   # registered model to serve (override: REGISTERED_MODEL_NAME or MODEL_URI)
+model_alias: champion
+latency_budget_ms: null
+throughput_target: null
+max_upload_bytes: 5242880
+monitoring:
+  psi_warn: 0.10
+  psi_alert: 0.25
+  channel_mean_z_alert: 3.0

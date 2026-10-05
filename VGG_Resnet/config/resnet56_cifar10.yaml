@@ -1,0 +1,56 @@
+# Single source of truth for training. Values marked ASSUMED are listed in TODO.md until confirmed.
+# Architecture family is inferred from model.arch (resnet20|32|56|44|110, vgg11|13|16|19).
+experiment_name: resnet-cifar10
+run_name: null
+phase: baseline                 # tag only: baseline | candidate
+seed: 42
+
+data:
+  dataset: cifar10              # cifar10 | cifar100 | synthetic (offline smoke tests only)
+  root: ./data
+  num_classes: 10               # overwritten from the dataset (cifar10 -> 10, cifar100 -> 100)
+  val_fraction: 0.10            # stratified split of the 50k train images
+  batch_size: 128
+  num_workers: 4                # 8-core CPU: 4 workers; use 0 for debugging
+  pin_memory: false             # no benefit on an iGPU that shares system RAM
+  subset_train: null            # int -> use only N train images (debugging)
+  subset_eval: null             # int -> use only N val/test images (debugging)
+  synthetic_size: 600           # used only when dataset: synthetic
+
+model:
+  arch: resnet56                # resnet20 | resnet32 | resnet56 (also resnet44, resnet110)
+  width_mult: 1.0               # 1.0 = paper widths 16/32/64
+  shortcut: A                   # A = parameter-free (paper default), B = 1x1 projection
+  zero_init_residual: false
+
+metric:
+  name: top1_accuracy           # ASSUMED (Checkpoint 1 not confirmed)
+  target_value: 0.88            # ASSUMED, sized for a ~40-epoch laptop budget (the paper reports roughly 91-93%)
+  higher_is_better: true
+
+training:
+  max_epochs: 40
+  optimizer: sgd                # sgd | adamw
+  lr: 0.1                       # paper value for batch 128
+  momentum: 0.9
+  nesterov: true
+  weight_decay: 0.0001          # paper value; applied to weights only, not BN/bias
+  warmup_epochs: 2
+  label_smoothing: 0.0
+  grad_clip: null
+  amp: true                     # fp16 autocast on GPU (CUDA or ROCm); `gpu-check` measures whether it helps
+  channels_last: false          # NVIDIA tends to like it; on AMD let `gpu-check` decide
+  early_stopping_patience: 8
+  device: auto                  # auto | cpu | cuda (ROCm builds of PyTorch also show up as cuda) | mps
+  resume_from: null             # path to a last.pt to resume
+
+sanity:                         # Ch. 11 debugging checks, run before training
+  enabled: true
+  initial_loss_tol: 0.5         # |loss - ln(K)| must be below this
+  overfit_batch: 32
+  overfit_steps: 150
+  fail_hard: true
+
+promotion:
+  min_improvement: 0.0          # val top-1 margin over current champion
+  require_target: true
