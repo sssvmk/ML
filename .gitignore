@@ -16,4 +16,5 @@ mlruns/
 mlartifacts/
 mlflow.db
 *.db
+.venv/
 
