@@ -1,0 +1,95 @@
+# Single source of truth for the pipeline. Nothing below is hard-coded in code.
+project:
+  name: airline-satisfaction
+  seed: 42
+  output_dir: runs            # every run goes to runs/<run_id>/
+
+data:
+  path: null                  # override with --data
+  target: satisfaction
+  id_column: id
+  positive_label: true        # satisfaction == TRUE  ->  class 1
+  duplicate_handling: group_split   # group_split (duplicates never straddle splits) | drop | keep
+  sample_rows: null           # set e.g. 50000 for quick experiments
+
+schema_overrides:             # leave empty to trust automatic inference
+  continuous: []
+  ordinal: []
+  nominal: []
+  ignore: []
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  stratify_by: [satisfaction, Class, "Type of Travel"]   # composite stratification key
+  min_stratum_size: 20
+
+features:
+  engineer: true
+  zero_rating_means_not_applicable: true   # rating 0 = "not applicable" in this survey
+  arrival_delay_on_time_threshold: 15      # minutes
+
+metric:
+  primary: roc_auc            # roc_auc | pr_auc | f1 | accuracy | neg_log_loss
+  target_value: null          # business target; UNCONFIRMED (see TODO.md)
+  threshold_rule: max_f1      # max_f1 | max_accuracy | fixed
+  fixed_threshold: 0.5
+
+search:
+  n_trials: 25                # per algorithm
+  timeout_seconds: 900        # per algorithm
+  train_subsample: 150000     # rows used inside the search objective (large-data shortcut)
+  pruner: median
+  sampler: tpe                # Bayesian (Tree-structured Parzen Estimator)
+
+cv_check:
+  enabled: true               # K-fold on a training subsample of the tuned config -> stability estimate
+  folds: 3
+  subsample: 100000
+
+diagnostics:
+  permutation_importance_rows: 20000
+  learning_curve_fractions: [0.05, 0.1, 0.2, 0.4, 0.8, 1.0]
+  slice_columns: [Class, "Type of Travel", "Customer Type", Gender, age_band]
+
+algorithms:
+  - majority_class_baseline
+  - logistic_regression_elasticnet
+  - random_forest_bagged_trees
+  - xgboost_gradient_boosted_trees
+  - lightgbm_gradient_boosted_trees
+  - pytorch_residual_mlp
+
+selection:
+  bootstrap_samples: 1000
+  min_practical_delta: 0.001      # differences smaller than this (primary metric) count as a tie
+  max_overfit_gap: 0.03           # train-minus-validation gap above which a model is FLAGGED (soft: loses ties)
+  max_cv_std: 0.01                # hard exclusion only if also > 2x the median CV std of the candidates
+  tie_breakers: [complexity, latency, brier]
+  report_test_for_all: false      # false => test set touched ONCE, for the winner only
+
+tracking:
+  enabled: true
+  uri: null                       # null => file store inside the run directory; or http://mlflow:5000
+  experiment_name: airline-satisfaction
+  registered_model_name: airline-satisfaction-classifier
+
+promotion:
+  min_primary_metric: 0.0         # set from the confirmed business target
+  max_slice_gap: 0.05             # max accuracy gap between slices
+  require_load_test: true
+
+output:                           # shape of the inference output file
+  id_column: id
+  prediction_column: satisfaction
+  label_style: logical            # logical (TRUE/FALSE) | binary (1/0) | text (satisfied/neutral or dissatisfied)
+  include_probability: false
+  probability_column: satisfaction_probability
+
+llm:                              # OpenAI-compatible endpoint (secrets only via environment variables)
+  model_env: LLM_MODEL
+  base_url_env: LLM_BASE_URL
+  api_key_env: LLM_API_KEY
+  default_headers_env: LLM_DEFAULT_HEADERS   # optional JSON, e.g. gateway headers
+  temperature: 0.0

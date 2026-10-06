@@ -1,0 +1,6 @@
+[console_scripts]
+airsat-explain = airsat.agent.ag2_explainer:main
+airsat-predict = airsat.predict:main
+airsat-promote = airsat.promote:main
+airsat-run = airsat.run_pipeline:main
+airsat-serve = airsat.serving.app:main

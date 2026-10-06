@@ -1,0 +1,117 @@
+Metadata-Version: 2.4
+Name: airsat
+Version: 0.1.0
+Summary: Config-driven ML experimentation, selection and inference pipeline for airline passenger satisfaction
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.1
+Requires-Dist: scipy>=1.11
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: seaborn>=0.13
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: joblib>=1.3
+Requires-Dist: pyarrow>=14
+Requires-Dist: optuna>=3.5
+Requires-Dist: xgboost>=2.0
+Requires-Dist: lightgbm>=4.1
+Requires-Dist: mlflow>=2.12
+Provides-Extra: deep
+Requires-Dist: torch>=2.2; extra == "deep"
+Provides-Extra: agent
+Requires-Dist: ag2[openai]<1.0,>=0.9; extra == "agent"
+Provides-Extra: serve
+Requires-Dist: fastapi>=0.110; extra == "serve"
+Requires-Dist: uvicorn>=0.29; extra == "serve"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: httpx>=0.27; extra == "dev"
+Requires-Dist: ruff>=0.4; extra == "dev"
+Provides-Extra: all
+Requires-Dist: airsat[agent,deep,dev,serve]; extra == "all"
+
+# airsat: airline passenger satisfaction, experiment-driven ML pipeline
+
+Config-driven pipeline that explores the data, builds representative splits, trains six algorithms under one identical
+protocol, declares a winner with an auditable decision trace, evaluates it once on a held-out test set, packages it for
+inference and explains everything through an AG2 LLM agent.
+
+> Status: verified end to end on SYNTHETIC data with the same schema (20 tests pass). It has NOT been run on the real
+> 699,635-row file, and the PyTorch MLP module has not been executed in the authoring sandbox (torch unavailable there).
+> See `TODO.md` before trusting any number.
+
+## Quick start
+```bash
+pip install -e ".[all]"                       # or: pip install -r requirements.txt && pip install -e . --no-deps
+python -m airsat.run_pipeline --data airline.csv --explain offline          # train, select, test, package, explain
+python -m airsat.predict --input unseen.csv --model runs/<run_id>/champion --output predictions.csv --drift-report
+python -m airsat.agent.ag2_explainer --run runs/<run_id> --mode llm         # LLM explanations (needs LLM_* env vars)
+python -m airsat.agent.ag2_explainer --run runs/<run_id> --mode llm --interactive
+AIRSAT_MODEL_DIR=runs/<run_id>/champion python -m airsat.serving.app       # HTTP service on :8000
+python -m airsat.promote --run runs/<run_id> --approver "Name"              # gate: candidate -> champion alias
+bash scripts/run_example.sh                                                 # synthetic demo
+```
+Everything is controlled by `config/default.yaml`; override with `--set search.n_trials=40`. Useful overrides:
+`data.sample_rows=50000` for quick iteration, `--algorithms lightgbm_gradient_boosted_trees ...` for a subset.
+
+LLM endpoint (any OpenAI-compatible server or gateway): `LLM_MODEL`, `LLM_API_KEY`, optional `LLM_BASE_URL`,
+`LLM_DEFAULT_HEADERS` (JSON). Behind a TLS-inspecting proxy also set `SSL_CERT_FILE`. Without credentials the agent
+falls back to deterministic offline explanations built from the same facts.
+
+## Experiment design
+1. **Goal and metric.** Primary metric ROC-AUC (threshold-free, classes roughly balanced, so ranking quality is what we
+   compare). Reported alongside: PR-AUC, log loss, Brier, expected calibration error, accuracy, balanced accuracy,
+   precision, recall, F1, MCC. The decision threshold is chosen on validation only (`metric.threshold_rule`).
+   The business target is `metric.target_value` (unset: to be confirmed).
+2. **EDA and tests** (`eda.py`). Missingness, duplicates, rating ranges and "0 = not applicable" shares, skew/outliers,
+   normality, Mann-Whitney and single-feature AUC (leak scan), Cramér's V and chi-square, mutual information, Spearman
+   collinearity pairs, id-vs-target check. Effect sizes accompany p-values because n is large.
+3. **Variable types** (`schema.py`): non-numeric -> nominal; integer-valued with <=10 levels -> ordinal (the 0-5 ratings);
+   other numeric -> continuous; `id` and the target are excluded from features.
+4. **Splits** (`splitting.py`): 70/15/15, stratified on target x Class x Type of Travel; identical rows never straddle
+   splits; split before any learned preprocessing. Representativeness is judged by KS statistic, Cramér's V, prevalence
+   difference (with sample-size-aware limits) and adversarial validation (AUC ~0.5 is good).
+5. **Features** (`features.py`): rating aggregates computed on non-zero ratings, count of zero/low/high ratings,
+   group means (digital, comfort, service, logistics), delay transforms, recovered delay, on-time flag, log distance,
+   distance/age bands, class ordinal, business x loyalty and digital x business interactions. Fitted on train only.
+6. **Per-algorithm protocol** (`algorithms/base.py`, identical for all): encode/scale -> assumption checks ->
+   Optuna TPE search (Bayesian) on a training subsample, defaults enqueued as trial 0 -> final fit on full train
+   (boosters/MLP early-stop on a 10% hold-out of TRAIN, so validation stays untouched) -> metrics, ROC/PR, calibration,
+   confusion, learning curve, permutation importance, slice metrics -> K-fold stability check with preprocessing refit
+   inside each fold -> inference bundle -> MLflow logging.
+7. **Winner** (`analysis/select_winner.py`): all models scored on the same validation rows; 95% bootstrap CIs and paired
+   bootstrap differences against the best; a model within `min_practical_delta` or whose difference CI contains 0 is a
+   tie; ties are broken by (no large train-validation gap, simplicity, latency, Brier). Unstable models (CV std high and
+   above 2x the median) are excluded. McNemar is reported as supporting evidence. The test set is then evaluated once,
+   for the winner only; `test_set_used.lock` blocks a second evaluation.
+
+## Algorithms, losses, hyper-parameters
+
+| Module | Loss / objective | Searched hyper-parameters | Key assumptions checked |
+|---|---|---|---|
+| `majority_class_baseline` | none (constant prior) | none | class balance, sample size |
+| `logistic_regression_elasticnet` | regularised cross-entropy, (1/C)[a L1 + (1-a)/2 L2] | C, l1_ratio, class_weight | linear log-odds (Box-Tidwell), VIF/collinearity, separation, events per variable, independence (Durbin-Watson) |
+| `random_forest_bagged_trees` | Gini/entropy per split, mean leaf frequency | trees, depth, min leaf, max features, bootstrap fraction, criterion | leakage, duplicates, shift, range coverage |
+| `xgboost_gradient_boosted_trees` | logistic loss + gamma T + lambda/alpha leaf penalties | eta, depth, min child weight, subsample, colsample, lambda, alpha, gamma (trees by early stopping) | leakage, shift, labels |
+| `lightgbm_gradient_boosted_trees` | logistic loss + L1/L2 + min split gain | eta, leaves, min child samples, subsample, colsample, lambda, alpha, min split gain | same as XGBoost |
+| `pytorch_residual_mlp` | BCE on logits + AdamW weight decay | width, blocks, dropout, lr, weight decay, batch size (median pruner on epoch val loss) | scaled inputs, params/sample ratio, initial loss ~ ln 2, can overfit tiny batch |
+
+Shared checks everywhere: finite inputs, class balance, duplicates, single-feature leakage, train-vs-validation shift.
+Why six: a trivial floor, a linear model, bagging, two boosting variants with different tree growth, and a deep model, so
+the experiment shows whether non-linearity and interactions matter at all.
+
+## Outputs (`runs/<run_id>/`)
+`eda/`, `splits/`, `algorithms/<name>/{result.json, assumption_checks.json, search_trials.csv, training_curve.csv, plots/, bundle/}`,
+`selection.json`, `model_comparison.md`, `reports/{experiment_report.md, MODEL_CARD.md, model_comparison.png, roc_overlay.png, agent_explanations/}`,
+`test_evaluation.json`, `champion/` (inference bundle), `registry.json`, `experiment_log.jsonl`, `mlflow.db`, `config_used.yaml`.
+
+## Inference
+The bundle takes RAW rows and returns probabilities: it validates the schema, engineers features, encodes and predicts, so
+training and serving cannot drift. `predict.py` writes `id,satisfaction` (TRUE/FALSE by default; `output.*` in the config
+changes column names, label style and optional probability). `--drift-report` computes PSI against the training reference.
+Bundles are pickles: serve with the library versions in `run_context.json`.
+
+## Tests
+`pytest` runs a tiny end-to-end pipeline, split/feature/metric unit tests, the HTTP service and the agent loop (mock LLM).
+`tests/test_mlp.py` runs only when torch is installed.
