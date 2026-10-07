@@ -1,0 +1,9 @@
+runs/
+mlruns/
+mlflow.db
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+*.joblib
+data/*.csv
