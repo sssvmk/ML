@@ -1,0 +1,95 @@
+# Single source of truth. Nothing below is hard-coded in code.
+project:
+  name: airline-autoencoder
+  seed: 42
+  output_dir: runs
+  device: auto                  # auto | cpu | cuda
+
+data:
+  path: null
+  target: satisfaction
+  id_column: id
+  positive_label: true
+  duplicate_handling: group_split
+  sample_rows: null
+
+schema_overrides: {continuous: [], ordinal: [], nominal: [], ignore: []}
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  stratify_by: [satisfaction, Class, "Type of Travel"]
+  min_stratum_size: 20
+
+encoding:
+  ordinal_as: categorical       # categorical: ratings 0-5 are embedded & reconstructed as classes | numeric: treated as numbers
+  skew_threshold: 2.0           # non-negative continuous columns with |skew| above this get log1p before standardising
+  embedding_max_dim: 8
+
+autoencoder:                    # STAGE 1: unsupervised representation learning (target never used)
+  kinds: [ae, dae, vae]         # plain AE, denoising AE, variational AE
+  max_epochs: 60
+  patience: 6
+  search: {n_trials: 12, timeout_seconds: 900, train_subsample: 100000}
+  defaults: {hidden: 128, depth: 2, latent: 16, dropout: 0.0, lr: 0.001, weight_decay: 0.00001, batch_size: 1024,
+             w_cat: 1.0, noise_sigma: 0.15, mask_p: 0.10, beta: 0.01}
+  vae_kl_warmup_epochs: 5
+
+classifier:                     # STAGE 2: satisfaction head on the encoder
+  modes: [frozen, finetune, lgbm_latent, lgbm_hybrid]
+  # frozen = head on fixed encoder; finetune = update encoder too; lgbm_latent = LightGBM on the latent code only;
+  # lgbm_hybrid = LightGBM on latent + raw encoded columns
+  include_scratch_control: true # same architecture, random init: does pretraining help at all?
+  include_lgbm_raw_control: true  # LightGBM on raw columns, no encoder: does the latent code add anything for trees?
+  max_epochs: 40
+  patience: 5
+  search: {n_trials: 10, timeout_seconds: 900, train_subsample: 100000}
+  lgbm_defaults: {learning_rate: 0.1, num_leaves: 31, min_child_samples: 20, subsample: 0.8, colsample_bytree: 0.8, reg_lambda: 1.0, reg_alpha: 0.01}
+  defaults: {head_hidden: 32, head_dropout: 0.1, lr: 0.001, enc_lr_mult: 0.2, weight_decay: 0.0001, batch_size: 1024}
+
+label_efficiency:               # does pretraining help when labels are scarce?
+  enabled: true
+  fractions: [0.01, 0.05, 0.2, 1.0]
+  seeds: [0, 1]
+
+metric:
+  primary: roc_auc              # roc_auc | pr_auc | f1 | accuracy | neg_log_loss
+  target_value: null            # UNCONFIRMED business target
+  threshold_rule: max_f1
+  fixed_threshold: 0.5
+
+reconstruction:
+  examples: 15                  # rows written as original-vs-reconstructed table
+  min_r2: 0.0                   # sanity: continuous reconstruction must beat the mean predictor
+  min_active_latent_dims: 2
+
+diagnostics:
+  slice_columns: [Class, "Type of Travel", "Customer Type", Gender]
+
+selection:
+  bootstrap_samples: 1000
+  min_practical_delta: 0.001
+  max_overfit_gap: 0.03
+  tie_breakers: [trainable_params, latency]
+  report_test_for_all: false
+
+tracking:
+  enabled: true
+  uri: null
+  experiment_name: airline-autoencoder
+  registered_model_name: airline-autoencoder-classifier
+
+output:
+  id_column: id
+  prediction_column: satisfaction
+  label_style: logical          # logical (TRUE/FALSE) | binary | text
+  include_probability: false
+  probability_column: satisfaction_probability
+
+llm:
+  model_env: LLM_MODEL
+  base_url_env: LLM_BASE_URL
+  api_key_env: LLM_API_KEY
+  default_headers_env: LLM_DEFAULT_HEADERS
+  temperature: 0.0

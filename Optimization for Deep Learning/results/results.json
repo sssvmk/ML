@@ -72,8 +72,8 @@
       },
       "seconds": 54.879462242126465,
       "run_id": "6add9760f25244228e56a97e91c34391",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\baseline\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\baseline\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\baseline\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\baseline\\loss_curve.png"
     },
     {
       "method": "batch_gd",
@@ -147,8 +147,8 @@
       },
       "seconds": 71.2179012298584,
       "run_id": "4b82b348d08e447fa57ed8650da491cf",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_gd\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_gd\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_gd\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_gd\\loss_curve.png"
     },
     {
       "method": "sgd",
@@ -222,8 +222,8 @@
       },
       "seconds": 59.07803916931152,
       "run_id": "df19bb432b914b6c91d2347ce59d8e93",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\sgd\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\sgd\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\sgd\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\sgd\\loss_curve.png"
     },
     {
       "method": "momentum",
@@ -298,8 +298,8 @@
       },
       "seconds": 62.33921718597412,
       "run_id": "02391ae150a14068917726558f208814",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\momentum\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\momentum\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\momentum\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\momentum\\loss_curve.png"
     },
     {
       "method": "nesterov",
@@ -374,8 +374,8 @@
       },
       "seconds": 66.18750953674316,
       "run_id": "31f52e2e0f684c69824ec6b04da822a1",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\nesterov\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\nesterov\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\nesterov\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\nesterov\\loss_curve.png"
     },
     {
       "method": "lr_decay",
@@ -455,8 +455,8 @@
       },
       "seconds": 66.67297863960266,
       "run_id": "3178df9756ed49f7a0c4a317f25342e6",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lr_decay\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lr_decay\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lr_decay\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lr_decay\\loss_curve.png"
     },
     {
       "method": "adagrad",
@@ -530,8 +530,8 @@
       },
       "seconds": 65.17028141021729,
       "run_id": "3db81f61fdb5449295fa4884a5de3e34",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adagrad\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adagrad\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adagrad\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adagrad\\loss_curve.png"
     },
     {
       "method": "rmsprop",
@@ -606,8 +606,8 @@
       },
       "seconds": 65.64492797851562,
       "run_id": "b9a3b8729e7c4c8698ed11dd23fd5d62",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop\\loss_curve.png"
     },
     {
       "method": "rmsprop_nesterov",
@@ -685,8 +685,8 @@
       },
       "seconds": 70.66688680648804,
       "run_id": "6f276861ec0c4195a9726250a410f6cf",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop_nesterov\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop_nesterov\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop_nesterov\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\rmsprop_nesterov\\loss_curve.png"
     },
     {
       "method": "adam",
@@ -764,8 +764,8 @@
       },
       "seconds": 78.3357138633728,
       "run_id": "4eface72cc624d1a85252587433c5ebf",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adam\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adam\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adam\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\adam\\loss_curve.png"
     },
     {
       "method": "newton",
@@ -844,8 +844,8 @@
       },
       "seconds": 230.03896117210388,
       "run_id": "5dbf609d54b64425ab34f3bf2b1f8a77",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\newton\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\newton\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\newton\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\newton\\loss_curve.png"
     },
     {
       "method": "conjugate_gradients",
@@ -922,8 +922,8 @@
       },
       "seconds": 134.5932013988495,
       "run_id": "7f260c92bc704e4caaeba7cf23ae31e1",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\conjugate_gradients\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\conjugate_gradients\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\conjugate_gradients\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\conjugate_gradients\\loss_curve.png"
     },
     {
       "method": "bfgs",
@@ -998,8 +998,8 @@
       },
       "seconds": 52.22856593132019,
       "run_id": "f2f88d41574a43f2b4e83c3cc3d60684",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bfgs\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bfgs\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bfgs\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bfgs\\loss_curve.png"
     },
     {
       "method": "lbfgs",
@@ -1075,8 +1075,8 @@
       },
       "seconds": 105.12830352783203,
       "run_id": "2263f45c02fe43868fa0bf0a35576a54",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lbfgs\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lbfgs\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lbfgs\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\lbfgs\\loss_curve.png"
     },
     {
       "method": "init_random",
@@ -1152,8 +1152,8 @@
       },
       "seconds": 68.00094223022461,
       "run_id": "e09178564b254629ac8b91b9041a2992",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random\\loss_curve.png"
     },
     {
       "method": "init_fixed_scale",
@@ -1228,8 +1228,8 @@
       },
       "seconds": 67.61448335647583,
       "run_id": "202c8e8bfcc54e9f9f82f6e36031c09c",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_fixed_scale\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_fixed_scale\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_fixed_scale\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_fixed_scale\\loss_curve.png"
     },
     {
       "method": "init_glorot",
@@ -1304,8 +1304,8 @@
       },
       "seconds": 65.53677105903625,
       "run_id": "2eaa91ae3845446b98a5ff1041145603",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_glorot\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_glorot\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_glorot\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_glorot\\loss_curve.png"
     },
     {
       "method": "init_orthogonal",
@@ -1380,8 +1380,8 @@
       },
       "seconds": 70.33176159858704,
       "run_id": "af27fde3ff8f44919ef6e6907ed6856c",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_orthogonal\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_orthogonal\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_orthogonal\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_orthogonal\\loss_curve.png"
     },
     {
       "method": "init_random_walk",
@@ -1461,8 +1461,8 @@
       },
       "seconds": 65.52152562141418,
       "run_id": "9e4d4ffb37844418b0bbe359687495f0",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random_walk\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random_walk\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random_walk\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_random_walk\\loss_curve.png"
     },
     {
       "method": "init_sparse",
@@ -1538,8 +1538,8 @@
       },
       "seconds": 100.59298539161682,
       "run_id": "eabc59af9b35435dbe616c8daa3c54cd",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_sparse\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_sparse\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_sparse\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_sparse\\loss_curve.png"
     },
     {
       "method": "init_scale_search",
@@ -1617,8 +1617,8 @@
       },
       "seconds": 86.28000783920288,
       "run_id": "6a702e06221e475aaa05002dc8fabe53",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_scale_search\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_scale_search\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_scale_search\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_scale_search\\loss_curve.png"
     },
     {
       "method": "bias_zero",
@@ -1692,8 +1692,8 @@
       },
       "seconds": 96.2928671836853,
       "run_id": "ab43123c06264bcb8bd18ba8c51fdaed",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_zero\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_zero\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_zero\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_zero\\loss_curve.png"
     },
     {
       "method": "bias_output_marginal",
@@ -1770,8 +1770,8 @@
       },
       "seconds": 101.86254835128784,
       "run_id": "ad5761737dbd4ed197ff2b239ff1a587",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_output_marginal\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_output_marginal\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_output_marginal\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_output_marginal\\loss_curve.png"
     },
     {
       "method": "bias_relu_positive",
@@ -1846,8 +1846,8 @@
       },
       "seconds": 94.6669909954071,
       "run_id": "e46a2123869c4707b7297a3a41b05eed",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_relu_positive\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_relu_positive\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_relu_positive\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_relu_positive\\loss_curve.png"
     },
     {
       "method": "bias_gate",
@@ -1922,8 +1922,8 @@
       },
       "seconds": 163.69948434829712,
       "run_id": "3067faafc70b4052a32e073fcb427ecd",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_gate\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_gate\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_gate\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\bias_gate\\loss_curve.png"
     },
     {
       "method": "variance_precision",
@@ -2003,8 +2003,8 @@
       },
       "seconds": 86.87803745269775,
       "run_id": "0a6c9400224241bc9e127d76ca576295",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\variance_precision\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\variance_precision\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\variance_precision\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\variance_precision\\loss_curve.png"
     },
     {
       "method": "init_unsupervised_pretrain",
@@ -2082,8 +2082,8 @@
       },
       "seconds": 69.05296277999878,
       "run_id": "19b1288093744f989e6f8dda99615619",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_unsupervised_pretrain\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_unsupervised_pretrain\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_unsupervised_pretrain\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_unsupervised_pretrain\\loss_curve.png"
     },
     {
       "method": "init_supervised_pretrain",
@@ -2163,8 +2163,8 @@
       },
       "seconds": 56.216511487960815,
       "run_id": "d9e075d044e44a358d12f782c52c76fe",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_supervised_pretrain\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_supervised_pretrain\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_supervised_pretrain\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\init_supervised_pretrain\\loss_curve.png"
     },
     {
       "method": "clip_value",
@@ -2240,8 +2240,8 @@
       },
       "seconds": 70.70128846168518,
       "run_id": "15a90bd82b59412aba059f6f4ba58c49",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_value\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_value\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_value\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_value\\loss_curve.png"
     },
     {
       "method": "clip_norm",
@@ -2318,8 +2318,8 @@
       },
       "seconds": 70.66438150405884,
       "run_id": "6988a039df2b439bae6a841c8ce66843",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_norm\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_norm\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_norm\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_norm\\loss_curve.png"
     },
     {
       "method": "clip_backprop",
@@ -2395,8 +2395,8 @@
       },
       "seconds": 61.22151732444763,
       "run_id": "6acc79ad18454c2ca16c9c63adbbad72",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_backprop\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_backprop\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_backprop\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\clip_backprop\\loss_curve.png"
     },
     {
       "method": "batch_norm",
@@ -2470,8 +2470,8 @@
       },
       "seconds": 72.44936203956604,
       "run_id": "100e1ddb80b74e258aa373b72f8d2df3",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_norm\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_norm\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_norm\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\batch_norm\\loss_curve.png"
     },
     {
       "method": "coordinate_descent",
@@ -2568,8 +2568,8 @@
       },
       "seconds": 63.230141401290894,
       "run_id": "a83d402e701547919172125829208941",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\coordinate_descent\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\coordinate_descent\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\coordinate_descent\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\coordinate_descent\\loss_curve.png"
     },
     {
       "method": "polyak_averaging",
@@ -2644,8 +2644,8 @@
       },
       "seconds": 63.95904588699341,
       "run_id": "34cc8a70e8da4dbeb759a28ad949ea05",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\polyak_averaging\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\polyak_averaging\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\polyak_averaging\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\polyak_averaging\\loss_curve.png"
     },
     {
       "method": "greedy_pretraining",
@@ -2725,8 +2725,8 @@
       },
       "seconds": 54.79441237449646,
       "run_id": "80209973c7964852afef36950601a787",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\greedy_pretraining\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\greedy_pretraining\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\greedy_pretraining\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\greedy_pretraining\\loss_curve.png"
     },
     {
       "method": "design_activations",
@@ -2801,8 +2801,8 @@
       },
       "seconds": 79.34728789329529,
       "run_id": "3c048bd998ca471ab907bef441021fc9",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_activations\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_activations\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_activations\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_activations\\loss_curve.png"
     },
     {
       "method": "design_skip",
@@ -2883,8 +2883,8 @@
       },
       "seconds": 99.76503276824951,
       "run_id": "841e903b46f84131a146bc1a5216bc9a",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_skip\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_skip\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_skip\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_skip\\loss_curve.png"
     },
     {
       "method": "design_aux_heads",
@@ -2973,8 +2973,8 @@
       },
       "seconds": 231.7203598022461,
       "run_id": "3bc8701b43b445858eccd3f4cb3ef7be",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_aux_heads\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_aux_heads\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_aux_heads\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\design_aux_heads\\loss_curve.png"
     },
     {
       "method": "continuation",
@@ -3050,8 +3050,8 @@
       },
       "seconds": 87.49025535583496,
       "run_id": "ed3879ea2822470d880689445f4a0afb",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\continuation\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\continuation\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\continuation\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\continuation\\loss_curve.png"
     },
     {
       "method": "curriculum",
@@ -3127,8 +3127,8 @@
       },
       "seconds": 67.52764534950256,
       "run_id": "f74c79513355440cbf3b8cc15c9b7405",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\curriculum\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\curriculum\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\curriculum\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Optimization for Deep Learning\\results\\methods\\curriculum\\loss_curve.png"
     }
   ],
   "best_method": "batch_norm"

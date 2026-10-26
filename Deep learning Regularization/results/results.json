@@ -57,8 +57,8 @@
       },
       "seconds": 49.11022734642029,
       "run_id": "dbc63e6a81854fe68f71f6890fc26dea",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\baseline\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\baseline\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\baseline\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\baseline\\loss_curve.png"
     },
     {
       "method": "l2_weight_decay",
@@ -118,8 +118,8 @@
       },
       "seconds": 60.622482776641846,
       "run_id": "e346b8943eec47daab1a3f7694f8e514",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\l2_weight_decay\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\l2_weight_decay\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\l2_weight_decay\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\l2_weight_decay\\loss_curve.png"
     },
     {
       "method": "l1",
@@ -179,8 +179,8 @@
       },
       "seconds": 57.59012484550476,
       "run_id": "5e416ee86cad4fc7b6aebd4c3db2ff7c",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\l1\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\l1\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\l1\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\l1\\loss_curve.png"
     },
     {
       "method": "constrained_norm",
@@ -241,8 +241,8 @@
       },
       "seconds": 54.45955681800842,
       "run_id": "e960fa96c7bc4bee98fa08f312e4058e",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\constrained_norm\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\constrained_norm\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\constrained_norm\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\constrained_norm\\loss_curve.png"
     },
     {
       "method": "under_constrained",
@@ -314,8 +314,8 @@
       },
       "seconds": 15.311062812805176,
       "run_id": "3abe79130d3146419357407016c74987",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\under_constrained\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\under_constrained\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\under_constrained\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\under_constrained\\loss_curve.png"
     },
     {
       "method": "augmentation",
@@ -377,8 +377,8 @@
       },
       "seconds": 67.99498581886292,
       "run_id": "cfb1c9dc655d4d7cbe072aa63208ecd0",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\augmentation\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\augmentation\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\augmentation\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\augmentation\\loss_curve.png"
     },
     {
       "method": "noise_robustness",
@@ -440,8 +440,8 @@
       },
       "seconds": 101.45138764381409,
       "run_id": "d7de1a20470241218fd944509e03c4c1",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\noise_robustness\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\noise_robustness\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\noise_robustness\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\noise_robustness\\loss_curve.png"
     },
     {
       "method": "input_noise",
@@ -501,8 +501,8 @@
       },
       "seconds": 63.36998414993286,
       "run_id": "11f250a86a4e4fac98272e5f0b17b1ae",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\input_noise\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\input_noise\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\input_noise\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\input_noise\\loss_curve.png"
     },
     {
       "method": "weight_noise",
@@ -562,8 +562,8 @@
       },
       "seconds": 86.03276944160461,
       "run_id": "5087007b419f4edaa5d8fca1b97ee1d4",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\weight_noise\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\weight_noise\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\weight_noise\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\weight_noise\\loss_curve.png"
     },
     {
       "method": "label_smoothing",
@@ -623,8 +623,8 @@
       },
       "seconds": 49.60907769203186,
       "run_id": "61cb336e45c548c38328807e31c549a4",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\label_smoothing\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\label_smoothing\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\label_smoothing\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\label_smoothing\\loss_curve.png"
     },
     {
       "method": "semi_supervised",
@@ -691,8 +691,8 @@
       },
       "seconds": 117.7761299610138,
       "run_id": "9447b779e1fa414b924bf887cf80bb7a",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\semi_supervised\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\semi_supervised\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\semi_supervised\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\semi_supervised\\loss_curve.png"
     },
     {
       "method": "multitask",
@@ -754,8 +754,8 @@
       },
       "seconds": 66.39844918251038,
       "run_id": "6fde7237ada44fec88162e46286b4a91",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\multitask\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\multitask\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\multitask\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\multitask\\loss_curve.png"
     },
     {
       "method": "early_stopping",
@@ -816,8 +816,8 @@
       },
       "seconds": 62.71127104759216,
       "run_id": "a670256873cd45a883fc3aaad9d1c7f3",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\early_stopping\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\early_stopping\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\early_stopping\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\early_stopping\\loss_curve.png"
     },
     {
       "method": "parameter_sharing",
@@ -882,8 +882,8 @@
       },
       "seconds": 73.39671564102173,
       "run_id": "931fe604b4a3499c8e325f7e8ae7e5de",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\parameter_sharing\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\parameter_sharing\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\parameter_sharing\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\parameter_sharing\\loss_curve.png"
     },
     {
       "method": "sparse_representations",
@@ -943,8 +943,8 @@
       },
       "seconds": 52.51301383972168,
       "run_id": "0d735068b22047a5a4bd52ef1a499e34",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\sparse_representations\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\sparse_representations\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\sparse_representations\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\sparse_representations\\loss_curve.png"
     },
     {
       "method": "bagging",
@@ -1004,8 +1004,8 @@
       },
       "seconds": 132.78890252113342,
       "run_id": "48b5e17153d14692a725de60d6222d48",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\bagging\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\bagging\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\bagging\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\bagging\\loss_curve.png"
     },
     {
       "method": "dropout",
@@ -1066,8 +1066,8 @@
       },
       "seconds": 122.67994594573975,
       "run_id": "d94ab37abe5c4a0493b7b98600464162",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\dropout\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\dropout\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\dropout\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\dropout\\loss_curve.png"
     },
     {
       "method": "adversarial",
@@ -1128,8 +1128,8 @@
       },
       "seconds": 85.27424383163452,
       "run_id": "5edbe8ec0c224ec49e7f6e558eeabb74",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\adversarial\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\adversarial\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\adversarial\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\adversarial\\loss_curve.png"
     },
     {
       "method": "tangent",
@@ -1196,8 +1196,8 @@
       },
       "seconds": 317.888384103775,
       "run_id": "1a863bb75f144376b17f57959207523c",
-      "bundle": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\tangent\\bundle",
-      "loss_curve": "C:\\Users\\msk80743\\Use Case Design\\Deep learning regularization\\results\\methods\\tangent\\loss_curve.png"
+      "bundle": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\tangent\\bundle",
+      "loss_curve": "C:\\Users\\username\\Use Case Design\\Deep learning regularization\\results\\methods\\tangent\\loss_curve.png"
     }
   ],
   "best_method": "augmentation"

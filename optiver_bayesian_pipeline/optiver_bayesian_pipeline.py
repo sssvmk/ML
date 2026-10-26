@@ -15,9 +15,9 @@ from joblib import Parallel, delayed
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-BOOK_DATA_PATH = r"C:\Users\msk80743\Use Case Design\book_train_mini.csv"
-TRADE_DATA_PATH = r"C:\Users\msk80743\Use Case Design\trade_train_mini.csv"
-TRAIN_LABELS_PATH = r"C:\Users\msk80743\Use Case Design\train_mini.csv"
+BOOK_DATA_PATH = r"C:\Users\username\Use Case Design\book_train_mini.csv"
+TRADE_DATA_PATH = r"C:\Users\username\Use Case Design\trade_train_mini.csv"
+TRAIN_LABELS_PATH = r"C:\Users\username\Use Case Design\train_mini.csv"
 
 # ---------------------------------------------------------
 # 2. Parallel Feature Engineering

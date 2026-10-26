@@ -106,7 +106,7 @@
     "note": "heuristic; train loss is a running average over the epoch (with dropout active)"
   },
   "mlflow": {
-    "tracking_uri": "sqlite:///C:/Users/msk80743/Use Case Design/MLP/results/santander/mlflow.db",
+    "tracking_uri": "sqlite:///C:/Users/username/Use Case Design/MLP/results/santander/mlflow.db",
     "experiment": "MLP-santander_train",
     "parent_run_id": "ef5f6b081f3e40a2a39d3cbb70df8aa0",
     "final_run_id": "1c79d39f54fd477c8f00c8574b613aec",

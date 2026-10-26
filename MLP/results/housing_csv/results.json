@@ -104,7 +104,7 @@
     "note": "heuristic; train loss is a running average over the epoch (with dropout active)"
   },
   "mlflow": {
-    "tracking_uri": "sqlite:///C:/Users/msk80743/Use Case Design/MLP/results/housing_csv/mlflow.db",
+    "tracking_uri": "sqlite:///C:/Users/username/Use Case Design/MLP/results/housing_csv/mlflow.db",
     "experiment": "MLP-housing_data",
     "parent_run_id": "3decbefcc2164903945e13c9cd511ec6",
     "final_run_id": "31a29440f19f451abc60d48d41076c3c",
